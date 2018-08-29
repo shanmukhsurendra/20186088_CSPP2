@@ -7,7 +7,7 @@ public class Solution {
     /**
      * Constructs the object.
      */
-    private Solution(){
+    private Solution() {
         //afgagf.
     }
     /**
