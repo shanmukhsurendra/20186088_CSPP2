@@ -5,6 +5,12 @@ import java.util.Scanner;
     */
 public class Solution {
     /**
+     * Constructs the object.
+     */
+    private Solution(){
+        //afgagf.
+    }
+    /**
      * { function_description }.
      *
      * @param      n1    The n 1
