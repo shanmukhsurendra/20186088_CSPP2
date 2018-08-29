@@ -6,6 +6,9 @@ import java.util.Scanner;
     Do not modify this main function.
     */
 public final class Solution {
+    private Solution() {
+        //fdf.
+    }
     /** Fill the main function to print the number of 7's between 1 to n.
      */
     /**
