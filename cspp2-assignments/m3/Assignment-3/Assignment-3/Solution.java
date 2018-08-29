@@ -5,7 +5,7 @@ import java.util.Scanner;
     */
 public class Solution {
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      n1    The n 1
      * @param      n2    The n 2
@@ -14,7 +14,7 @@ public class Solution {
      */
     static int gcd(final int n1, final int n2) {
         /**
-         * { item_description }
+         * { item_description }.
          */
         int result = 1;
         for (int i = 1; i <= n1 && i <= n2; i++) {
@@ -25,12 +25,12 @@ public class Solution {
         return result;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      args  The arguments
      */
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         /**
          * { var_description }
          */
