@@ -20,14 +20,16 @@ public final class Solution {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         int count = 0;
-        for (int i = 7; i <= n; i++) {
+        int sev = 7;
+        int ten = 10;
+        for (int i = sev; i <= n; i++) {
             int y = i;
             while (y > 0) {
                 int x = y % 10;
-                if (x == 7) {
+                if (x == sev) {
                     count = count + 1;
                 }
-                y = y / 10;
+                y = y / ten;
             }
 
 
