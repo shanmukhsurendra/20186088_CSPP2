@@ -41,7 +41,7 @@ public final class Solution {
         int base = s.nextInt();
         int exponent = s.nextInt();
         long result = power(base, exponent);
-        System.out.println(result);
+        System.out.(result);
 
     }
     /*
