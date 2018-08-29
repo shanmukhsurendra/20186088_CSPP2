@@ -25,7 +25,7 @@ public final class Solution {
         for (int i = sev; i <= n; i++) {
             int y = i;
             while (y > 0) {
-                int x = y % 10;
+                int x = y % ten;
                 if (x == sev) {
                     count = count + 1;
                 }
