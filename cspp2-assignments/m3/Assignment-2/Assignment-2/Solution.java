@@ -20,8 +20,8 @@ public final class Solution {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         int count = 0;
-        int sev = 7;
-        int ten = 10;
+        final int sev = 7;
+        final int ten = 10;
         for (int i = sev; i <= n; i++) {
             int y = i;
             while (y > 0) {
