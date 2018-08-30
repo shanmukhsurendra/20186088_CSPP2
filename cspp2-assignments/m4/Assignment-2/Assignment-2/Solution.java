@@ -26,11 +26,15 @@ public class Solution {
 					sum[x][y] = a1[x][y] + a2[x][y];
 				}
 			}
-			for (int[] row : sum) {
-				for (int column : row) {
-					System.out.print(column + " ");
-				}
-				System.out.println();
+			for (int i = 0; i < a2srowa; i++) {
+			for (int j = 0; j < a2colms; j++) {
+			if (j == a2colms-1) {
+				System.out.println(sum[i][j]);
+			 } 
+			else {
+				System.out.println(sum[i][j] + " ");
+			}
+			}
 			}
 
 		} else {
