@@ -7,6 +7,12 @@ import java.util.Scanner;
  */
 public class Solution {
     /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //ergdsfg.
+    }
+    /**
      * { function_description }.
      *
      * @param      s     { parameter_description }.
@@ -17,7 +23,7 @@ public class Solution {
         /**
          * { var_description }.
          */
-        long i = (long)Long.parseLong(s);
+        long i = (long) Long.parseLong(s);
         int b = 1;
         final int ten = 10;
         long sum = 0;
