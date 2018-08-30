@@ -50,9 +50,9 @@ public final class Solution {
             for (int i = 0; i < a2srowa; i++) {
                 for (int j = 0; j < a2colms; j++) {
                     if (j == a2colms - 1) {
-                        System.out.println(sum[i][j]);
+                        System.out.print(sum[i][j]);
                     } else {
-                        System.out.println(sum[i][j] + " ");
+                        System.out.print(sum[i][j] + " ");
                     }
                 }
                 System.out.println();
@@ -63,3 +63,4 @@ public final class Solution {
         }
     }
 }
+
