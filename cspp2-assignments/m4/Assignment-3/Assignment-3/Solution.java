@@ -3,11 +3,11 @@
  */
 import java.util.Scanner;
 /**
- * import scanner class
+ * import scanner class.
  */
 public final class Solution {
     /**
-     * class 
+     * class.
      */
     private Solution() {
         //ergdsfg.
@@ -21,7 +21,7 @@ public final class Solution {
      */
     static long binaryToDecimal(final String s) {
         /**
-         * here we consider each digit of 
+         * here we consider each digit of
          * gievn number and multiply with 2
          * by power .
          */
@@ -45,8 +45,8 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         /**
-         * main fucntion to read the input and 
-         * print result by recuersion
+         * main fucntion to read the input and
+         * print result by recuersion.
          */
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt(); sc.nextLine();
