@@ -13,6 +13,19 @@ public class FirstLast6 {
 
 	}
 	/**
+	 * { item_description }
+	 */
+	public static boolean firstlast6(int[] arra) {
+		/**
+		 * { item_description }.
+		 */
+		if (arra[0] == 6 || arra[arra.length-1] == 6) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	/**
 	 * { function_description }
 	 *
 	 * @param      args  The arguments
@@ -27,10 +40,7 @@ public class FirstLast6 {
 		for (int i = 0; i < size; i++) {
 			array[i] = s.nextInt();
 		}
-		if (array[0] == 6 || array[size] == 6) {
-			System.out.println("true");
-		} else {
-			System.out.println("false");
-		}
+		System.out.println(firstlast6(array));
+		
 	}
 }
