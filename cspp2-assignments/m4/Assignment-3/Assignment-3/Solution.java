@@ -17,7 +17,7 @@ public final class Solution {
      *
      * @param      s     { parameter_description }.
      *
-     * @return     { description_of_the_return_value }.
+     * @return     { binary to decimal}.
      */
     static long binaryToDecimal(final String s) {
         /**
