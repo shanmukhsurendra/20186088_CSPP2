@@ -14,7 +14,7 @@ public final class Fahrenheet {
     */
     public static void main(final String[] args) {
         /**
-        * main function
+        * reads the input and cinvert into farenheet.
         */
         Scanner in = new Scanner(System.in);
         double a = in.nextInt(), f;

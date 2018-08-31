@@ -4,7 +4,7 @@ import java.util.Scanner;
  */
 public final class Quotient {
     /**
-    *swap class.
+    *qoutient class.
     */
     private Quotient() {
         //hgdh.
@@ -14,7 +14,8 @@ public final class Quotient {
     */
     public static void main(final String[] args) {
         /**
-        * main function
+        * reads input and print values
+         * after math operations.
         */
         Scanner in = new Scanner(System.in);
         int a = in.nextInt();

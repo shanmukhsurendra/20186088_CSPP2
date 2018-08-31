@@ -8,12 +8,12 @@ public class FirstLast6 {
 	 */
 	private FirstLast6() {
 		/**
-		 * { item_description }
+		 * { item_description }''
 		 */
 
 	}
 	/**
-	 * { item_description }
+	 * { to check given condition }.
 	 */
 	public static boolean firstlast6(int[] arra) {
 		/**
@@ -26,13 +26,14 @@ public class FirstLast6 {
 		}
 	}
 	/**
-	 * { function_description }
+	 * { to read inputs into array }.
 	 *
 	 * @param      args  The arguments
 	 */
 	public static void main(String[] args) {
 		/**
-		 * { var_description }
+		 * { int variables are taken and 
+		 * read into array }.
 		 */
 		Scanner s = new Scanner(System.in);
 		int size = s.nextInt();

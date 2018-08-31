@@ -15,13 +15,15 @@ public final class Solution {
          */
     }
     /**
-     * { function_description }.
+     * {reads thge input from user using 
+     * scanner }.
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
         /**
-         * { var_description }.
+         * {returns the maximum value by comparing with
+         * the remaining elements in array}.
          */
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

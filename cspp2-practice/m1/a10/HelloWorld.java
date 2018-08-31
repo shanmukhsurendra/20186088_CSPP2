@@ -3,7 +3,7 @@
  */
 public final class HelloWorld {
     /**
-     *sdfs.
+     *helloworld class.
      */
     private HelloWorld() {
         //hgdh.
@@ -12,7 +12,7 @@ public final class HelloWorld {
      *@param args of type string[].
      */
     public static void main(final String[] args) {
-    /**main function.
+    /**returns required output.
     */
         System.out.println("Hello, World");
    }

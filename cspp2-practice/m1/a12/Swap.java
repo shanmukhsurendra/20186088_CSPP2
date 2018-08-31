@@ -14,7 +14,7 @@ public final class Swap {
     */
     public static void main(final String[] args) {
         /**
-        * main function
+        * reads input from user.
         */
         Scanner in = new Scanner(System.in);
         int a = in.nextInt();

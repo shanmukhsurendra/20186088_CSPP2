@@ -20,7 +20,9 @@ public final class Solution {
      */
     static int gcd(final int n1, final int n2) {
         /**
-         * { item_description }.
+         * {to the gcd of the given two numbers
+         * bvy increasing the numbers which can divide both
+         * the given numbers}.
          */
         int result = 1;
         for (int i = 1; i <= n1 && i <= n2; i++) {
@@ -31,14 +33,14 @@ public final class Solution {
         return result;
     }
     /**
-     * { function_description }.
+     * {prints the gcd of two numbers}.
      *
      * @param      args  The arguments
      */
 
     public static void main(final String[] args) {
         /**
-         * { var_description }
+         * {reads input from user}.
          */
 
         Scanner s = new Scanner(System.in);
@@ -46,8 +48,8 @@ public final class Solution {
         int n2 = s.nextInt();
         System.out.println(gcd(n1, n2));
     }
-    /*
-    Need to write the gcd function and print the output.
+    /**
+    *Need to write the gcd function and print the output.
     */
 }
 

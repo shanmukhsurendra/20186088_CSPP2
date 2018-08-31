@@ -5,14 +5,15 @@ import java.util.Scanner;
 class SumOfNNumbers
 {
 	/**
-	 * { function_description }.
+	 * { to print sum of numbers upto given
+	 * range}.
 	 *
 	 * @param      args  The arguments
 	 */
 	public static void main (String[] args) 
 	{
 		/**
-		 * { var_description }.
+		 * { to sum numbers by increasing one value at once}.
 		 */
 		Scanner s = new Scanner(System.in);
 		int n = s.nextInt();

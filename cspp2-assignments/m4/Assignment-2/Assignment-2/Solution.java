@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public final class Solution {
     /**
-     * { item_description }.
+     * {solution class}.
      */
     private Solution() {
         /**
@@ -15,13 +15,16 @@ public final class Solution {
          */
     }
     /**
-     * { function_description }.
+     * {reads two input arrays and returns 
+     * the addition of two arrays}.
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
         /**
-         * { var_description }.
+         * {using for loops reads input
+         * and using fortloops returns the 
+         * array of addittion of two matrix}.
          */
         Scanner sc = new Scanner(System.in);
         int a1srowa = sc.nextInt();

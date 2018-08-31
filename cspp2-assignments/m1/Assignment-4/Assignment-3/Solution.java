@@ -14,7 +14,7 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         /**
-         *main fucntion
+         *convert degree to celsius.
          */
         Scanner scan = new Scanner(System.in);
         double degreesCelsius = scan.nextDouble();

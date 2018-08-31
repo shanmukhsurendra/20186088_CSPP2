@@ -17,12 +17,12 @@ public final class Solution {
      * @param      base      The base
      * @param      exponent  The exponent
      *
-     * @return     { description_of_the_return_value }
+     * @return     { description_of_the_return_value }.
      */
 
     static long power(final int base, final int exponent) {
         /**
-         * { var_description }.
+         * {returns the maultiplication value}.
          */
         if (exponent == 0) {
             return 1;
@@ -32,7 +32,7 @@ public final class Solution {
 
     }
     /**
-     * { function_description }.
+     * {reads the input from user}.
      *
      * @param      args  The arguments
      */
@@ -41,11 +41,11 @@ public final class Solution {
         int base = s.nextInt();
         int exponent = s.nextInt();
         long result = power(base, exponent);
-        System.out.(result);
+        System.out.println(result);
 
     }
     /*
-    Need to write the power function and print the output.
+    *Need to write the power function and print the output.
     */
 }
 

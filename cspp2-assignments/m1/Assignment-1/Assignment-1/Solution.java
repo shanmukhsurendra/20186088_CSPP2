@@ -4,8 +4,8 @@ assignment-1.
 */
 public final class Solution {
     /**
- *to print roll number and name.
- */
+    *to print roll number and name.
+    */
     private Solution() {
         //hgdh.
     }
@@ -13,8 +13,8 @@ public final class Solution {
      *@param args of type string[].
      */
     public static void main(final String[] args) {
-        /**main function.
-    */
+        /**reads the input from the user.
+        */
         Scanner in = new Scanner(System.in);
         String name = in.nextLine();
         int rollnumber = in.nextInt();

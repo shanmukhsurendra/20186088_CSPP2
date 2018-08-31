@@ -1,14 +1,14 @@
 class ConverttoWhileLoop
 {
     /**
-     * { function_description }
+     * {print output as required }.
      *
      * @param      args  The arguments
      */
     public static void main (String[] args) 
     {
         /**
-         * { var_description }
+         * {to print the given test case using while loop}.
          */
         int i = 2;
         while(i<=10)

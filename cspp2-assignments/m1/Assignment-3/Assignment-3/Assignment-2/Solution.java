@@ -20,7 +20,7 @@ public final class Solution {
      */
     static void areaOfTriangle(final int base, final int height) {
         /**
-         * { var_description }.
+         * {variables are declared in fucntion}.
          */
         final float five = 0.5;
         double area;

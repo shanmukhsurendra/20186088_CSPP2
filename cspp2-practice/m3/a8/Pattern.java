@@ -12,7 +12,7 @@ class Pattern
 	public static void main (String[] args) 
 	{
 		/**
-		 * { var_description }.
+		 * { to print numbers in pattern}.
 		 */
 		Scanner s = new Scanner(System.in);
 		int n = s.nextInt();

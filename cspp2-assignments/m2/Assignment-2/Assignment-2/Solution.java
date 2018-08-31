@@ -10,7 +10,7 @@ public final class Solution {
         //dg.
     }
     /**
-     * { function_description }.
+     * {prints the roots of the given equation}.
      *
      * @param      a     { parameter_description }
      * @param      b     { parameter_description }
@@ -18,7 +18,7 @@ public final class Solution {
      */
     static void quadraticEquation(final int a, final int b, final int c) {
         /**
-         * { var_description }.
+         * {reads the input from the main fucntion}.
          */
         final int four = 4;
         double determinent = b * b - four * a * c;
@@ -27,13 +27,13 @@ public final class Solution {
         System.out.println(root1 + " " + root2);
     }
     /**
-     * { function_description.
+     * {reads the input from the user.
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
         /**
-         * main function.
+         * call the method where the value is returned.
          */
         Scanner scan = new Scanner(System.in);
         final int four = 4;

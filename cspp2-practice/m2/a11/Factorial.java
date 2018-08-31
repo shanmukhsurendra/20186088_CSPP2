@@ -12,13 +12,13 @@ public final class Factorial {
     /**
      * { function_description }.
      *
-     * @param      n     { parameter_description }
+     * @param      n     { parameter_description }.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { description_of_the_return_value }.
      */
     static int facto(final int n) {
         /**
-         * { item_description }.
+         * { to return factorial value}.
          */
         if (n == 1) {
             return 1;
@@ -33,7 +33,7 @@ public final class Factorial {
      */
     public static void main(final String[] args) {
         /**
-         * { var_description }
+         * { reads input from user using scanner}.
          */
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
