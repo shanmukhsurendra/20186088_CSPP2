@@ -23,21 +23,20 @@ final class Solution {
      * @return     Matrix of the rounded elements
      */
     static int[][] roundHundred(final int[][] a, final int rows, final int columns) {
-        final int hund= 100;
-        final int thou = 1000;
+        final int hund = 100, fiv = 50;
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
-                for (int k = 100; k <= k*a.length; k = k + 100 ) {
+                for (int k = 100; k <= k * a.length; k = k + 100 ) {
                     int temp = 0;
-                     // System.out.println(":----------------");
+                    // System.out.println(":----------------");
                     temp = k - a[i][j];
                     // System.out.println(temp);
-                    if (temp > 50 && temp < 100) {
-                        a[i][j] = k - 100;
+                    if (temp > 50 && temp < hund) {
+                        a[i][j] = k - hund;
                         // System.out.println(a[i][j]);
                         // System.out.println(":----------------");
                     } else if (temp > 0 && temp < 50) {
-                        a[i][j] =k;
+                        a[i][j] = k;
                     }
                 }
 
