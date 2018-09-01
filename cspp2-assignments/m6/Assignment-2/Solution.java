@@ -31,11 +31,11 @@ final class Solution {
                     // System.out.println(":----------------");
                     temp = k - a[i][j];
                     // System.out.println(temp);
-                    if (temp > 50 && temp < hund) {
+                    if (temp > fiv && temp < hund) {
                         a[i][j] = k - hund;
                         // System.out.println(a[i][j]);
                         // System.out.println(":----------------");
-                    } else if (temp > 0 && temp < 50) {
+                    } else if (temp > 0 && temp < fiv) {
                         a[i][j] = k;
                     }
                 }
