@@ -32,7 +32,7 @@ final class Solution {
                     // System.out.println(temp);
                     if (temp > 50 && temp < 100) {
                         a[i][j] = k - 100;
-                        System.out.println(a[i][j]);
+                        // System.out.println(a[i][j]);
                         // System.out.println(":----------------");
                     } else if (temp > 0 && temp < 50) {
                         a[i][j] =100;
