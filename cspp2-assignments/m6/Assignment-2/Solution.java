@@ -26,7 +26,7 @@ final class Solution {
         final int hund = 100, fiv = 50;
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
-                for (int k = 100; k <= k * a.length; k = k + 100 ) {
+                for (int k = hund; k <= k * a.length; k = k + hund ) {
                     int temp = 0;
                     // System.out.println(":----------------");
                     temp = k - a[i][j];
