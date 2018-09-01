@@ -29,13 +29,9 @@ final class Solution {
             for (int j = 0; j < columns; j++) {
                 for (int k = hund; k <= k * a.length; k = k + hund) {
                     int temp = 0;
-                    // System.out.println(":----------------");
                     temp = k - a[i][j];
-                    // System.out.println(temp);
                     if (temp > fiv && temp < hund) {
                         a[i][j] = k - hund;
-                        // System.out.println(a[i][j]);
-                        // System.out.println(":----------------");
                     } else if (temp > 0 && temp < fiv) {
                         a[i][j] = k;
                     }
