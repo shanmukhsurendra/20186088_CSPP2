@@ -8,9 +8,11 @@ import java.util.Scanner;
 class InputValidator {
     /**
      * taking data a string variable.
-     * length is of int data variable.
      */
     private String data;
+    /**
+     * length is of int data variable.
+     */
     private int length;
     /**
      * Constructs the object.
