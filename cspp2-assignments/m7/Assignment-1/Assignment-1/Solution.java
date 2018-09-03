@@ -15,7 +15,7 @@ class InputValidator {
     /**
      * Constructs the object.
      *
-     * @param      input  takes input string as parameters. 
+     * @param      input  takes input string as parameters.
      */
     public InputValidator(final String input) {
         /**
@@ -44,7 +44,7 @@ class InputValidator {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * calls the class inlutvalidator.
      */
