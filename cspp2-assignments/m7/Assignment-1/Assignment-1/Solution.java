@@ -19,7 +19,7 @@ class InputValidator {
      *
      * @param      input  takes input string as parameters.
      */
-    public InputValidator(final String input) {
+    InputValidator(final String input) {
         /**
          * data is used to take input.
          * length is used to calculate length of data.
