@@ -14,8 +14,7 @@ class InputValidator {
      * length is of int data variable.
      */
     private int length;
-    /**
-     * Constructs the object.
+    /** Constructs the object.
      *
      * @param      input  takes input string as parameters.
      */
