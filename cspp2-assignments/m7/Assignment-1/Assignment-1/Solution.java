@@ -59,7 +59,7 @@ public final class Solution {
      * main function where the programm starts the execution.
      * @param      args  reads input from user.
      */
-    public static void main(final String args[]) {
+    public static void main(final String[] args) {
         /**
          * input s is taken using the scanner function.
          */
