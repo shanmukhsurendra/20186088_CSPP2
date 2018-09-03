@@ -55,7 +55,7 @@ public final class Solution {
     }
     /**
      * main function where the programm starts the execution.
-     * @param      input  reads input from user.
+     * @param      args  reads input from user.
      */
     public static void main(final String args[]) {
         /**
