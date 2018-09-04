@@ -2,7 +2,9 @@ import java.io.BufferedInputStream;
 import java.util.Scanner;
 
 public class List {
-	//Implement all the methods mentioned to build a ListADT
+	/**
+	 * Implement all the methods mentioned to build a ListADT
+	 */
 
 	/*
 	 * The goal for the list is to store items.
@@ -130,7 +132,7 @@ public class List {
 			System.out.println("Invalid Position Exception");
 
 		} else {
-			for (int i = index; i < a.length - 1; i++) {
+			for (int i = index; i < size; i++) {
 				a[i] = a[i + 1];
 			}
 			size -= 1;
@@ -149,10 +151,7 @@ public class List {
 	 * number of items in the list? Would size variable be useful?
 	 */
 	public int get(int index) {
-		if (index < size) {
 			return a[index];
-		}
-		return 5;
 	}
 
 	/*
