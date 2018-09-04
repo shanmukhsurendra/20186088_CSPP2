@@ -134,8 +134,8 @@ public class List {
 			for (int i = index;i<a.length-1;i++){
 			a[i] = a[i+1];
 		}
-		}
 		size -= 1;
+		}
 	}
 
 	/*
