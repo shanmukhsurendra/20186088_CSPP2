@@ -126,15 +126,14 @@ public class List {
 	 * The method returns void (nothing)
 	 */
 	public void remove(int index) {
-		if (index> size) {
+		if (index > size) {
 			System.out.println("Invalid Position Exception");
 
-		}
-		else{
-			for (int i = index;i<a.length-1;i++){
-			a[i] = a[i+1];
-		}
-		size -= 1;
+		} else {
+			for (int i = index; i < a.length - 1; i++) {
+				a[i] = a[i + 1];
+			}
+			size -= 1;
 		}
 	}
 
@@ -150,7 +149,7 @@ public class List {
 	 * number of items in the list? Would size variable be useful?
 	 */
 	public int get(int index) {
-		if (index < size){
+		if (index < size) {
 			return a[index];
 		}
 		return 5;
@@ -179,10 +178,10 @@ public class List {
 	public String toString() {
 		// Replace the code below
 		String e = "";
-		for (int i = 0;i<size;i++){
-			e += a[i]+",";
+		for (int i = 0; i < size; i++) {
+			e += a[i] + ",";
 		}
-		return ("["+ e.substring(0,e.length()-1)+"]");
+		return ("[" + e.substring(0, e.length() - 1) + "]");
 	}
 
 	/*
@@ -192,8 +191,8 @@ public class List {
 	 * the item exists and otherwise false
 	 */
 	public boolean contains(int item) {
-		for (int element:a){
-			if(element == item){
+		for (int element : a) {
+			if (element == item) {
 				return true;
 			}
 		}
@@ -206,11 +205,11 @@ public class List {
 	 * or -1 if this list does not contain the element.
 	 */
 	public int indexOf(int item) {
-		for (int i=0;i<size;i++) {
-			if(a[i]== item){
+		for (int i = 0; i < size; i++) {
+			if (a[i] == item) {
 				return i;
 			}
-			
+
 		}
 		return -1;
 	}
