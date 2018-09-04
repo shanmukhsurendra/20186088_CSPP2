@@ -67,8 +67,6 @@ public class List {
         /**
          * cosntructor
          */
-        
-
         // what are the two variables to be initialized here?
         // think about the private variables described above.
         // What should be the default values?
@@ -309,6 +307,8 @@ public class List {
                 }
             case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
+                break;
+            default:
                 break;
             }
         }
