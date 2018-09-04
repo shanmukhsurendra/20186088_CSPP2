@@ -33,7 +33,7 @@ public class List {
     // that's the job of the List constructor
     private int[] a;
 
-    /*
+    /**
      * What are the other class variables needed for creating a list?
      * How about keeping track of the size of the list?
      * If you add 2 items to the list then the size should be 2.
@@ -93,6 +93,11 @@ public class List {
      *
      * The method returns void (nothing).
      */
+    /**
+     * adds the item to end of list.
+     *
+     * @param      item  item to add to list.
+     */
     public void add(int item) {
         a[size] = item;
         size += 1;
@@ -105,6 +110,11 @@ public class List {
      * to the objects outside the list
      *
      * The method returns an int. Empty list should return 0.
+     */
+    /**
+     * returns the size of list.
+     *
+     * @return     size.
      */
     public int size() {
         // replace the code below to implement the size method
@@ -131,6 +141,12 @@ public class List {
      * array = [1,3,0,0,0,0,0,0,0,0]
      * The method returns void (nothing)
      */
+    /**
+     * remove the elements and shifts
+     * remaining elements left postion.
+     *
+     * @param      index  send from main to delete particular element.
+     */
     public void remove(int index) {
         if (index > size) {
             System.out.println("Invalid Position Exception");
@@ -153,6 +169,13 @@ public class List {
      * in the list then that would mean the item doesn't exist.
      * How do we check if the position is greater than the.
      * number of items in the list? Would size variable be useful?
+     */
+    /**
+     * to give index position
+     *
+     * @param      index  send the element to get index value.
+     *
+     * @return     returns the indexposition of given value.
      */
     public int get(int index) {
             return a[index];
@@ -178,6 +201,11 @@ public class List {
      * not all the elements of the array.
      *
      */
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         // Replace the code below
         String e = "";
@@ -193,6 +221,13 @@ public class List {
      * So, iterate through the list and return true if
      * the item exists and otherwise false
      */
+    /**
+     * check if item is present in list.
+     *
+     * @param      item  item to check.
+     *
+     * @return    returns true if item is present else false.
+     */
     public boolean contains(int item) {
         for (int element : a) {
             if (element == item) {
@@ -204,8 +239,15 @@ public class List {
 
     /**
      * Returns the index of the first occurrence.
-     * of the specified element in this list,
+     * of the specified element in this list.
      * or -1 if this list does not contain the element.
+     */
+    /**
+     * Searches for the first match.
+     *
+     * @param      item  integer passing from main to call method.
+     *
+     * @return     { description_of_the_return_value }
      */
     public int indexOf(int item) {
         for (int i = 0; i < size; i++) {
@@ -216,8 +258,13 @@ public class List {
         }
         return -1;
     }
+    /**
+     * { function_description }
+     *
+     * @param      args  reading the input.
+     */
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
