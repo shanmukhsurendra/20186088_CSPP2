@@ -1,12 +1,14 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
-
+/**
+ * class list.
+ */
 public class List {
     /**
      * Implement all the methods mentioned to build a ListADT
      */
 
-    /*
+    /**
      * The goal for the list is to store items.
      * How are we going to store the items in the list?
      * An array would be good. Right?
@@ -57,14 +59,15 @@ public class List {
     // again, don't initialize it here
     // variable initialization should be done in the constructor
     private int size;
-    /*
+    /**
      * The purpose of the constructor is to initialize the
      * class variables with some default values.
      */
     public List() {
         /**
-         * constructor to define variables
+         * cosntructor
          */
+        
 
         // what are the two variables to be initialized here?
         // think about the private variables described above.
@@ -98,7 +101,7 @@ public class List {
      *
      * @param      item  item to add to list.
      */
-    public void add(int item) {
+    public void add(final int item) {
         a[size] = item;
         size += 1;
     }
@@ -147,7 +150,7 @@ public class List {
      *
      * @param      index  send from main to delete particular element.
      */
-    public void remove(int index) {
+    public void remove(final int index) {
         if (index > size) {
             System.out.println("Invalid Position Exception");
 
@@ -171,13 +174,13 @@ public class List {
      * number of items in the list? Would size variable be useful?
      */
     /**
-     * to give index position
+     * to give index position.
      *
      * @param      index  send the element to get index value.
      *
      * @return     returns the indexposition of given value.
      */
-    public int get(int index) {
+    public int get(final int index) {
             return a[index];
     }
 
@@ -228,7 +231,7 @@ public class List {
      *
      * @return    returns true if item is present else false.
      */
-    public boolean contains(int item) {
+    public boolean contains(final int item) {
         for (int element : a) {
             if (element == item) {
                 return true;
@@ -249,7 +252,7 @@ public class List {
      *
      * @return     { description_of_the_return_value }
      */
-    public int indexOf(int item) {
+    public int indexOf(final int item) {
         for (int i = 0; i < size; i++) {
             if (a[i] == item) {
                 return i;
@@ -259,8 +262,6 @@ public class List {
         return -1;
     }
     /**
-     * { function_description }
-     *
      * @param      args  reading the input.
      */
 
