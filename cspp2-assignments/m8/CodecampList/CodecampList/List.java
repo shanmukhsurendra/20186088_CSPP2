@@ -251,9 +251,10 @@ public class List {
 				break;
 			case "get":
 			if (Integer.parseInt(tokens[1])< l.size()) {
-				
-			
 				System.out.println(l.get(Integer.parseInt(tokens[1])));
+				break;
+			}
+			else{
 				break;
 			}
 			case "contains":
