@@ -131,7 +131,7 @@ public class List {
 
 		}
 		else{
-			for (int i = 0;i<a.length-1;i++){
+			for (int i = index;i<a.length-1;i++){
 			a[i] = a[i+1];
 		}
 		}
