@@ -153,7 +153,7 @@ public class List {
 		if (index < size){
 			return a[index];
 		}
-		return -1;
+		return 5;
 	}
 
 	/*
