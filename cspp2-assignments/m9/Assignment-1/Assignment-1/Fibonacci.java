@@ -25,9 +25,12 @@ public class Fibonacci {
      *
      * Look for the hint.txt if some of the testcases fail.
      */
+    
     public static List fib(int n) {
-        List list = new List();
+        //List list = new List();
         int t1 = 0, t2 = 1;
+        List list = new List(n);
+
         for (int i = 1; i <= n; ++i) {
             list.add(t1);
             int sum = t1 + t2;

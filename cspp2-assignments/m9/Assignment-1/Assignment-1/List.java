@@ -78,6 +78,9 @@ public class List {
         // That is the initial value to use for size.
         size = 0;
     }
+    public List(int n){
+        list = new int[10];
+    }
 
     /*
      * Overloaded constructor with list capacity as argument
