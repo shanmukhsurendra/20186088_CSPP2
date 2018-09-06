@@ -138,7 +138,7 @@ public class List<E> {
 	public String toString() {
 
 		if (size == 0)
-			return "";
+			return "[]";
 		String str = "[";
 		int i = 0;
 		for (i = 0; i < size - 1; i++) {
