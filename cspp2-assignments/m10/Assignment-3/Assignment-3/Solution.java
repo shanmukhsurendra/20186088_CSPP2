@@ -79,6 +79,8 @@ public class Solution {
                 case "contains":
                     System.out.println(listString.contains(tokens[1]));
                     break;
+                default:
+                    break;
                 }
             }
             break;
@@ -129,6 +131,8 @@ public class Solution {
                     break;
                 case "contains":
                     System.out.println(listInteger.contains(Integer.parseInt((tokens[1]))));
+                    break;
+                default:
                     break;
                 }
             }
