@@ -207,7 +207,7 @@ public class List {
      * in the list then that would mean the item doesn't exist.
      * How do we check if the position is greater than the
      * number of items in the list? Would size variable be useful?
-     * @param index
+     * @param index index position.
      * @returnn element in index position.
      */
     public int get(final int index) {
