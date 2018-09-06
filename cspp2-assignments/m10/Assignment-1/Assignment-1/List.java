@@ -181,6 +181,7 @@ public class List {
      * So, the new array looks like this.
      * array = [1,3,0,0,0,0,0,0,0,0]
      * The method returns void (nothing)
+     * @param index 
      */
 
     public void remove(final int index) {
@@ -206,6 +207,8 @@ public class List {
      * in the list then that would mean the item doesn't exist.
      * How do we check if the position is greater than the
      * number of items in the list? Would size variable be useful?
+     * @param index
+     * @returnn element in index position.
      */
     public int get(final int index) {
         if (index < 0 || index >= size) {
