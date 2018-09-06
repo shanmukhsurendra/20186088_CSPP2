@@ -282,7 +282,13 @@ public class List {
     by moving all the elements to the right.
            The method returns void (nothing)
         */
-    public void add(final int index,final int item) {
+    /**
+     * adds item in particular index.
+     *
+     * @param      index  The index
+     * @param      item   The item
+     */
+    public void add(final int index, final int item) {
         size++;
         for (int i = size; i > index; i--) {
             list[i] = list[i - 1];
@@ -290,7 +296,14 @@ public class List {
         list[index] = item;
     }
 
-    /** Returns the count of occurances of a given item in the list*/
+    /**
+     * Returns the count of occurances
+     *  of a given item in the list.
+     *
+     * @param      item  The item
+     *
+     * @return    count.
+     */
     public int count(final int item) {
         int count = 0;
         for (int i = 0; i < size; i++) {
@@ -328,8 +341,8 @@ public class List {
                     } else {
                         if (t.length > 1) {
                             l.add(
-                            Integer.parseInt(t[0]), Integer.parseInt(t[1]));
-                    }
+                                Integer.parseInt(t[0]), Integer.parseInt(t[1]));
+                        }
                     }
                 }
                 break;
@@ -342,8 +355,8 @@ public class List {
                     int[] temp = new int[t1.length];
                     for (int i = 0; i < temp.length; i++) {
                         temp[i] = Integer.
-                    parseInt(t1[i]);
-                }
+                                  parseInt(t1[i]);
+                    }
                     l.addAll(temp);
                 }
                 break;
@@ -364,18 +377,18 @@ public class List {
                 break;
             case "indexOf":
                 System.out.println(l.indexOf(
-                    Integer.parseInt(tokens[1])));
+                                       Integer.parseInt(tokens[1])));
                 break;
             case "get":
                 System.out.println(l.get(
-                    Integer.parseInt(tokens[1])));
+                                       Integer.parseInt(tokens[1])));
                 break;
             case "contains":
                 System.out.println(l.contains(
-                    Integer.parseInt(tokens[1])));
+                                       Integer.parseInt(tokens[1])));
                 break;
             default:
-            break;
+                break;
             }
         }
     }
