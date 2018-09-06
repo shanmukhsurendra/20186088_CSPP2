@@ -151,7 +151,7 @@ public class List {
         return array;
     }
 
-    /*
+    /**
      * The size method returns the value of the size.
      * The purpose of the method is to announce the size of the list
      * to the objects outside the list
@@ -162,7 +162,7 @@ public class List {
         return size;
     }
 
-    /*
+    /**
      * The remove method does what the name suggests.
      * Removes an int item, specified by the index argument, from the list
      * It also does an additional step.
@@ -183,7 +183,7 @@ public class List {
      * The method returns void (nothing)
      */
 
-    public void remove(int index) {
+    public void remove(final int index) {
         // write the logic for remove here.
         // Think about what to do to the size variable.
         if (index >= 0 && index < size) {
@@ -196,7 +196,7 @@ public class List {
         }
     }
 
-    /*
+    /**
      * Get method has to return the items that is
      * at the index position passed as an argument to the method.
      * If the item doesn't exist then return a -1 to indicate that
@@ -207,7 +207,7 @@ public class List {
      * How do we check if the position is greater than the
      * number of items in the list? Would size variable be useful?
      */
-    public int get(int index) {
+    public int get(final int index) {
         if (index < 0 || index >= size) {
             return -1;
         } else {
