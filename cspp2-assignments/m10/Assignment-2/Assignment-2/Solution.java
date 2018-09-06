@@ -1,17 +1,19 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
+/**
+ * Class for solution.
+ */
 
-public class Solution {
+public final class Solution {
     /**
      * call the required method.
      *
-     * @param      args  The arguments
      */
     private Solution() {
         // empty constructor.
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      args  The arguments
      */
