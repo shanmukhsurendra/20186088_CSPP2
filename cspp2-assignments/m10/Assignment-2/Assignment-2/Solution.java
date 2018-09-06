@@ -2,7 +2,11 @@ import java.io.BufferedInputStream;
 import java.util.Scanner;
 
 public class Solution {
-
+    /**
+     * call the required method.
+     *
+     * @param      args  The arguments
+     */
 
     public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
