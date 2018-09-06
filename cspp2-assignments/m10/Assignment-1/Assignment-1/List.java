@@ -181,7 +181,7 @@ public class List {
      * So, the new array looks like this.
      * array = [1,3,0,0,0,0,0,0,0,0]
      * The method returns void (nothing)
-     * @param index 
+     * @param index
      */
 
     public void remove(final int index) {
@@ -209,7 +209,6 @@ public class List {
      * number of items in the list? Would size variable be useful?
      * @param index index position.
      * @return element in index position.
-     * 
      */
     public int get(final int index) {
         if (index < 0 || index >= size) {
