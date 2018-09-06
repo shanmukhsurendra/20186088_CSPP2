@@ -283,6 +283,8 @@ public class Solution {
                 case "contains":
                     System.out.println(listDouble.contains(Double.parseDouble(tokens[1])));
                     break;
+                default:
+                    break;
                 }
             }
             break;
@@ -302,10 +304,10 @@ public class Solution {
                 case "addAll":
                     if (tokens.length == 2) {
                         String[] t1 =
-                        tokens[1].split(",");
+                            tokens[1].split(",");
                         Student[] temp = new
-                         Student[t1.length];
-                    for (int i = 0; i < t1.length; i++) {
+                        Student[t1.length];
+                        for (int i = 0; i < t1.length; i++) {
                             temp[i] = new Student(
                                 t1[i]);
                         }
@@ -347,8 +349,8 @@ public class Solution {
 
                         listStudent.contains(new Student(tokens[1])));
                     break;
-                    default:
-            break;
+                default:
+                    break;
                 }
             }
             break;
