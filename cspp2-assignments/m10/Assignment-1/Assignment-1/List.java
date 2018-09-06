@@ -233,7 +233,7 @@ public class List {
      * Example: [1,2,3,0,0,0,0,0,0,0]
      * toString should only return the items in the list and
      * not all the elements of the array.
-     *@return tag
+     *@return 
      */
     public String toString() {
         if (size == 0) {
@@ -253,7 +253,7 @@ public class List {
       * the item passed as an argument to the method
      * So, iterate through the list and return true if
      * the item exists and otherwise false
-     *  @param      items  The items
+     *  @param      item  The items
      */
     public boolean contains(final int item) {
         return indexOf(item) == -1;
@@ -263,7 +263,7 @@ public class List {
      * Returns the index of the first occurrence
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
-     *  @param      items  The items
+     *  @param      item  The items
      */
     public int indexOf(final int item) {
         for (int i = 0; i < size; i++) {
