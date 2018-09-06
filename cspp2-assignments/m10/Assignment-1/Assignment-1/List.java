@@ -233,7 +233,7 @@ public class List {
      * Example: [1,2,3,0,0,0,0,0,0,0]
      * toString should only return the items in the list and
      * not all the elements of the array.
-     *@return 
+     *@return string
      */
     public String toString() {
         if (size == 0) {
@@ -254,6 +254,7 @@ public class List {
      * So, iterate through the list and return true if
      * the item exists and otherwise false
      *  @param      item  The items
+     *   @return index position.
      */
     public boolean contains(final int item) {
         return indexOf(item) == -1;
@@ -264,6 +265,7 @@ public class List {
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      *  @param      item  The items
+     *  @return index position.
      */
     public int indexOf(final int item) {
         for (int i = 0; i < size; i++) {
