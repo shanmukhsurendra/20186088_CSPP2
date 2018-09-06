@@ -275,8 +275,7 @@ public class List {
     {
         for (int i =0;i<items.length;i++) {
         	list[size++]=items[i];         	
-         } 
-          System.out.println(list);
+         }
     }
 
      /* 
@@ -286,18 +285,23 @@ public class List {
      */
     public void add(int index,int item) {
          size++;
-         for(int i =size;i>=index;i++){
-         	list[size] = list[size-1];
+         for(int i = size;i>index;i--){
+         	list[i] = list[i-1];
          } 
          list[index]= item;
-         System.out.println(list);
     }
     
     /* Returns the count of occurances of a given item in the list*/
     public int count(int item)
     {
-         // write the logic 
-        return 0;
+    	int count = 0;
+         for (int i=0;i<size;i++) {
+         	if (list[i]==item) {
+         		count+=1;
+         	}
+          	
+          } 
+        return count;
     }
 
 
