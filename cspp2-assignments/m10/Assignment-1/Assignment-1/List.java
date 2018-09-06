@@ -208,7 +208,8 @@ public class List {
      * How do we check if the position is greater than the
      * number of items in the list? Would size variable be useful?
      * @param index index position.
-     * @returnn element in index position.
+     * @return element in index position.
+     * 
      */
     public int get(final int index) {
         if (index < 0 || index >= size) {
