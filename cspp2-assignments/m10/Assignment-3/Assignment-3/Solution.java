@@ -321,7 +321,8 @@ public class Solution {
 					//for this to work)
 					// expected format is [item-1,item-2,...,item-n]
 					// review the output testcase file
-					System.out.println(listStudent);
+					System.out.println(
+                        listStudent);
 					break;
 				case "remove":
 					listStudent.remove(
@@ -336,7 +337,9 @@ public class Solution {
                         listStudent.get(Integer.parseInt(tokens[1])));
 					break;
 				case "contains":
-					System.out.println(listStudent.contains(new Student(tokens[1])));
+					System.out.println(
+
+                        listStudent.contains(new Student(tokens[1])));
 					break;
 				}
 			}
