@@ -335,9 +335,10 @@ public class List {
                 if (tokens.length == 2) {
                     String[] t1 = tokens[1].split(",");
                     int temp[] = new int[t1.length];
-                    for (int i = 0; i < temp.length; i++)
+                    for (int i = 0; i < temp.length; i++){
                         temp[i] = Integer.
                     parseInt(t1[i]);
+                }
                     l.addAll(temp);
                 }
                 break;
@@ -357,16 +358,16 @@ public class List {
                 l.remove(Integer.parseInt(tokens[1]));
                 break;
             case "indexOf":
-                System.out.println(l.indexOf
-                    (Integer.parseInt(tokens[1])));
+                System.out.println(l.indexOf(
+                    Integer.parseInt(tokens[1])));
                 break;
             case "get":
-                System.out.println(l.get
-                    (Integer.parseInt(tokens[1])));
+                System.out.println(l.get(
+                    Integer.parseInt(tokens[1])));
                 break;
             case "contains":
-                System.out.println(l.contains
-                    (Integer.parseInt(tokens[1])));
+                System.out.println(l.contains(
+                    Integer.parseInt(tokens[1])));
                 break;
             }
         }
