@@ -271,18 +271,18 @@ public class List {
     }
     /*Inserts all the elements of specified int
      array to the end of list*/
-    public void addAll(int items[]) {
+    public void addAll(int[] items) {
         for (int i = 0; i < items.length; i++) {
             list[size++] = items[i];
         }
     }
 
-    /*
+    /**
        Inserts the specified element at the specified index
     by moving all the elements to the right.
            The method returns void (nothing)
         */
-    public void add(int index, int item) {
+    public void add(final int index,final int item) {
         size++;
         for (int i = size; i > index; i--) {
             list[i] = list[i - 1];
@@ -290,7 +290,7 @@ public class List {
         list[index] = item;
     }
 
-    /* Returns the count of occurances of a given item in the list*/
+    /** Returns the count of occurances of a given item in the list*/
     public int count(final int item) {
         int count = 0;
         for (int i = 0; i < size; i++) {
@@ -301,9 +301,12 @@ public class List {
         }
         return count;
     }
-
-
-    public static void main(String[] args) {
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
