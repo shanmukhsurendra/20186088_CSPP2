@@ -291,7 +291,7 @@ public class List {
     }
 
     /* Returns the count of occurances of a given item in the list*/
-    public int count(int item) {
+    public int count(final int item) {
         int count = 0;
         for (int i = 0; i < size; i++) {
             if (list[i] == item) {
@@ -371,6 +371,8 @@ public class List {
                 System.out.println(l.contains(
                     Integer.parseInt(tokens[1])));
                 break;
+            default:
+            break;
             }
         }
     }
