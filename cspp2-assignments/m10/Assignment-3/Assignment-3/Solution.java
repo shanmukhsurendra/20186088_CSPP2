@@ -313,7 +313,8 @@ public class Solution {
 					// invoke size method and print the list size
 					// BTW, list size is not the array size
 					// it is the number of items in the list
-					System.out.println(listStudent.size());
+					System.out.println(
+                        listStudent.size());
 					break;
 				case "print":
 					// print the list (implement toString in List class
@@ -323,13 +324,16 @@ public class Solution {
 					System.out.println(listStudent);
 					break;
 				case "remove":
-					listStudent.remove(Integer.parseInt(tokens[1]));
+					listStudent.remove(
+                        Integer.parseInt(tokens[1]));
 					break;
 				case "indexOf":
-					System.out.println(listStudent.indexOf(new Student(tokens[1])));
+					System.out.println(
+                        listStudent.indexOf(new Student(tokens[1])));
 					break;
 				case "get":
-					System.out.println(listStudent.get(Integer.parseInt(tokens[1])));
+					System.out.println(
+                        listStudent.get(Integer.parseInt(tokens[1])));
 					break;
 				case "contains":
 					System.out.println(listStudent.contains(new Student(tokens[1])));
