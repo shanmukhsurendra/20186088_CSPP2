@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class List {
     //Implement all the methods mentioned to build a ListADT
 
-    /*
+    /**
      * The goal for the list is to store items.
      * How are we going to store the items in the list?
      * An array would be good. Right?
@@ -32,7 +32,7 @@ public class List {
     // that's the job of the List constructor
     private int[] list;
 
-    /*
+    /**
      * What are the other class variables needed for creating a list?
      * How about keeping track of the size of the list?
      * If you add 2 items to the list then the size should be 2.
@@ -57,7 +57,7 @@ public class List {
     // variable initialization should be done in the constructor
     private int size;
 
-    /*
+    /**
      * The purpose of the constructor is to initialize the
      * class variables with some default values.
      */
@@ -80,7 +80,7 @@ public class List {
         size = 0;
     }
 
-    /*
+    /**
      * Overloaded constructor with list capacity as argument
      * The default constructor sets the list capacity to 10
      * So, adding an item when the list size is 10
@@ -92,14 +92,14 @@ public class List {
      * The overloaded constructor is a way to initialize a list with
      * a list capacity of n items where n is given as an argument to
      * constructor.
-     *
+     *@param capacity capacity.
      */
-    public List(int capacity) {
+    public List(final int capacity) {
         size = 0;
         list = new int[capacity];
     }
 
-    /*
+    /**
      * The add method does what the name suggests.
      * Add an int item to the list.
      * The assumption is to store the item at the end of the list
@@ -107,9 +107,8 @@ public class List {
      * Is it the same as the end of the array?
      * Think about how you can use the size variable to add item
      * to the list.
-     *
      * The method returns void (nothing)
-     * 
+     * @param item to add item.
      */
     public void add(final int item) {
         //Inserts the specified element at the end of the zelist.
