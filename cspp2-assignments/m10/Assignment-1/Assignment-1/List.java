@@ -109,13 +109,14 @@ public class List {
      * to the list.
      *
      * The method returns void (nothing)
+     * 
      */
-    public void add(int item) {
+    public void add(final int item) {
         //Inserts the specified element at the end of the zelist.
         list[size++] = item;
     }
 
-    /*
+    /**
      *
      * Resize the list
      * Sometimes the clients of the ADT won't know the expected list capacity
@@ -134,7 +135,8 @@ public class List {
      * with the contents of the original array.
      *
      * TODO
-     * Create a method called resize(). Resize should create an new array that is
+     * Create a method called resize().
+     *  Resize should create an new array that is
      * double the size of the old array.
      * Then copy the contents of the old array to the new one.
      *
@@ -142,8 +144,9 @@ public class List {
      * Will the client invoke resize or is it internal to List class?
      * Should the resize be public method or private?
      * Should the resize method return any values?
-     * You know enough of Object Oriented Programming to answer these questions :-)
-     *
+     * You know enough of Object Oriented
+     *  Programming to answer these questions :-)
+     *@return array.
      */
 
     public int[] resize() {
@@ -157,6 +160,7 @@ public class List {
      * to the objects outside the list
      *
      * The method returns an int. Empty list should return 0.
+     * @return size.
      */
     public int size() {
         return size;
@@ -181,7 +185,7 @@ public class List {
      * So, the new array looks like this.
      * array = [1,3,0,0,0,0,0,0,0,0]
      * The method returns void (nothing)
-     * @param index
+     * @param index index position.
      */
 
     public void remove(final int index) {
