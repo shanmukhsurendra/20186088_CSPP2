@@ -223,7 +223,7 @@ public class List {
 	*/
 	public void removeAll(int[] newArray) {
 		for (int each : newArray) {
-			for(int i =0;i<newArray.length;i++){
+			for (int i = 0; i < newArray.length; i++) {
 				if (contains(newArray[i])) {
 					remove(indexOf(newArray[i]));
 				}
@@ -239,7 +239,7 @@ public class List {
 	*/
 	public List subList(int start, int end) {
 
-		if (start <0 || end < 0 || start >= end || start+1==end) {
+		if (start < 0 || end < 0 || start >= end || start + 1 == end) {
 			System.out.println("Index Out of Bounds Exception");
 			return null;
 		} else {
