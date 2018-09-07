@@ -149,8 +149,7 @@ public class List<E> {
      */
     public boolean contains(E item) {
         System.out.println(item);
-		for (int i = 0; i < size; i++) {
-            
+		for (int i = 0; i < size; i++) { 
             if (item.equals(list[i])) {
                 return true;
             }
@@ -181,9 +180,11 @@ public class List<E> {
     public void removeAll(E[] items)
     {
          for (E each : items) {
-                if (contains(each)) {
-                    remove(indexOf(each));
+            for (int i= 0;i<size;i++){
+                if (contains(items[i])) {
+                    remove(indexOf(items[i]));
                 }
+            }
             }
     }
 
