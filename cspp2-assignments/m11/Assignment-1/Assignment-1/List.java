@@ -183,12 +183,18 @@ public class List {
 		}
 
 	}
-	/*
-	 * Contains return true if the list has the item passed as an argument to
-	 * the method So, iterate through the list and return true if the item
-	 * exists and otherwise false
+	/**
+	 * Contains return true if the list has
+	 * the item passed as an argument to
+	 * the method So, iterate through the
+	 * list and return true if the item
+	 * exists and otherwise false.
+	 *
+	 * @param      item  The item
+	 *
+	 * @return     { description_of_the_return_value }
 	 */
-	public boolean contains(int item) {
+	public boolean contains(final int item) {
 		// Replace the code below
 		for (int i = 0; i < size; i++) {
 			if (item == list[i]) {
@@ -197,11 +203,17 @@ public class List {
 		}
 		return false;
 	}
-	/*
-	 * Returns the index of the first occurrence of the specified element in
-	 * this list, or -1 if this list does not contain the element.
+	/**
+	 * Returns the index of the first occurrence of
+	 * the specified element in
+	 * this list, or -1 if this list does not
+	 * contain the element.
+	 *
+	 * @param      item  The item
+	 *
+	 * @return     { description_of_the_return_value }
 	 */
-	public int indexOf(int item) {
+	public int indexOf(final int item) {
 		for (int i = 0; i < size; i++) {
 			if (item == list[i]) {
 				return i;
@@ -209,10 +221,13 @@ public class List {
 		}
 		return -1;
 	}
-	/*
-	Inserts all the elements of specified int array to the end of list
-	*/
-	public void addAll(int[] newArray) {
+	/**
+	 * Inserts all the elements of specified
+	 * int array to the end of list.
+	 *
+	 * @param      newArray  The new array
+	 */
+	public void addAll(final int[] newArray) {
 		for (int i = 0; i < newArray.length; i++) {
 			add(newArray[i]);
 		}
