@@ -179,7 +179,7 @@ public class List {
 				str = str + list[i] + ",";
 			}
 			str = str + list[i] + "]";
-		return str;
+			return str;
 		}
 
 	}
@@ -198,167 +198,170 @@ public class List {
 	 */
 	public int indexOf(int item) {
 		for (int i = 0; i < size; i++) {
-			if (item==list[i]) {
+			if (item == list[i]) {
 				return i;
 			}
 		}
 		return -1;
-}
-/*
-Inserts all the elements of specified int array to the end of list
-*/
-public void addAll(int[] newArray) {
-	for (int i = 0; i < newArray.length; i++) {
-		add(newArray[i]);
 	}
-}
-/*
- Removes all of its elements that are contained in the specified int
- array.
-*/
-public void removeAll(int[] newArray) {
-	for (int i = 0; i < size; i++) {
-		remove(i);
-	}
-
-}
-/*
-Returns a list object containing elements, including startIndex and
-excluding endIndex. The first parameter indicates the startIndex and the
-second parameter indicates the endIndex. Returns null and print
-"Index Out of Bounds Exception" if any of values start and end are negative
-and also if start is greater than end.
-*/
-public List subList(int start, int end) {
-
-	if (start < 0 || end < 0 || start > end) {
-		System.out.println("Index Out of Bounds Exception");
-		return null;
-	} else {
-		List list1 = new List();
-		for(int i =start; i < end ; i++) {
-	        list1.add(list[i]);
-		}
-	return list1;
-	}
-}
-/*
-Returns a boolean indicating whether the parameter i.e a List object is
-exactly matching with the given list or not.
-*/
-public boolean equals(List list ) {
-	if(this.size==list.size()){
-		if(list.toString().equals(this.toString())){
-			return true;
+	/*
+	Inserts all the elements of specified int array to the end of list
+	*/
+	public void addAll(int[] newArray) {
+		for (int i = 0; i < newArray.length; i++) {
+			add(newArray[i]);
 		}
 	}
-	return false;
-}
-/*
-* Removes all the elements from list
-* Think about this case and make the method
-* the simpler.
-*/
-public void clear() {
-	removeAll(list);
-
-}
-
-public static void main(String[] args) {
-	// create an object of the list to invoke methods on it
-	List l = new List();
-
-	// code to read the test cases input file
-	Scanner stdin = new Scanner(new BufferedInputStream(System.in));
-	// check if there is one more line to process
-	while (stdin.hasNext()) {
-		// read the line
-		String line = stdin.nextLine();
-		// split the line using space
-		String[] tokens = line.split(" ");
-		// based on the list operation invoke the corresponding method
-		switch (tokens[0]) {
-		case "add":
-			if (tokens.length == 2) {
-				String[] t = tokens[1].split(",");
-				if (t.length == 1) {
-					l.add(Integer.parseInt(tokens[1]));
+	/*
+	 Removes all of its elements that are contained in the specified int
+	 array.
+	*/
+	public void removeAll(int[] newArray) {
+		for (int each : newArray) {
+			for (int i = 0; i < size; i++) {
+				if (each == list[i]) {
+					remove(i);
 				}
 			}
-			break;
-		case "size":
-			System.out.println(l.size());
-			break;
-		case "print":
-			System.out.println(l);
-			break;
-		case "remove":
-			if (tokens.length == 2) {
-				l.remove(Integer.parseInt(tokens[1]));
-			}
-			break;
-		case "indexOf":
-			if (tokens.length == 2) {
-				System.out.println(l.indexOf(
-				                       Integer.parseInt(tokens[1])));
-			}
-			break;
-		case "get":
-			if (tokens.length == 2) {
-				System.out.println(l.get(
-				                       Integer.parseInt(tokens[1])));
-			}
-			break;
-		case "contains":
-			if (tokens.length == 2) {
-				System.out.println(l.contains(
-				                       Integer.parseInt(tokens[1])));
-			}
-			break;
-		case "addAll":
-			if (tokens.length == 2) {
-				String[] t1 = tokens[1].split(",");
-				int[] temp = new int[t1.length];
-				for (int i = 0; i < temp.length; i++) {
-					temp[i] = Integer.parseInt(t1[i]);
-				}
-				l.addAll(temp);
-			}
-			break;
-		case "removeAll":
-			if (tokens.length == 2) {
-				String[] t2 = tokens[1].split(",");
-				int[] a = new int[t2.length];
-				for (int i = 0; i < t2.length; i++)
-					a[i] = Integer.parseInt(t2[i]);
-				l.removeAll(a);
-			}
-			break;
-		case "subList": {
-			if (tokens.length != 2) break;
-			String[] arrstring3 = tokens[1].split(",");
-			List object = l.subList(Integer.parseInt(arrstring3[0]),
-			                        Integer.parseInt(arrstring3[1]));
-			if (object != null)
-				System.out.println(object);
-			break;
-		}
-		case "equals":
-			if (tokens.length == 2) {
-				String[] lt = tokens[1].split(",");
-				List l2 = new List();
-				for (int k = 0; k < lt.length; k++ ) {
-					l2.add(Integer.parseInt(lt[k]));
-				}
-				System.out.println(l.equals(l2));
-			}
-			break;
-		case "clear":
-			l.clear();
-			break;
-		default:
-			break;
 		}
 	}
-}
+	/*
+	Returns a list object containing elements, including startIndex and
+	excluding endIndex. The first parameter indicates the startIndex and the
+	second parameter indicates the endIndex. Returns null and print
+	"Index Out of Bounds Exception" if any of values start and end are negative
+	and also if start is greater than end.
+	*/
+	public List subList(int start, int end) {
+
+		if (start < 0 || end < 0 || start > end) {
+			System.out.println("Index Out of Bounds Exception");
+			return null;
+		} else {
+			List list1 = new List();
+			for (int i = start; i < end ; i++) {
+				list1.add(list[i]);
+			}
+			return list1;
+		}
+	}
+	/*
+	Returns a boolean indicating whether the parameter i.e a List object is
+	exactly matching with the given list or not.
+	*/
+	public boolean equals(List list ) {
+		if (this.size == list.size()) {
+			if (list.toString().equals(this.toString())) {
+				return true;
+			}
+		}
+		return false;
+	}
+	/*
+	* Removes all the elements from list
+	* Think about this case and make the method
+	* the simpler.
+	*/
+	public void clear() {
+		removeAll(list);
+
+	}
+
+	public static void main(String[] args) {
+		// create an object of the list to invoke methods on it
+		List l = new List();
+
+		// code to read the test cases input file
+		Scanner stdin = new Scanner(new BufferedInputStream(System.in));
+		// check if there is one more line to process
+		while (stdin.hasNext()) {
+			// read the line
+			String line = stdin.nextLine();
+			// split the line using space
+			String[] tokens = line.split(" ");
+			// based on the list operation invoke the corresponding method
+			switch (tokens[0]) {
+			case "add":
+				if (tokens.length == 2) {
+					String[] t = tokens[1].split(",");
+					if (t.length == 1) {
+						l.add(Integer.parseInt(tokens[1]));
+					}
+				}
+				break;
+			case "size":
+				System.out.println(l.size());
+				break;
+			case "print":
+				System.out.println(l);
+				break;
+			case "remove":
+				if (tokens.length == 2) {
+					l.remove(Integer.parseInt(tokens[1]));
+				}
+				break;
+			case "indexOf":
+				if (tokens.length == 2) {
+					System.out.println(l.indexOf(
+					                       Integer.parseInt(tokens[1])));
+				}
+				break;
+			case "get":
+				if (tokens.length == 2) {
+					System.out.println(l.get(
+					                       Integer.parseInt(tokens[1])));
+				}
+				break;
+			case "contains":
+				if (tokens.length == 2) {
+					System.out.println(l.contains(
+					                       Integer.parseInt(tokens[1])));
+				}
+				break;
+			case "addAll":
+				if (tokens.length == 2) {
+					String[] t1 = tokens[1].split(",");
+					int[] temp = new int[t1.length];
+					for (int i = 0; i < temp.length; i++) {
+						temp[i] = Integer.parseInt(t1[i]);
+					}
+					l.addAll(temp);
+				}
+				break;
+			case "removeAll":
+				if (tokens.length == 2) {
+					String[] t2 = tokens[1].split(",");
+					int[] a = new int[t2.length];
+					for (int i = 0; i < t2.length; i++)
+						a[i] = Integer.parseInt(t2[i]);
+					l.removeAll(a);
+				}
+				break;
+			case "subList": {
+				if (tokens.length != 2) break;
+				String[] arrstring3 = tokens[1].split(",");
+				List object = l.subList(Integer.parseInt(arrstring3[0]),
+				                        Integer.parseInt(arrstring3[1]));
+				if (object != null)
+					System.out.println(object);
+				break;
+			}
+			case "equals":
+				if (tokens.length == 2) {
+					String[] lt = tokens[1].split(",");
+					List l2 = new List();
+					for (int k = 0; k < lt.length; k++ ) {
+						l2.add(Integer.parseInt(lt[k]));
+					}
+					System.out.println(l.equals(l2));
+				}
+				break;
+			case "clear":
+				l.clear();
+				break;
+			default:
+				break;
+			}
+		}
+	}
 }
