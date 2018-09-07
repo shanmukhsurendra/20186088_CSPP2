@@ -250,12 +250,10 @@ public class List {
 	exactly matching with the given list or not.
 	*/
 	public boolean equals(List list ) {
-		if(this.size==list.size){
-			if(this.list.equals(list)){
-				return true;
-			}
+		if(this.size!=list.size){
+				return false;	
 		}
-		return false;
+		return this.list.equals(list);
 	}
 	/*
 	* Removes all the elements from list
