@@ -54,22 +54,28 @@ public class List {
 
 	// declare a private int size
 	// again, don't initialize it here
-	// variable initialization should be done in the constructor
+	// variable initialization
+	// should be done in the constructor
 	private int size;
 
-	/*
-	 * The purpose of the constructor is to initialize the class variables with
+	/**
+	 * The purpose of the constructor is to
+	 * initialize the class variables with
 	 * some default values.
 	 */
 	public List() {
 
-		// what are the two variables to be initialized here? think about the
-		// private variables described above. What should be the default values?
-		// In the case of the list, it should be empty but it should be
+		// what are the two variables to
+		// be initialized here? think about the
+		// private variables described
+		// above. What should be the default values?
+		// In the case of the list, it
+		// should be empty but it should be
 		// initialized with an array size like 10
 
 		// Think about the initial value for size.
-		// How many items do we have in the list when you create it?
+		// How many items do we have in the list
+		// when you create it?
 		// An empty list has how many items?
 		// That is the initial value to use for size.
 		final int ten = 10;
@@ -116,6 +122,11 @@ public class List {
 	 *
 	 * The method returns an int. Empty list should return 0.
 	 *
+	 */
+	/**
+	 * { function_description }.
+	 *
+	 * @return     { description_of_the_return_value }
 	 */
 	public int size() {
 		// replace the code below to implement the size method
