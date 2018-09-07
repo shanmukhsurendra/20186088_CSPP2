@@ -282,13 +282,14 @@ public class List {
 			String line = stdin.nextLine();
 			// split the line using space
 			String[] tokens = line.split(" ");
-			// based on the list operation invoke the corresponding method
+			// based on the list operation invoke
+			//the corresponding method
 			switch (tokens[0]) {
 			case "add":
 				if (tokens.length == 2) {
 					String[] t = tokens[1].split(",");
 					if (t.length == 1) {
-						l.add(Integer.parseInt(tokens[1]));
+				l.add(Integer.parseInt(tokens[1]));
 					}
 				}
 				break;
@@ -306,13 +307,13 @@ public class List {
 			case "indexOf":
 				if (tokens.length == 2) {
 					System.out.println(l.indexOf(
-					                       Integer.parseInt(tokens[1])));
+					    Integer.parseInt(tokens[1])));
 				}
 				break;
 			case "get":
 				if (tokens.length == 2) {
 					System.out.println(l.get(
-					                       Integer.parseInt(tokens[1])));
+					    Integer.parseInt(tokens[1])));
 				}
 				break;
 			case "contains":
@@ -341,14 +342,14 @@ public class List {
 					l.removeAll(a);
 				}
 				break;
-			case "subList": 
+			case "subList":
 				if (tokens.length != 2) {
 					break;
 				}
 				String[] arrstring3 = tokens[1].split(",");
 				List object = l.subList(
 					Integer.parseInt(arrstring3[0]),
-				                Integer.parseInt(arrstring3[1]));
+				        Integer.parseInt(arrstring3[1]));
 				if (object != null) {
 					System.out.println(object);
 				}
