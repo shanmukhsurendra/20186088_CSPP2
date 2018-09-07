@@ -254,13 +254,13 @@ public class List {
 	Returns a boolean indicating whether the parameter i.e a List object is
 	exactly matching with the given list or not.
 	*/
-	public boolean equals(List list1 ) {
+	public boolean equals(List list1) {
 		if (this == list1) {
 			return true;
 		}
 		return this.toString().equals(list1.toString());
 	}
-	/*
+	/**
 	* Removes all the elements from list
 	* Think about this case and make the method
 	* the simpler.
@@ -269,8 +269,13 @@ public class List {
 		removeAll(list);
 
 	}
+	/**
+	 * { function_description }
+	 *
+	 * @param      args  The arguments
+	 */
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		// create an object of the list to invoke methods on it
 		List l = new List();
 
