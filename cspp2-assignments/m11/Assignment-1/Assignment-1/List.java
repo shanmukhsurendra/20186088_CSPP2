@@ -230,14 +230,14 @@ public class List {
 			}
 		}
 	}
-	/*
+	/**
 	Returns a list object containing elements, including startIndex and
 	excluding endIndex. The first parameter indicates the startIndex and the
 	second parameter indicates the endIndex. Returns null and print
 	"Index Out of Bounds Exception" if any of values start and end are negative
 	and also if start is greater than end.
 	*/
-	public List subList(final int start,final int end) {
+	public List subList(final int start, final int end) {
 
 		if (start < 0 || end < 0 || start >= end || start + 1 == end) {
 			System.out.println("Index Out of Bounds Exception");
@@ -251,9 +251,17 @@ public class List {
 		}
 	}
 	/**
-	Returns a boolean indicating whether the parameter i.e a List object is
-	exactly matching with the given list or not.
+	
 	*/
+	/**
+	 * Returns a boolean indicating whether
+	 the parameter i.e a List object is
+	exactly matching with the given list or not.
+	 *
+	 * @param      list1  The list 1
+	 *
+	 * @return     true or false.
+	 */
 	public boolean equals(final List list1) {
 		if (this == list1) {
 			return true;
