@@ -135,7 +135,7 @@ public class List {
 		}
 	}
 
-	/*
+	/**
 	 * Get method has to return the items that is at the index position passed
 	 * as an argument to the method. If the item doesn't exist then return a -1
 	 * to indicate that there is no element at that index. How can an element
@@ -144,7 +144,14 @@ public class List {
 	 * exist. How do we check if the position is greater than the number of
 	 * items in the list? Would size variable be useful?
 	 */
-	public int get(int index) {
+	/**
+	 * { function_description }.
+	 *
+	 * @param      index  The index
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public int get(final int index) {
 		// Replace the code below to write the code for get
 		if (index >= 0 && index < size) {
 			return list[index];
@@ -174,11 +181,16 @@ public class List {
 	 * only return the items in
 	 * the list and not all the elements of the array.
 	 */
+	/**
+	 * Returns a string representation of the object.
+	 *
+	 * @return     String representation of the object.
+	 */
 	public String toString() {
 		// Replace the code below
 		if (size == 0) {
 			return "[]";
-		}else {
+		} else {
 			String str = "[";
 			int i = 0;
 			for (i = 0; i < size - 1; i++) {
