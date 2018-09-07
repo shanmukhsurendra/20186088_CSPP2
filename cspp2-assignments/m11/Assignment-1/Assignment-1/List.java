@@ -218,9 +218,9 @@ public class List {
 	*/
 	public void removeAll(int[] newArray) {
 		for (int each : newArray) {
-			for(int eac : list){
-				if (each == list[eac]) {
-					remove(indexOf(eac));
+			for(int i =0;i<newArray.length;i++){
+				if (contains(each)) {
+					remove(indexOf(newArray[i]));
 				}
 			}
 		}
