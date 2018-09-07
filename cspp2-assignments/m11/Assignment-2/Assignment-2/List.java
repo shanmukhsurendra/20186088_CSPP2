@@ -83,7 +83,7 @@ public class List<E> {
      */
     public void remove(int index) {
             if (index >= 0 && index < size) {
-            for (int i = index; i < size - 1; i++) {
+            for (int i = index; i < size; i++) {
                 list[i] = list[i + 1];
             }
             size--;
@@ -148,7 +148,9 @@ public class List<E> {
      * the item exists and otherwise false
      */
     public boolean contains(E item) {
+        System.out.println(item);
 		for (int i = 0; i < size; i++) {
+            
             if (item.equals(list[i])) {
                 return true;
             }
@@ -179,12 +181,10 @@ public class List<E> {
     public void removeAll(E[] items)
     {
          for (E each : items) {
-            for (int i = 0; i < items.length; i++) {
-                if (contains(items[i])) {
-                    remove(indexOf(items[i]));
+                if (contains(each)) {
+                    remove(indexOf(each));
                 }
             }
-        }
     }
 
     /*Returns a list containing elements, including
@@ -211,7 +211,7 @@ public class List<E> {
      */
     public boolean equals(List<E> listdata)
     {
-         if (this == listdata) {
+         if (list.equals(listdata)) {
             return true;
         }
         return this.toString().equals(listdata.toString());
