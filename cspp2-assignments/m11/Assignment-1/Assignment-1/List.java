@@ -249,11 +249,11 @@ public class List {
 	Returns a boolean indicating whether the parameter i.e a List object is
 	exactly matching with the given list or not.
 	*/
-	public boolean equals(List list ) {
-		if(this.size!=list.size){
-				return false;	
+	public boolean equals(List list1 ) {
+		if (this == list1) {
+			return true;
 		}
-		return this.list.equals(list);
+		return this.toString().equals(list1.toString());
 	}
 	/*
 	* Removes all the elements from list
