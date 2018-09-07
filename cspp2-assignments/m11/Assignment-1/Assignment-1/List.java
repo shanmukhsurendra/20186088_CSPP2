@@ -250,12 +250,18 @@ Returns a boolean indicating whether the parameter i.e a List object is
 exactly matching with the given list or not.
 */
 public boolean equals(List list ) {
-	if(this.size==list.size){
-		if(list.toString().equals(this.toString())){
-			return true;
+	for(int i =0;i<this.size;i++){
+		int count =0;
+		for(int j=0;j<list.size;j++){
+			if(this.list[i]==list.list[j]){
+				count += 1;
+			}
 		}
+	if(count == 0){
+		return false;
 	}
-	return false;
+	}
+	return true;
 }
 /*
 * Removes all the elements from list
