@@ -217,11 +217,14 @@ public class List {
 			add(newArray[i]);
 		}
 	}
-	/*
-	 Removes all of its elements that are contained in the specified int
+	/**
+	 * Removes all of its elements that are
+	 contained in the specified int
 	 array.
-	*/
-	public void removeAll(int[] newArray) {
+	 *
+	 * @param      newArray  The new array
+	 */
+	public void removeAll(final int[] newArray) {
 		for (int each : newArray) {
 			for (int i = 0; i < newArray.length; i++) {
 				if (contains(newArray[i])) {
@@ -231,12 +234,21 @@ public class List {
 		}
 	}
 	/**
-	Returns a list object containing elements, including startIndex and
-	excluding endIndex. The first parameter indicates the startIndex and the
-	second parameter indicates the endIndex. Returns null and print
-	"Index Out of Bounds Exception" if any of values start and end are negative
+	 * Returns a list object containing elements,
+	 including startIndex and
+	excluding endIndex. The first parameter
+	indicates the startIndex and the
+	second parameter indicates the endIndex.
+	Returns null and print
+	"Index Out of Bounds Exception" if any of
+	values start and end are negative
 	and also if start is greater than end.
-	*/
+	 *
+	 * @param      start  The start
+	 * @param      end    The end
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public List subList(final int start, final int end) {
 
 		if (start < 0 || end < 0 || start >= end || start + 1 == end) {
@@ -250,9 +262,6 @@ public class List {
 			return list1;
 		}
 	}
-	/**
-	
-	*/
 	/**
 	 * Returns a boolean indicating whether
 	 the parameter i.e a List object is
