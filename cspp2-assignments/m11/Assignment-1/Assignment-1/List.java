@@ -153,26 +153,32 @@ public class List {
 		}
 	}
 
-	/*
-	 * What happens when you print an object using println? Java provides a
-	 * method named toString that is internally invoked when an object variable
-	 * is used in println. For example: List l = new List();
-	 * System.out.println(l); This statement is a shortcut for
+	/**
+	 * What happens when you print an object using
+	 * println? Java provides a
+	 * method named toString that is internally
+	 * invoked when an object variable
+	 * is used in println. For example: List
+	 * l = new List();
+	 * System.out.println(l); This statement
+	 * is a shortcut for
 	 * System.out.println(l.toString());
 	 *
-	 * So, implement the toString method to display the items in the list in the
-	 * square brackets notation. i.e., if the list has numbers 1, 2, 3 return
-	 * the string [1,2,3] Caution: The array may be having other elements
-	 * Example: [1,2,3,0,0,0,0,0,0,0] toString should only return the items in
+	 * So, implement the toString method to
+	 * display the items in the list in the
+	 * square brackets notation. i.e., if
+	 * the list has numbers 1, 2, 3 return
+	 * the string [1,2,3] Caution: The
+	 * array may be having other elements
+	 * Example: [1,2,3,0,0,0,0,0,0,0] toString should
+	 * only return the items in
 	 * the list and not all the elements of the array.
 	 */
 	public String toString() {
 		// Replace the code below
 		if (size == 0) {
 			return "[]";
-		}
-
-		else {
+		}else {
 			String str = "[";
 			int i = 0;
 			for (i = 0; i < size - 1; i++) {
