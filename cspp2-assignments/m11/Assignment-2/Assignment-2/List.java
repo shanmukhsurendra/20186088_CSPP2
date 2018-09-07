@@ -148,7 +148,7 @@ public class List<E> {
      * the item exists and otherwise false
      */
     public boolean contains(E item) {
-        System.out.println(item);
+        //System.out.println(item);
 		for (int i = 0; i < size; i++) { 
             if (item.equals(list[i])) {
                 return true;
