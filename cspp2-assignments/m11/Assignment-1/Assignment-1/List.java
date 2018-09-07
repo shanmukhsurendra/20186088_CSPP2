@@ -234,7 +234,7 @@ public class List {
 	*/
 	public List subList(int start, int end) {
 
-		if (start < 0 || end < 0 || start > end) {
+		if (start <0 || end < 0 || start >= end || start+1==end) {
 			System.out.println("Index Out of Bounds Exception");
 			return null;
 		} else {
