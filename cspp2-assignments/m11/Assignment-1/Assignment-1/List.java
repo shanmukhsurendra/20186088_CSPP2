@@ -77,28 +77,42 @@ public class List {
 		size = 0;
 
 	}
+	/**
+	 * { function_description }.
+	 */
 	public void resize() {
 		list = Arrays.copyOf(list, list.length * 2);
 	}
 
-	/*
-	 * The add method does what the name suggests. Add an int item to the list.
-	 * The assumption is to store the item at the end of the list What is the
-	 * end of the list? Is it the same as the end of the array? Think about how
-	 * you can use the size variable to add item to the list.
+	/**
+	 * The add method does what the
+	 * name suggests. Add an int item to the list.
+	 * The assumption is to store the
+	 * item at the end of the list What is the
+	 * end of the list? Is it the same
+	 * as the end of the array? Think about how
+	 * you can use the size variable
+	 * to add item to the list.
 	 *
 	 * The method returns void (nothing)
 	 */
-	public void add(int item) {
+	/**
+	 * { function_description }.
+	 *
+	 * @param      item  The item
+	 */
+	public void add(final int item) {
 		if (size == list.length) {
 			resize();
 		}
 		list[size++] = item;
 	}
 
-	/*
-	 * The size method returns the value of the size. The purpose of the method
-	 * is to announce the size of the list to the objects outside the list
+	/**
+	 * The size method returns the value
+	 * of the size. The purpose of the method
+	 * is to announce the size of the list
+	 * to the objects outside the list
 	 *
 	 * The method returns an int. Empty list should return 0.
 	 *
