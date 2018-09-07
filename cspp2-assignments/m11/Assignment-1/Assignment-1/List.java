@@ -237,7 +237,7 @@ public List subList(int start, int end) {
 	} else {
 		List list1 = new List();
 		for(int i =start; i < end ; i++) {
-	        list1.add(list[start]);
+	        list1.add(list[i]);
 		}
 	return list1;
 	}
