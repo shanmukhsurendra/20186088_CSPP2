@@ -253,7 +253,7 @@ public class List {
 		if (this == list) {
 				return true;
 		}
-		return list.toString().equals(this.toString());
+		return this.toString().equals(list.toString());
 	}
 	/*
 	* Removes all the elements from list
