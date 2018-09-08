@@ -13,7 +13,7 @@ class Set {
 	private int[] set;
 	private int size;
 	public Set() {
-	Set set = new Set();
+	int[] set = new int[10];
 		int size = 0;
 	}
 	public int size() {
