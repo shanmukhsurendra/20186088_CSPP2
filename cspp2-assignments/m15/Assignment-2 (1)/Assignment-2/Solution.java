@@ -4,6 +4,16 @@ import java.util.Arrays;
 /**
  * Class for sorted set.
  */
+class InvalidSubsetSelectionException extends Exception{
+    public String toString(){
+        return "Invalid​ Arguments​ to Subset​ ​Exception";
+    }
+}
+class SetEmptyException extends Exception {
+     public String toString(){
+        return " “Set Empty Exception";
+    }
+}
 class SortedSet extends Set {
     /**
      * sort function.
@@ -41,10 +51,9 @@ class SortedSet extends Set {
      *
      * @return     from start to end returns elements.
      */
-    public int[] subSet(final int start, final int end) {
-        if (start > end) {
-            System.out.println("Invalid Arguments to Subset Exception");
-            return null;
+    public int[] subSet(final int start, final int end) throws Exception {
+            if (start > end) {
+            throw new InvalidSubsetSelectionException();
         }
         int[] result = new int[size];
         int k = 0;
@@ -68,7 +77,10 @@ class SortedSet extends Set {
      *
      * @return     returms elements.
      */
-    public int[] headSet(final int end) {
+    public int[] headSet(final int end) throws Exception {
+        if(size==0){
+            throw new SetEmptyException();
+        }
         int[] result = new int[size];
         int temp = 0;
         for (int i = 0; i < size; i++) {
@@ -192,6 +204,7 @@ public final class Solution {
                 System.out.println(Arrays.deepToString(s.cartesianProduct(t)));
                 break;
             case "subSet":
+                try{
                 if (tokens.length != 2) {
                     break;
                 }
@@ -202,8 +215,13 @@ public final class Solution {
                     System.out.println(Arrays.toString(object).replace("[",
                         "{").replace("]", "}"));
                 }
+            }
+            catch (Exception e){
+                System.out.println("Invalid​ Arguments​ to Subset​ ​Exception");
+            }
                 break;
             case "headSet":
+            try{
                 if (tokens.length != 2) {
                     break;
                 }
@@ -212,6 +230,10 @@ public final class Solution {
                     System.out.println(Arrays.toString(obj).replace("[",
                         "{").replace("]", "}"));
                 }
+            }
+            catch (Exception e){
+                System.out.println("Set​ Empty​ Exception");
+            }
                 break;
             case "last":
                 if (tokens.length != 1) {
