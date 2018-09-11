@@ -20,7 +20,7 @@ class List{
 	public int size(){
 		return size;
 	}
-	public void remove(final int index) {
+	 public void remove(final int index) {
         if (index >= 0 && index <= size) {
             for (int i = index; i <= size; i++) {
                 list[i] = list[i + 1];
@@ -31,13 +31,13 @@ class List{
         }
     }
     
-	public int indexOf(int index){
+	/*public int indexOf(int index){
 		if(contains(list[index])){
 		return list[index];
 	}else {
 		return -1;
 	}
-	}
+	}*/
 	public String toString(){
 		if(size==0){
 			return "[]";
@@ -51,22 +51,24 @@ class List{
 		return str;
 	}
 	}
-	public int indexOF(int item){
-		for(int i =0;i<size;i++){
-			if(item == list[i]){
-				return i;
-			}
-		}
-		return -1;
-	}
-	public boolean contains(int item){
-		for(int i =0;i<size;i++){
-			if(item == list[i]){
-				return true;
-			}
-		}
-		return false;
-	}
+	public int indexOf(final int item) {
+        for (int i = 0; i < size; i++) {
+            if (item == list[i]) {
+                return i;
+            }
+        }
+        return -1;
+    }
+	public boolean contains(final int item) {
+        // Replace the code below
+        for (int i = 0; i < size; i++) {
+            if (item == list[i]) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
 	public void addAll(int[] arra){
 		for (int i = 0;i<arra.length;i++)
 			add(arra[i]);
@@ -103,7 +105,7 @@ class List{
         return this.toString().equals(list1.toString());
     }
     public void clear() {
-        removeAll(list);
+        size = 0;
 
     }
 	public List subList(final int start, final int end) {
