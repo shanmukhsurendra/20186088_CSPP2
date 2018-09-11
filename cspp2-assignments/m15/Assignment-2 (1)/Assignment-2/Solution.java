@@ -217,7 +217,7 @@ public final class Solution {
                                            "{").replace("]", "}"));
                     }
                 } catch (InvalidSubsetSelectionException e) {
-                    System.out.println("hello");
+                    System.out.println("Invalid Subset Selection Exception");
                 }
                 break;
             case "headSet":
