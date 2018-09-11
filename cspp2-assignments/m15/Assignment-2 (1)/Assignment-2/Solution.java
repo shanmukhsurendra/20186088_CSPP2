@@ -100,9 +100,10 @@ class SortedSet extends Set {
     public int last() throws SetEmptyException{
         if (size == 0) {
             throw new SetEmptyException();  
-        }
+        }else{
         return set[size - 1];
     }
+}
     /**
      * Adds all.
      *
