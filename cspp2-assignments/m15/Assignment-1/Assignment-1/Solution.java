@@ -90,13 +90,11 @@ class List{
 		}
 		return count;
 	}
-	public void removeAll(final int[] newArray) throws Exception{
+	public void removeAll(final int[] newArray) throws Exception {
         for (int each : newArray) {
             for (int i = 0; i < newArray.length; i++) {
                 if (contains(newArray[i])) {
                     	remove(indexOf(newArray[i]));
-                } else {
-                	throw new Exception("Index Out Of Bounds Exception");
                 }
             }
         }
