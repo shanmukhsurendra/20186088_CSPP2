@@ -233,7 +233,7 @@ public final class Solution {
                         System.out.println("Set​ Empty​ Exception");
 
                     }
-                } catch (Exception e) {
+                } catch (SetEmptyException e) {
                     System.out.println("Set​ Empty​ Exception");
                 }
                 break;
@@ -244,7 +244,7 @@ public final class Solution {
                 try {
                     int temp = s.last();
                     System.out.println(temp);
-                } catch (Exception e) {
+                } catch (SetEmptyException e) {
                     System.out.println("Set​ Empty​ Exception");
 
                 }
