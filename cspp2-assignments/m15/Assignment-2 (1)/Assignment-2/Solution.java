@@ -217,7 +217,7 @@ public final class Solution {
                                            "{").replace("]", "}"));
                     }
                 } catch (InvalidSubsetSelectionException e) {
-                    System.out.println("Invalid​ Arguments​ to Subset​ ​Exception");
+                    // System.out.println("Invalid​ Arguments​ to Subset​ ​Exception");
                 }
                 break;
             case "headSet":
@@ -234,7 +234,7 @@ public final class Solution {
 
                     }
                 } catch (SetEmptyException e) {
-                    System.out.println("Set​ Empty​ Exception");
+                    // System.out.println("Set​ Empty​ Exception");
                 }
                 break;
             case "last":
@@ -245,7 +245,7 @@ public final class Solution {
                     int temp = s.last();
                     System.out.println(temp);
                 } catch (SetEmptyException e) {
-                    System.out.println("Set​ Empty​ Exception");
+                    // System.out.println("Set​ Empty​ Exception");
 
                 }
                 break;
