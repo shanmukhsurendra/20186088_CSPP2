@@ -51,7 +51,7 @@ class SortedSet extends Set {
      *
      * @return     from start to end returns elements.
      */
-    public int[] subSet(final int start, final int end) throws Exception {
+    public int[] subSet(final int start, final int end) throws InvalidSubsetSelectionException {
             if (start > end) {
             throw new InvalidSubsetSelectionException();
         }
@@ -77,7 +77,7 @@ class SortedSet extends Set {
      *
      * @return     returms elements.
      */
-    public int[] headSet(final int end) throws Exception {
+    public int[] headSet(final int end) throws SetEmptyException {
         if(size==0){
             throw new SetEmptyException();
         }
