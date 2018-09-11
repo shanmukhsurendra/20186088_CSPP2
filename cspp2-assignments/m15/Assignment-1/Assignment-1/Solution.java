@@ -108,7 +108,7 @@ class List{
         size = 0;
 
     }
-	public List subList(final int start, final int end) {
+	public List subList(final int start, final int end){
 
         if (start < 0 || end < 0 || start >= end
          || start > size || end > size) {
@@ -224,6 +224,12 @@ class Solution{
                 break;
            		case "clear":
                 l.clear();
+                break;
+                case "count":
+                if (tokens.length == 2) {
+                    System.out.println(l.count(
+                        Integer.parseInt(tokens[1])));
+                }
                 break;
             default:
                 break;
