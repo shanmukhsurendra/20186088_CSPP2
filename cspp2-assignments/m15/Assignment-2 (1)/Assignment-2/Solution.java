@@ -214,8 +214,10 @@ public final class Solution {
                 if (object != null) {
                     System.out.println(Arrays.toString(object).replace("[",
                         "{").replace("]", "}"));
-                }
+                }else{
+                    System.out.println("Invalid​ Arguments​ to Subset​ ​Exception");
             }
+        }
             catch (Exception e){
                 System.out.println("Invalid​ Arguments​ to Subset​ ​Exception");
             }
@@ -229,6 +231,9 @@ public final class Solution {
                 if (obj != null) {
                     System.out.println(Arrays.toString(obj).replace("[",
                         "{").replace("]", "}"));
+                }else{
+                    System.out.println("Set​ Empty​ Exception");
+
                 }
             }
             catch (Exception e){
