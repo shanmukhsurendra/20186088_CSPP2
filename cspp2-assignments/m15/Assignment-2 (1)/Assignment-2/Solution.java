@@ -98,7 +98,7 @@ class SortedSet extends Set {
      * @return     returns list of elements.
      */
     public int last() throws SetEmptyException {
-        if (size == 0) {
+        if (this.size == 0) {
             throw new SetEmptyException();
         } else {
             return set[size - 1];
@@ -242,8 +242,7 @@ public final class Solution {
                     break;
                 }
                 try {
-                    int temp = s.last();
-                    System.out.println(temp);
+                    System.out.println(s.last());
                 } catch (SetEmptyException e) {
                     System.out.println("Set Empty Exception");
 
