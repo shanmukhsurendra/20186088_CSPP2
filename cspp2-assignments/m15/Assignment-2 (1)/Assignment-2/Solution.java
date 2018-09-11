@@ -69,7 +69,7 @@ class SortedSet extends Set {
      *
      * @throws     InvalidSubsetSelectionException  throws print statement
      * */
-    public int[] subSet(final int start, final int end) 
+    public int[] subSet(final int start, final int end)
     throws InvalidSubsetSelectionException {
         if (start > end) {
             throw new InvalidSubsetSelectionException();
