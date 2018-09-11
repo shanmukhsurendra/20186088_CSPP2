@@ -224,10 +224,10 @@ public final class Solution {
             }
                 break;
             case "headSet":
-            try{
                 if (tokens.length != 2) {
                     break;
                 }
+            try{
                 int[] obj = s.headSet(Integer.parseInt(tokens[1]));
                 if (obj != null) {
                     System.out.println(Arrays.toString(obj).replace("[",
