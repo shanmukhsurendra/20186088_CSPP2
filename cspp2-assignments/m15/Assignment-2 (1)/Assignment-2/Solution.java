@@ -230,11 +230,11 @@ public final class Solution {
                         System.out.println(Arrays.toString(obj).replace("[",
                                            "{").replace("]", "}"));
                     } else {
-                        System.out.println("Set​ Empty​ Exception");
+                        System.out.println("Set Empty Exception");
 
                     }
                 } catch (SetEmptyException e) {
-                    System.out.println("Set​ Empty​ Exception");
+                    System.out.println("Set Empty Exception");
                 }
                 break;
             case "last":
