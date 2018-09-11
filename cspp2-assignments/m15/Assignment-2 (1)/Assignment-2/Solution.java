@@ -4,13 +4,13 @@ import java.util.Arrays;
 /**
  * Class for sorted set.
  */
-class InvalidSubsetSelectionException extends Exception{
-    public String toString(){
+class InvalidSubsetSelectionException extends Exception {
+    public String toString() {
         return "Invalid​ Arguments​ to Subset​ ​Exception";
     }
 }
 class SetEmptyException extends Exception {
-     public String toString(){
+    public String toString() {
         return "Set Empty Exception";
     }
 }
@@ -52,7 +52,7 @@ class SortedSet extends Set {
      * @return     from start to end returns elements.
      */
     public int[] subSet(final int start, final int end) throws InvalidSubsetSelectionException {
-            if (start > end) {
+        if (start > end) {
             throw new InvalidSubsetSelectionException();
         }
         int[] result = new int[size];
@@ -69,7 +69,7 @@ class SortedSet extends Set {
         }
         return Arrays.copyOf(result, k);
     }
-    
+
     /**
      * headset function.
      *
@@ -78,32 +78,32 @@ class SortedSet extends Set {
      * @return     returms elements.
      */
     public int[] headSet(final int end) throws SetEmptyException {
-        if(size==0 || end <0){
+        if (size == 0 || end < 0) {
             throw new SetEmptyException();
-        }else{
-        int[] result = new int[size];
-        int temp = 0;
-        for (int i = 0; i < size; i++) {
-            if (set[i] < end) {
-                result[i] = set[i];
-                temp++;
+        } else {
+            int[] result = new int[size];
+            int temp = 0;
+            for (int i = 0; i < size; i++) {
+                if (set[i] < end) {
+                    result[i] = set[i];
+                    temp++;
+                }
             }
+            return Arrays.copyOf(result, temp);
         }
-        return Arrays.copyOf(result, temp);
     }
-}
     /**
      * last function.
      *
      * @return     returns list of elements.
      */
-    public int last() throws SetEmptyException{
+    public int last() throws SetEmptyException {
         if (size == 0) {
-            throw new SetEmptyException();  
-        }else{
-        return set[size - 1];
+            throw new SetEmptyException();
+        } else {
+            return set[size - 1];
+        }
     }
-}
     /**
      * Adds all.
      *
@@ -208,51 +208,46 @@ public final class Solution {
                 if (tokens.length != 2) {
                     break;
                 }
-                try{
-                String[] arrstring3 = tokens[1].split(",");
-                int[] object = s.subSet(Integer.parseInt(arrstring3[0]),
-                                        Integer.parseInt(arrstring3[1]));
-                if (object != null) {
-                    System.out.println(Arrays.toString(object).replace("[",
-                        "{").replace("]", "}"));
-                }else{
+                try {
+                    String[] arrstring3 = tokens[1].split(",");
+                    int[] object = s.subSet(Integer.parseInt(arrstring3[0]),
+                                            Integer.parseInt(arrstring3[1]));
+                    if (object != null) {
+                        System.out.println(Arrays.toString(object).replace("[",
+                                           "{").replace("]", "}"));
+                    }
+                } catch (Exception e) {
                     System.out.println("Invalid​ Arguments​ to Subset​ ​Exception");
-            }
-        }
-            catch (Exception e){
-                System.out.println("Invalid​ Arguments​ to Subset​ ​Exception");
-            }
+                }
                 break;
             case "headSet":
                 if (tokens.length != 2) {
                     break;
                 }
-            try{
-                int[] obj = s.headSet(Integer.parseInt(tokens[1]));
-                if (obj != null) {
-                    System.out.println(Arrays.toString(obj).replace("[",
-                        "{").replace("]", "}"));
-                }else{
-                    System.out.println("Set​ Empty​ Exception");
+                try {
+                    int[] obj = s.headSet(Integer.parseInt(tokens[1]));
+                    if (obj != null) {
+                        System.out.println(Arrays.toString(obj).replace("[",
+                                           "{").replace("]", "}"));
+                    } else {
+                        System.out.println("Set​ Empty​ Exception");
 
+                    }
+                } catch (Exception e) {
+                    System.out.println("Set​ Empty​ Exception");
                 }
-            }
-            catch (Exception e){
-                System.out.println("Set​ Empty​ Exception");
-            }
                 break;
             case "last":
                 if (tokens.length != 1) {
                     break;
                 }
-                try{
-                int temp = s.last();
-                System.out.println(temp);
-            }
-            catch (Exception e){
-                System.out.println("Set​ Empty​ Exception");
+                try {
+                    int temp = s.last();
+                    System.out.println(temp);
+                } catch (Exception e) {
+                    System.out.println("Set​ Empty​ Exception");
 
-            }
+                }
                 break;
             case "addAll":
                 int[] intArr = intArray(tokens[1]);
