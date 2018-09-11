@@ -2,18 +2,24 @@ import java.io.BufferedInputStream;
 import java.util.Scanner;
 import java.util.Arrays;
 /**
- * Class for sorted set.
+ * Exception for signaling invalid subset selection errors.
  */
 class InvalidSubsetSelectionException extends Exception {
     public String toString() {
         return "Invalid​ Arguments​ to Subset​ ​Exception";
     }
 }
+/**
+ * Exception for signaling set empty errors.
+ */
 class SetEmptyException extends Exception {
     public String toString() {
         return "Set Empty Exception";
     }
 }
+/**
+ * Class for sorted set.
+ */
 class SortedSet extends Set {
     /**
      * sort function.
@@ -44,13 +50,15 @@ class SortedSet extends Set {
         sort(set);
     }
     /**
-     * subset.
+     * { function_description }
      *
-     * @param      start  The start
-     * @param      end    The end
+     * @param      start                            The start
+     * @param      end                              The end
      *
-     * @return     from start to end returns elements.
-     */
+     * @return     { description_of_the_return_value }
+     *
+     * @throws     InvalidSubsetSelectionException  throws print statement
+     * */
     public int[] subSet(final int start, final int end) throws InvalidSubsetSelectionException {
         if (start > end) {
             throw new InvalidSubsetSelectionException();
@@ -71,11 +79,13 @@ class SortedSet extends Set {
     }
 
     /**
-     * headset function.
+     * { function_description }
      *
-     * @param      end   The end
+     * @param      end                The end
      *
-     * @return     returms elements.
+     * @return     { description_of_the_return_value }
+     *
+     * @throws     SetEmptyException  prints throw statement
      */
     public int[] headSet(final int end) throws SetEmptyException {
         if (end <= this.set[0]) {
@@ -93,10 +103,13 @@ class SortedSet extends Set {
         }
     }
     /**
-     * last function.
+     * { function_description }
      *
-     * @return     returns list of elements.
+     * @return     { description_of_the_return_value }
+     *
+     * @throws     SetEmptyException  prints throw statement
      */
+
     public int last() throws SetEmptyException {
         if (this.size == 0) {
             throw new SetEmptyException();
@@ -229,7 +242,7 @@ public final class Solution {
                     if (obj != null) {
                         System.out.println(Arrays.toString(obj).replace("[",
                                            "{").replace("]", "}"));
-                    } 
+                    }
                 } catch (SetEmptyException e) {
                     System.out.println("Set Empty Exception");
                 }
