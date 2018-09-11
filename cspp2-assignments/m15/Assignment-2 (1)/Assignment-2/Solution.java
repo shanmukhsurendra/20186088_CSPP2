@@ -11,7 +11,7 @@ class InvalidSubsetSelectionException extends Exception{
 }
 class SetEmptyException extends Exception {
      public String toString(){
-        return " “Set Empty Exception";
+        return "Set Empty Exception";
     }
 }
 class SortedSet extends Set {
@@ -204,10 +204,10 @@ public final class Solution {
                 System.out.println(Arrays.deepToString(s.cartesianProduct(t)));
                 break;
             case "subSet":
-                try{
                 if (tokens.length != 2) {
                     break;
                 }
+                try{
                 String[] arrstring3 = tokens[1].split(",");
                 int[] object = s.subSet(Integer.parseInt(arrstring3[0]),
                                         Integer.parseInt(arrstring3[1]));
