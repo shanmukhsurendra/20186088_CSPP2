@@ -216,7 +216,7 @@ public final class Solution {
                         System.out.println(Arrays.toString(object).replace("[",
                                            "{").replace("]", "}"));
                     }
-                } catch (Exception e) {
+                } catch (InvalidSubsetSelectionException e) {
                     System.out.println("Invalid​ Arguments​ to Subset​ ​Exception");
                 }
                 break;
