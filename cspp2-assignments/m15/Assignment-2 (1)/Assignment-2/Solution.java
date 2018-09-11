@@ -78,7 +78,7 @@ class SortedSet extends Set {
      * @return     returms elements.
      */
     public int[] headSet(final int end) throws SetEmptyException {
-        if (size == 0 || end < 0) {
+        if (end <= this.set[0]) {
             throw new SetEmptyException();
         } else {
             int[] result = new int[size];
@@ -229,10 +229,7 @@ public final class Solution {
                     if (obj != null) {
                         System.out.println(Arrays.toString(obj).replace("[",
                                            "{").replace("]", "}"));
-                    } else {
-                        System.out.println("Set Empty Exception");
-
-                    }
+                    } 
                 } catch (SetEmptyException e) {
                     System.out.println("Set Empty Exception");
                 }
