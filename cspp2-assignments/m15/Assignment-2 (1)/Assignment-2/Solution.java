@@ -96,10 +96,9 @@ class SortedSet extends Set {
      *
      * @return     returns list of elements.
      */
-    public int last() {
+    public int last() throws SetEmptyException{
         if (size == 0) {
-            System.out.println("Set Empty Exception");
-            return -1;
+            throw new SetEmptyException();  
         }
         return set[size - 1];
     }
@@ -244,8 +243,14 @@ public final class Solution {
                 if (tokens.length != 1) {
                     break;
                 }
+                try{
                 int temp = s.last();
                 System.out.println(temp);
+            }
+            catch (Exception e){
+                System.out.println("Set​ Empty​ Exception");
+
+            }
                 break;
             case "addAll":
                 int[] intArr = intArray(tokens[1]);
