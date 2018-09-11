@@ -245,7 +245,7 @@ public final class Solution {
                     int temp = s.last();
                     System.out.println(temp);
                 } catch (SetEmptyException e) {
-                    System.out.println("Set​ Empty​ Exception");
+                    System.out.println("Set Empty Exception");
 
                 }
                 break;
