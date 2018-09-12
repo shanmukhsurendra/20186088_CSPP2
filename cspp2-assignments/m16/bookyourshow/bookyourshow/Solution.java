@@ -71,40 +71,76 @@ class Show {
     private String movie;
     private String showTime;
     private String[] seats;
-
-    Show (String movie, String showTime, String[] seats) {
+/**
+ * Constructs the object.
+ *
+ * @param      movie     The movie
+ * @param      showTime  The show time
+ * @param      seats     The seats
+ */
+    Show (final String movie, final String showTime, final String[] seats) {
         this.movie = movie;
         this.showTime = showTime;
         this.seats = seats;
     }
-
+/**
+ * Gets the movie.
+ *
+ * @return     The movie.
+ */
     String getMovie() {
         return movie;
     }
-
+/**
+ * Gets the show time.
+ *
+ * @return     The show time.
+ */
     String getShowTime() {
         return showTime;
     }
 
-
+/**
+ * Gets the seats.
+ *
+ * @return     The seats.
+ */
     String[] getSeats()  {
         return seats;
     }
-
+/**
+ * Sets the seat na.
+ *
+ * @param      index  The index
+ */
     void setSeatNA(int index) {
         seats[index] = "N/A";
     }
-
+/**
+ * Returns a string representation of the object.
+ *
+ * @return     String representation of the object.
+ */
     public String toString() {
         return movie + "," + showTime;
     }
 }
-
+/**
+ * Class for patron.
+ */
 class Patron {
+    /**
+     * creates name and mobilenum.
+     */
     private String name;
     private String mobile;
-
-    Patron (String name, String mobileNum) {
+/**
+ * Constructs the object.
+ *
+ * @param      name       The name
+ * @param      mobileNum  The mobile number
+ */
+    Patron(final String name, final  String mobileNum) {
         this.name = name;
         this.mobile = mobileNum;
     }
