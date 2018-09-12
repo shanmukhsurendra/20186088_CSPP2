@@ -66,8 +66,13 @@ public final class Solution {
         }
     }
 }
-
+/**
+ * Class for show.
+ */
 class Show {
+    /**
+     * { var_description }
+     */
     private String movie;
     private String showTime;
     private String[] seats;
@@ -78,10 +83,10 @@ class Show {
  * @param      showTime  The show time
  * @param      seats     The seats
  */
-    Show (final String movie, final String showTime, final String[] seats) {
-        this.movie = movie;
-        this.showTime = showTime;
-        this.seats = seats;
+    Show(final String movies, final String showTime1, final String[] ssseats) {
+        this.movie = movies;
+        this.showTime = showTime1;
+        this.seats = ssseats;
     }
 /**
  * Gets the movie.
@@ -113,7 +118,7 @@ class Show {
  *
  * @param      index  The index
  */
-    void setSeatNA(int index) {
+    void setSeatNA(final int index) {
         seats[index] = "N/A";
     }
 /**
@@ -133,6 +138,9 @@ class Patron {
      * creates name and mobilenum.
      */
     private String name;
+    /**
+     * { var_description }
+     */
     private String mobile;
 /**
  * Constructs the object.
@@ -140,8 +148,8 @@ class Patron {
  * @param      name       The name
  * @param      mobileNum  The mobile number
  */
-    Patron(final String name, final  String mobileNum) {
-        this.name = name;
+    Patron(final String nameMov, final  String mobileNum) {
+        this.name = nameMov;
         this.mobile = mobileNum;
     }
 /**
