@@ -1,4 +1,8 @@
-import java.util.*;
+import java.util.Scanner;
+import java.util.Arrays;
+import java.util.ArrayList;
+
+
 
 /**
  * Class for solution.
@@ -191,6 +195,9 @@ class BookYourShow {
      * create array variables.
      */
     private ArrayList<Show> showList;
+    /**
+     * taking arraylist.
+     */
     private ArrayList<String> ticketList;
 /**
  * Constructs the object.
