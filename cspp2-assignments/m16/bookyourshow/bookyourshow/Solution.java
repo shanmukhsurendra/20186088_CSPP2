@@ -165,10 +165,18 @@ class BookYourShow {
         if (flag) {
             ticketList.add(patron.getMobile() + " " + movie + " " + showTime);
         }
-        // System.out.println(ticketList);
     }
-
+/**
+ * { function_description }
+ *
+ * @param      movie     The movie
+ * @param      showTime  The show time
+ * @param      mobile    The mobile
+ */
     void printTicket(String movie, String showTime, String mobile) {
+        /**
+         * prints what are present.
+         */
         String t = mobile + " " + movie + " " + showTime;
         if (ticketList.contains(t)){
             System.out.println(t);
@@ -176,10 +184,16 @@ class BookYourShow {
             System.out.println("Invalid");
         }
     }
-
+/**
+ * Shows all.
+ */
     void showAll() {
-        for (Show show : showList){
-            System.out.println(show.toString() + "," + Arrays.toString(show.getSeats()).replace(" ", ""));
+        /**
+         * print what shows are present.
+         */
+        for (Show show : showList) {
+            System.out.println(show.toString() + "," +
+                Arrays.toString(show.getSeats()).replace(" ", ""));
         }
     }
 }
