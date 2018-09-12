@@ -79,9 +79,9 @@ class Show {
 /**
  * Constructs the object.
  *
- * @param      movie     The movie
- * @param      showTime  The show time
- * @param      seats     The seats
+ * @param      movies     The movies
+ * @param      showTime1  The show time 1
+ * @param      ssseats    The ssseats
  */
     Show(final String movies, final String showTime1, final String[] ssseats) {
         this.movie = movies;
