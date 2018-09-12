@@ -71,10 +71,16 @@ public final class Solution {
  */
 class Show {
     /**
-     * { var_description }
+     * string movie.
      */
     private String movie;
+    /**
+     * string showtime.
+     */
     private String showTime;
+    /**
+     * stringlist seats.
+     */
     private String[] seats;
 /**
  * Constructs the object.
@@ -139,7 +145,7 @@ class Patron {
      */
     private String name;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private String mobile;
 /**
