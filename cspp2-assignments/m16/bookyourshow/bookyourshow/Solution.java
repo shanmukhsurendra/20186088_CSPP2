@@ -173,14 +173,15 @@ class BookYourShow {
  * @param      showTime  The show time
  * @param      mobile    The mobile
  */
-    void printTicket(String movie, String showTime, String mobile) {
+    void printTicket(final String movie,final String showTime,
+        final String mobile) {
         /**
          * prints what are present.
          */
         String t = mobile + " " + movie + " " + showTime;
-        if (ticketList.contains(t)){
+        if (ticketList.contains(t)) {
             System.out.println(t);
-        }else{
+        } else {
             System.out.println("Invalid");
         }
     }
@@ -192,8 +193,8 @@ class BookYourShow {
          * print what shows are present.
          */
         for (Show show : showList) {
-            System.out.println(show.toString() + "," +
-                Arrays.toString(show.getSeats()).replace(" ", ""));
+            System.out.println(show.toString() + ","
+                +Arrays.toString(show.getSeats()).replace(" ", ""));
         }
     }
 }
