@@ -190,8 +190,8 @@ class BookYourShow {
     /**
      * create array variables.
      */
-    ArrayList<Show> showList;
-    ArrayList<String> ticketList;
+    private ArrayList<Show> showList;
+    private ArrayList<String> ticketList;
 /**
  * Constructs the object.
  */
