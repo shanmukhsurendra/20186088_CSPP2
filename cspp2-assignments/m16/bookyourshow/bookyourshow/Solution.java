@@ -121,30 +121,52 @@ class Patron {
         return name + " " + mobile;
     }
 }
-
+/**
+ * Class for book your show.
+ */
 class BookYourShow {
     ArrayList<Show> showList;
     ArrayList<String> ticketList;
-
+/**
+ * Constructs the object.
+ */
     BookYourShow() {
         showList = new ArrayList<>();
         ticketList = new ArrayList<>();
     }
-
-    void addAShow(Show show) {
+/**
+ * Adds a show.
+ *
+ * @param      show  The show
+ */
+    void addAShow(final Show show) {
         showList.add(show);
     }
-
+/**
+ * Gets a show.
+ *
+ * @param      movie     The movie
+ * @param      showTime  The show time
+ *
+ * @return     A show.
+ */
     Show getAShow(final String movie, final String showTime) {
         for (Show show : showList) {
-            if (show.getMovie().equals(movie) &&
-                show.getShowTime().equals(showTime)){
+            if (show.getMovie().equals(movie)
+                && show.getShowTime().equals(showTime)) {
                 return show;
             }
         }
         return null;
     }
-
+/**
+ * books the show.
+ *
+ * @param      movie     The movie
+ * @param      showTime  The show time
+ * @param      patron    The patron
+ * @param      seats     The seats
+ */
     void bookAShow(final String movie, final String showTime,
         final Patron patron, final String[] seats) {
         Show show = getAShow(movie, showTime);
