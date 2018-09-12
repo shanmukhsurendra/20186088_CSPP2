@@ -144,7 +144,8 @@ class BookYourShow {
         return null;
     }
 
-    void bookAShow(String movie, String showTime, Patron patron, String[] seats) {
+    void bookAShow(final String movie, final String showTime,
+        final Patron patron, final String[] seats) {
         Show show = getAShow(movie, showTime);
         if (show == null) {
             System.out.println("No show");
@@ -152,8 +153,8 @@ class BookYourShow {
         }
         boolean flag = false;
         String[] sseats = show.getSeats();
-        for (String seat : seats){
-            for (int i = 0; i < sseats.length; i++){
+        for (String seat : seats) {
+            for (int i = 0; i < sseats.length; i++) {
                 if (seat.equals(sseats[i])) {
                     show.setSeatNA(i);
                     flag = true;
@@ -167,13 +168,13 @@ class BookYourShow {
         }
     }
 /**
- * { function_description }
+ * { function_description }.
  *
  * @param      movie     The movie
  * @param      showTime  The show time
  * @param      mobile    The mobile
  */
-    void printTicket(final String movie,final String showTime,
+    void printTicket(final String movie, final String showTime,
         final String mobile) {
         /**
          * prints what are present.
@@ -194,7 +195,7 @@ class BookYourShow {
          */
         for (Show show : showList) {
             System.out.println(show.toString() + ","
-                +Arrays.toString(show.getSeats()).replace(" ", ""));
+                + Arrays.toString(show.getSeats()).replace(" ", ""));
         }
     }
 }
