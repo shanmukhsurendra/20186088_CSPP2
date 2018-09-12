@@ -104,19 +104,31 @@ class Patron {
     private String name;
     private String mobile;
 
-    Patron (String name, String mobile) {
+    Patron (String name, String mobileNum) {
         this.name = name;
-        this.mobile = mobile;
+        this.mobile = mobileNum;
     }
-
+/**
+ * Gets the name.
+ *
+ * @return     The name.
+ */
     String getName() {
         return name;
     }
-
+/**
+ * Gets the mobile.
+ *
+ * @return     The mobile.
+ */
     String getMobile() {
         return mobile;
     }
-
+/**
+ * Returns a string representation of the object.
+ *
+ * @return     String representation of the object.
+ */
     public String toString() {
         return name + " " + mobile;
     }
@@ -125,6 +137,9 @@ class Patron {
  * Class for book your show.
  */
 class BookYourShow {
+    /**
+     * create array variables.
+     */
     ArrayList<Show> showList;
     ArrayList<String> ticketList;
 /**
