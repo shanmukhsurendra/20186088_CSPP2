@@ -145,7 +145,7 @@ class Patron {
 /**
  * Constructs the object.
  *
- * @param      name       The name
+ * @param      nameMov    The name mov
  * @param      mobileNum  The mobile number
  */
     Patron(final String nameMov, final  String mobileNum) {
