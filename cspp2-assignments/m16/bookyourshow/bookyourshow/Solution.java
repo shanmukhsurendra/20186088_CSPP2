@@ -21,7 +21,7 @@ public final class Solution {
         int testCases = Integer.parseInt(scan.nextLine());
         for (int i = 0; i < testCases; i++) {
             String[] tokens = scan.nextLine().
-                replace("[", "").replace("]", "").split(",");
+                              replace("[", "").replace("]", "").split(",");
             String[] check = tokens[0].split(" ");
             switch (check[0]) {
             case "add":
@@ -136,9 +136,11 @@ class BookYourShow {
     }
 
     Show getAShow(String movie, String showTime) {
-        for (Show show : showList)
-            if (show.getMovie().equals(movie) && show.getShowTime().equals(showTime))
+        for (Show show : showList){
+            if (show.getMovie().equals(movie) && show.getShowTime().equals(showTime)){
                 return show;
+            }
+        }
         return null;
     }
 
@@ -150,12 +152,14 @@ class BookYourShow {
         }
         boolean flag = false;
         String[] sseats = show.getSeats();
-        for (String seat : seats)
-            for (int i = 0; i < sseats.length; i++)
+        for (String seat : seats){
+            for (int i = 0; i < sseats.length; i++){
                 if (seat.equals(sseats[i])) {
                     show.setSeatNA(i);
                     flag = true;
                 }
+            }
+        }
 
 
         if (flag) {
@@ -166,14 +170,16 @@ class BookYourShow {
 
     void printTicket(String movie, String showTime, String mobile) {
         String t = mobile + " " + movie + " " + showTime;
-        if (ticketList.contains(t))
+        if (ticketList.contains(t)){
             System.out.println(t);
-        else
+        }else{
             System.out.println("Invalid");
+        }
     }
 
     void showAll() {
-        for (Show show : showList)
+        for (Show show : showList){
             System.out.println(show.toString() + "," + Arrays.toString(show.getSeats()).replace(" ", ""));
+        }
     }
 }
