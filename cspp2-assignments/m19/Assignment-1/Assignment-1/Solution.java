@@ -7,15 +7,15 @@ class Quiz{
 	Quiz(){
 
 	}
-	/*Scanner s = new Scanner(System.in);
-	void quiz(int nOfQuestions){
-		String inp = "";
-        int i = 0;
-		String[] arr = new String[nOfQuestions];
-	 	for (i=0;i<nOfQuestions;i++) {
-        	arr[i] = s.nextLine();
-        }
-    }*/
+	/*class Quiz {*/
+	String[] questions = new String[10];
+	String[] choices = new String[10];;
+	String[] correctAns = new String[10];;
+	String[] marks = new String[10];;
+	String[] penality = new String[10];;
+	String[] responses = new String[10];
+	int count = 0;
+
 }
 public final class Solution {
      /**
@@ -72,19 +72,25 @@ public final class Solution {
      * @param      quiz           The quiz object
      * @param      questionCount  The question count
      */
-    public static String[] loadQuestions(final Scanner s, final Quiz quiz, final int questionCount) {
+    public static void loadQuestions(final Scanner s, final Quiz quiz, final int questionCount) {
         // write your code here to read the questions from the console
         // tokenize the question line and create the question object
         // add the question objects to the quiz class
-        String inp = "";
-        int i = 0;
-        String[] arr = new String[questionCount];
-        for (i=0;i<questionCount;i++) {
-        	arr[i] = s.nextLine();
+         int  count = 0;
+        while(count < questionCount) {
+            String inp = s.nextLine();
+            String[] inp1 = inp.split(":");
+            quiz.questions[count] = inp1[0];
+            quiz.choices[count] = inp1[1];
+            quiz.correctAns[count] = inp1[2];
+            quiz.marks[count] = inp1[3];
+            quiz.penality[count] = inp1[4];
+            count ++;
+            quiz.count ++;
         }
-        System.out.println(questionCount+ " are added to the quiz");
-        return arr;
+        System.out.println(questionCount + " are added to the quiz");
     }
+
 
     /**
      * Starts a quiz.
@@ -97,9 +103,16 @@ public final class Solution {
         // write your code here to display the quiz questions
         // read the user responses from the console
         // store the user respones in the quiz object
-        /*String[] arr1 =  loadQuestions();
-        System.out.println(Arrays.toString(arr1));*/
-    System.out.println("hi iam here ");
+        /*String[] arr2 = new String[answerCount];
+        String[] arr1 =  loadQuestions();
+        int j =0;
+        for(j=0;j<answerCount;j++){
+        System.out.println(Arrays.toString(arr1));
+    }*/
+     /*for(int i=0; i<4; i++)
+    {
+        System.out.println(arr[i]);
+    }*/
     }
 
     /**
