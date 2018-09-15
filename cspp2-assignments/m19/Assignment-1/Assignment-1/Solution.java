@@ -148,10 +148,12 @@ public final class Solution {
             int penality = 0;
             if(quiz.correctAns[i].equals(quiz.responses[i])) {
                 correctAns = Integer.parseInt(quiz.marks[i]);
+                System.out.println(quiz.questions[i]);
                 System.out.println("Correct Answer! - Marks Awarded: " + quiz.marks[i]);
             }
             else {
                 penality = Integer.parseInt(quiz.penality[i]);
+                System.out.println(quiz.questions[i]);
                 System.out.println("Wrong Answer! - Penalty: " + quiz.penality[i]);
             }
             total = total + correctAns + penality;
