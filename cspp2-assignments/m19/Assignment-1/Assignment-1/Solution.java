@@ -128,6 +128,7 @@ public final class Solution {
             }
             c++;
         }
+        System.out.println();
         String answer = sc1.nextLine();
         String[] res = answer.split(" ");
         quiz.responses[i1] = res[1];
