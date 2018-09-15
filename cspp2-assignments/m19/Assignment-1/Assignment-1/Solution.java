@@ -14,7 +14,7 @@ class Quiz{
 	String[] marks = new String[10];;
 	String[] penality = new String[10];;
 	String[] responses = new String[10];
-	int count = 0;
+	int i = 0;
 
 }
 public final class Solution {
@@ -76,17 +76,17 @@ public final class Solution {
         // write your code here to read the questions from the console
         // tokenize the question line and create the question object
         // add the question objects to the quiz class
-         int  count = 0;
-        while(count < questionCount) {
+         int  i = 0;
+        while(i < questionCount) {
             String inp = s.nextLine();
             String[] inp1 = inp.split(":");
-            quiz.questions[count] = inp1[0];
-            quiz.choices[count] = inp1[1];
-            quiz.correctAns[count] = inp1[2];
-            quiz.marks[count] = inp1[3];
-            quiz.penality[count] = inp1[4];
-            count ++;
-            quiz.count ++;
+            quiz.questions[i] = inp1[0];
+            quiz.choices[i] = inp1[1];
+            quiz.correctAns[i] = inp1[2];
+            quiz.marks[i] = inp1[3];
+            quiz.penality[i] = inp1[4];
+            i ++;
+            quiz.i ++;
         }
         System.out.println(questionCount + " are added to the quiz");
     }
@@ -113,6 +113,26 @@ public final class Solution {
     {
         System.out.println(arr[i]);
     }*/
+    int i1 = 0;
+    Scanner sc1 = s;
+    while(i1 < answerCount) {
+        System.out.println("question text " + (i1+1) + " (" + quiz.marks[i1] + ")");
+        String[] options = quiz.choices[i1].split(",");
+        int c = 1;
+        for(String option : options) {
+            if(c == 4) {
+                System.out.println(option);
+            }
+            else {
+                System.out.print(option + "\t");
+            }
+            c++;
+        }
+        String answer = sc1.nextLine();
+        String[] res = answer.split(" ");
+        quiz.responses[i1] = res[1];
+        i1 += 1;
+    }
     }
 
     /**
