@@ -142,5 +142,20 @@ public final class Solution {
      */
     public static void displayScore(final Quiz quiz) {
         // write your code here to display the score report
+         int total = 0;
+        for(int i = 0; i < quiz.i; i++) {
+            int correctAns = 0;
+            int penality = 0;
+            if(quiz.correctAns[i].equals(quiz.responses[i])) {
+                correctAns = Integer.parseInt(quiz.marks[i]);
+                System.out.println("Correct Answer! - Marks Awarded: " + quiz.marks[i]);
+            }
+            else {
+                penality = Integer.parseInt(quiz.penality[i]);
+                System.out.println("Wrong Answer! - Penalty: " + quiz.penality[i]);
+            }
+            total = total + correctAns + penality;
+        }
+        System.out.println("Total Score: " + total);
     }
 }
