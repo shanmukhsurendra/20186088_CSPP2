@@ -73,7 +73,8 @@ public final class Solution {
      * @param      quiz           The quiz object
      * @param      questionCount  The question count
      */
-    public static void loadQuestions(final Scanner s, final Quiz quiz, final int questionCount) {
+    public static void loadQuestions(final Scanner s,
+     final Quiz quiz, final int questionCount) {
         // write your code here to read the questions from the console
         // tokenize the question line and create the question object
         // add the question objects to the quiz class
@@ -91,20 +92,25 @@ public final class Solution {
                 quiz.penality[i] = inp1[4];
                 String[] inp2 = quiz.choices[i].split(",");
                 if (inp2.length < 2) {
-                    System.out.println("trick question  does not have enough answer choices");
+                    System.out.println(
+                        "trick question  does not have enough answer choices");
                     break;
                 }
                 if (Integer.parseInt(quiz.correctAns[i]) > 4) {
-                    System.out.println("Error! Correct answer choice number is out of range for " + inp1[0]);
+                    System.out.println(
+                    "Error! Correct answer choice number is out of range for "
+                     + inp1[0]);
 
                     break;
                 }
                 if (Integer.parseInt(quiz.marks[i]) < 0) {
-                    System.out.println("Invalid max marks for question about sony");
+                    System.out.println(
+                        "Invalid max marks for question about sony");
                     break;
                 }
                 if (Integer.parseInt(quiz.penality[i]) > 0) {
-                    System.out.println("Invalid penalty for question about sony");
+                    System.out.println(
+                        "Invalid penalty for question about sony");
                     break;
                 }
                 i ++;
