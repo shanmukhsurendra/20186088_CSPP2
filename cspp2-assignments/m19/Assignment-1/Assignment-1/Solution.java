@@ -12,7 +12,7 @@ class Quiz {
     /**
      * variable ten.
      */
-    final int ten = 10;
+    private static final int ten = 10;
     /**
      * questions array.
      */
