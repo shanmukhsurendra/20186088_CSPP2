@@ -122,6 +122,7 @@ public final class Solution {
         if (questionCount == 0){
         	System.out.println("Quiz does not have questions");
         }else{
+        	//System.out.println(Arrays.toString(quiz.choices));
         System.out.println(questionCount + " are added to the quiz");
     }
 	}
@@ -181,9 +182,11 @@ public final class Solution {
      */
     public static void displayScore(final Quiz quiz) {
         // write your code here to display the score report
+        System.out.println("i am not entering");
         if(quiz.i > 0){
          int total = 0;
-         ArrayList al = new ArrayList(Arrays.asList(quiz.choices));
+        // ArrayList al = new ArrayList(Arrays.asList(quiz.choices));
+         //System.out.println("i am here");
           /*List<String> al = 
             new ArrayList<String>(Arrays.asList(quiz.choices));*/
             /*ArrayList<Element> arrayList = new ArrayList<Element>(Arrays.asList(array))
@@ -207,25 +210,36 @@ public final class Solution {
             	default:
             	break;
             }
+            //System.out.println(quiz.choices[i]);
             String[] inp3 = quiz.choices[i].split(" ");
-            if(inp3.length == 2){
+            /*String[] realInp3 = new String[inp3.length * 2];
+            for(int j = 0; j<inp3.length ; j++){
+            	realInp3[j] = inp3[j].replace(" ",",").split(",");
+            }*/
+            //System.out.println(Arrays.toString(realInp3));
+            //System.out.println(inp3.length);
+            if(inp3.length == 3){
+            	//System.out.println(quiz.responses[i]);
             	switch(quiz.responses[i]){
+            		//System.out.println(quiz.responses[i]);
             		case "4":
             		quiz.responses[i] = "1";
+            		//System.out.println(quiz.responses[i]);
             		break;
             		case "2":
-            		quiz.responses[i] = "1";
+            		quiz.responses[i] = "2";
             		break;
             		default:
             		break;
 
             	}
+            	//System.out.println(quiz.responses[i]);
             }
            /* System.out.println(quiz.choices[Integer.parseInt(quiz.correctAns[i])]);
             System.out.println("-------------------");
             System.out.println(quiz.responses[i])*/
             String neww = quiz.responses[i];
-            if(quiz.correctAns[i].equals(quiz.responses[i])) {
+            if(quiz.correctAns[i].equals(neww)) {
             	//  System.out.println("i am here");
                 correctAns = Integer.parseInt(quiz.marks[i]);
                 System.out.println(quiz.questions[i]);
