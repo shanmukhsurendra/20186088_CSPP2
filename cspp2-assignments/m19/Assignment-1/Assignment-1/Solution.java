@@ -88,10 +88,14 @@ public final class Solution {
             quiz.correctAns[i] = inp1[2];
             quiz.marks[i] = inp1[3];
             quiz.penality[i] = inp1[4];
-            
             i ++;
             quiz.i ++;
         }
+        else{
+        	System.out.println("Error! Malformed question");
+
+        }
+        break;
         }
        if(quiz.i == questionCount){
         if (questionCount == 0){
@@ -99,9 +103,7 @@ public final class Solution {
         }else{
         System.out.println(questionCount + " are added to the quiz");
     }
-}else{
-	System.out.println("Error! Malformed question");
-}
+	}
 }
 
 
