@@ -162,7 +162,7 @@ public final class Solution {
                 System.out.println(option);
             }
             else {
-                System.out.print(option + "\t");
+                System.out.println(option + "\t");
             }
             c++;
         }
