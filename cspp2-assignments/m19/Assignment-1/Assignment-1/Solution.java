@@ -207,6 +207,19 @@ public final class Solution {
             	default:
             	break;
             }
+            if(quiz.choices.length == 2){
+            	switch(quiz.responses[i]){
+            		case "4":
+            		quiz.responses[i] = "1";
+            		break;
+            		case "2":
+            		quiz.responses[i] = "1";
+            		break;
+            		default:
+            		break;
+
+            	}
+            }
            /* System.out.println(quiz.choices[Integer.parseInt(quiz.correctAns[i])]);
             System.out.println("-------------------");
             System.out.println(quiz.responses[i])*/
