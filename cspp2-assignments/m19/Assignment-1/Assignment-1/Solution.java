@@ -2,47 +2,7 @@ import java.util.Scanner;
 /**
  * Solution class for code-eval.
  */
-class Quiz {
-    /**
-     * Constructs the object.
-     */
-    Quiz() {
 
-    }
-    /**
-     * variable TEN.
-     */
-    private static final int TEN = 10;
-    /**
-     * questions array.
-     */
-    protected static String[] questions = new String[TEN];
-    /**
-     *choices array.
-     */
-    protected static String[] choices = new String[TEN];
-    /**
-     * correctAns array.
-     */
-    protected static String[] correctAns = new String[TEN];
-    /**
-     *marks array.
-     */
-    protected static String[] marks = new String[TEN];
-    /**
-     * penality array.
-     */
-    protected static String[] penality = new String[TEN];
-    /**
-     * responses array.
-     */
-    protected static String[] responses = new String[TEN];
-    /**
-     * integer.
-     */
-    protected static int i = 0;
-
-}
 /**
  * solution class.
  */
