@@ -89,16 +89,16 @@ public final class Solution {
             quiz.correctAns[i] = inp1[2];
             quiz.marks[i] = inp1[3];
             quiz.penality[i] = inp1[4];
-            if(Integer.parseInt(quiz.correctAns[i])>4){
-            	System.out.println("Error! Correct answer choice number is out of range for "+inp1[0]);
-
-            	break;
-            }
             String[] inp2 = quiz.choices[i].split(",");
              if(inp2.length < 2){
              	System.out.println("trick question  does not have enough answer choices");
              	break;
              }
+            if(Integer.parseInt(quiz.correctAns[i])>4){
+            	System.out.println("Error! Correct answer choice number is out of range for "+inp1[0]);
+
+            	break;
+            }
             if(Integer.parseInt(quiz.marks[i])<0){
             	System.out.println("Invalid max marks for question about sony");
             	break;
