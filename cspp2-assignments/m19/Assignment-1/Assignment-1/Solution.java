@@ -88,10 +88,10 @@ public final class Solution {
             i ++;
             quiz.i ++;
         }
-        if (quiz.questions.length > 0){
-        System.out.println(questionCount + " are added to the quiz");
-        }else{
+        if (questionCount == 0){
         	System.out.println("Quiz does not have questions");
+        }else{
+        System.out.println(questionCount + " are added to the quiz");
     }
 }
 
@@ -117,6 +117,7 @@ public final class Solution {
     {
         System.out.println(arr[i]);
     }*/
+    if(quiz.i > 0) {
     int i1 = 0;
     Scanner sc1 = s;
     while(i1 < answerCount) {
@@ -139,6 +140,7 @@ public final class Solution {
         i1 += 1;
     }
     }
+}
 
     /**
      * Displays the score report
@@ -147,6 +149,7 @@ public final class Solution {
      */
     public static void displayScore(final Quiz quiz) {
         // write your code here to display the score report
+        if(quiz.i > 0){
          int total = 0;
         for(int i = 0; i < quiz.i; i++) {
             int correctAns = 0;
@@ -165,4 +168,5 @@ public final class Solution {
         }
         System.out.println("Total Score: " + total);
     }
+}
 }
