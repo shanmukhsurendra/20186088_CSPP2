@@ -93,9 +93,8 @@ public final class Solution {
         }
         else{
         	System.out.println("Error! Malformed question");
-
+        	break;
         }
-        break;
         }
        if(quiz.i == questionCount){
         if (questionCount == 0){
