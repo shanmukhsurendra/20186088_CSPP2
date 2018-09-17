@@ -131,7 +131,7 @@ public final class Solution {
     int i1 = 0;
     Scanner sc1 = s;
     while(i1 < answerCount) {
-        System.out.println(quiz.questions[i1] + (i1) + "(" + quiz.marks[i1] + ")");
+        System.out.println(quiz.questions[i1]  + "(" + quiz.marks[i1] + ")");
         String[] options = quiz.choices[i1].split(",");
         int c = 1;
         for(String option : options) {
