@@ -162,7 +162,7 @@ public final class Solution {
                 System.out.println(option);
             }
             else {
-                System.out.println(option + "\t");
+                System.out.print(option + "\t");
             }
             c++;
         }
@@ -233,7 +233,7 @@ public final class Solution {
             		break;
 
             	}
-            	//System.out.println(quiz.responses[i]);
+            	System.out.println();
             }
            /* System.out.println(quiz.choices[Integer.parseInt(quiz.correctAns[i])]);
             System.out.println("-------------------");
