@@ -136,7 +136,8 @@ public final class Solution {
      * @param      quiz         The quiz object
      * @param      answerCount  The answer count
      */
-    public static void startQuiz(final Scanner s, final Quiz quiz, final int answerCount) {
+    public static void startQuiz(final Scanner s,
+     final Quiz quiz, final int answerCount) {
         // write your code here to display the quiz questions
         // read the user responses from the console
         // store the user respones in the quiz object
@@ -154,7 +155,8 @@ public final class Solution {
             int i1 = 0;
             Scanner sc1 = s;
             while (i1 < answerCount) {
-                System.out.println(quiz.questions[i1]  + "(" + quiz.marks[i1] + ")");
+                System.out.println(quiz.questions[i1]
+                    + "(" + quiz.marks[i1] + ")");
                 String[] options = quiz.choices[i1].split(",");
                 int c = 1;
                 for (String option : options) {
@@ -176,7 +178,7 @@ public final class Solution {
     }
 
     /**
-     * Displays the score report
+     * Displays the score report.
      *
      * @param      quiz     The quiz object
      */
@@ -189,7 +191,7 @@ public final class Solution {
             //System.out.println("i am here");
             /*List<String> al =
               new ArrayList<String>(Arrays.asList(quiz.choices));*/
-            /*ArrayList<Element> arrayList = new ArrayList<Element>(Arrays.asList(array))
+            /*
             System.out.println(al); */
             for (int i = 0; i < quiz.i; i++) {
                 int correctAns = 0;
@@ -218,7 +220,8 @@ public final class Solution {
                 }*/
                 //System.out.println(Arrays.toString(realInp3));
                 //System.out.println(inp3.length);
-                if (inp3.length == 3) {
+                final int three = 3;
+                if (inp3.length == three) {
                     //System.out.println(quiz.responses[i]);
                     switch (quiz.responses[i]) {
                     //System.out.println(quiz.responses[i]);
@@ -235,7 +238,7 @@ public final class Solution {
                     }
                     // System.out.println();
                 }
-                /* System.out.println(quiz.choices[Integer.parseInt(quiz.correctAns[i])]);
+                /* 
                  System.out.println("-------------------");
                  System.out.println(quiz.responses[i])*/
                 String neww = quiz.responses[i];
@@ -243,11 +246,13 @@ public final class Solution {
                     //  System.out.println("i am here");
                     correctAns = Integer.parseInt(quiz.marks[i]);
                     System.out.println(quiz.questions[i]);
-                    System.out.println(" Correct Answer! - Marks Awarded: " + quiz.marks[i]);
+                    System.out.println
+                    (" Correct Answer! - Marks Awarded: " + quiz.marks[i]);
                 } else {
                     penality = Integer.parseInt(quiz.penality[i]);
                     System.out.println(quiz.questions[i]);
-                    System.out.println(" Wrong Answer! - Penalty: " + quiz.penality[i]);
+                    System.out.println
+                    (" Wrong Answer! - Penalty: " + quiz.penality[i]);
                 }
                 total = total + correctAns + penality;
             }
