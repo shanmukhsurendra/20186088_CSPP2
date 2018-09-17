@@ -164,7 +164,27 @@ public final class Solution {
         for(int i = 0; i < quiz.i; i++) {
             int correctAns = 0;
             int penality = 0;
+            switch(quiz.responses[i]){
+            	case "a":
+            	quiz.responses[i] = "1";
+            	break;
+            	case "b":
+            	quiz.responses[i] = "2";
+            	break;
+            	case "c":
+            	quiz.responses[i] = "3";
+            	break;
+            	case "d":
+            	quiz.responses[i] = "4";
+            	break;
+            	default:
+            	break;
+            }
+           /* System.out.println(quiz.choices[Integer.parseInt(quiz.correctAns[i])]);
+            System.out.println("-------------------");
+            System.out.println(quiz.responses[i])*/;
             if(quiz.correctAns[i].equals(quiz.responses[i])) {
+            	//System.out.println("i am here");
                 correctAns = Integer.parseInt(quiz.marks[i]);
                 System.out.println(quiz.questions[i]);
                 System.out.println(" Correct Answer! - Marks Awarded: " + quiz.marks[i]);
