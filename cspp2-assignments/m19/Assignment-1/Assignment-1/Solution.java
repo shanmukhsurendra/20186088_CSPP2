@@ -88,20 +88,21 @@ public final class Solution {
             quiz.correctAns[i] = inp1[2];
             quiz.marks[i] = inp1[3];
             quiz.penality[i] = inp1[4];
-            String[] inp2 = quiz.choices[i].split(" ");
+            String[] inp2 = quiz.choices[i].split(",");
              if(inp2.length != 4){
              	System.out.println("trick question  does not have enough answer choices");
              	break;
              }
             i ++;
             quiz.i ++;
-
         }
+
         else{
         	System.out.println("Error! Malformed question");
         	break;
         }
         }
+
 
        if(quiz.i == questionCount){
         if (questionCount == 0){
