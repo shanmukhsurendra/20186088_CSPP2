@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.ArrayList;
 /**
  * Solution class for code-eval.
  */
@@ -93,6 +94,14 @@ public final class Solution {
              	System.out.println("trick question  does not have enough answer choices");
              	break;
              }
+            if(Integer.parseInt(quiz.marks[i])<0){
+            	System.out.println("Invalid max marks for question about sony");
+            	break;
+            }
+            if(Integer.parseInt(quiz.penality[i])>0){
+            	System.out.println("Invalid penalty for question about sony");
+            	break;
+            }
             i ++;
             quiz.i ++;
         }
@@ -169,6 +178,11 @@ public final class Solution {
         // write your code here to display the score report
         if(quiz.i > 0){
          int total = 0;
+         ArrayList al = new ArrayList(Arrays.asList(quiz.correctAns));
+          /*List<String> al = 
+            new ArrayList<String>(Arrays.asList(geeks)); */
+            /*ArrayList<Element> arrayList = new ArrayList<Element>(Arrays.asList(array))
+        System.out.println(al); */
         for(int i = 0; i < quiz.i; i++) {
             int correctAns = 0;
             int penality = 0;
@@ -192,7 +206,7 @@ public final class Solution {
             System.out.println("-------------------");
             System.out.println(quiz.responses[i])*/;
             if(quiz.correctAns[i].equals(quiz.responses[i])) {
-            	//System.out.println("i am here");
+            	//  System.out.println("i am here");
                 correctAns = Integer.parseInt(quiz.marks[i]);
                 System.out.println(quiz.questions[i]);
                 System.out.println(" Correct Answer! - Marks Awarded: " + quiz.marks[i]);
