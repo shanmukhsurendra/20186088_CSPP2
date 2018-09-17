@@ -207,7 +207,8 @@ public final class Solution {
             	default:
             	break;
             }
-            if(quiz.choices[i].length() == 2){
+            String[] inp3 = quiz.choices[i].split(" ");
+            if(inp3.length == 2){
             	switch(quiz.responses[i]){
             		case "4":
             		quiz.responses[i] = "1";
