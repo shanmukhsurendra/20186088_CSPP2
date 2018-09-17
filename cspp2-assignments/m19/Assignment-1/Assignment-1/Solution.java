@@ -158,15 +158,15 @@ public final class Solution {
         String[] options = quiz.choices[i1].split(",");
         int c = 1;
         for(String option : options) {
-            if(c == 4) {
-                System.out.print(option);
+            if(c == options.length) {
+                System.out.println(option);
             }
             else {
                 System.out.print(option + "\t");
             }
             c++;
         }
-        System.out.println();
+        // System.out.println();
         String answer = sc1.nextLine();
         String[] res = answer.split(" ");
         quiz.responses[i1] = res[1];
