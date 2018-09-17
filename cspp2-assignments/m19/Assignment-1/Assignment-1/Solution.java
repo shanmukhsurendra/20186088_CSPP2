@@ -87,15 +87,20 @@ public final class Solution {
             quiz.correctAns[i] = inp1[2];
             quiz.marks[i] = inp1[3];
             quiz.penality[i] = inp1[4];
+            if(inp1.length == 5){
             i ++;
             quiz.i ++;
         }
-       
+        }
+       if(quiz.i == questionCount){
         if (questionCount == 0){
         	System.out.println("Quiz does not have questions");
         }else{
         System.out.println(questionCount + " are added to the quiz");
     }
+}else{
+	System.out.println("Error! Malformed question");
+}
 }
 
 
