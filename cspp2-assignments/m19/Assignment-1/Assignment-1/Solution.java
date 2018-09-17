@@ -207,7 +207,7 @@ public final class Solution {
             	default:
             	break;
             }
-            if(quiz.choices.length == 2){
+            if(quiz.choices[i].length() == 2){
             	switch(quiz.responses[i]){
             		case "4":
             		quiz.responses[i] = "1";
