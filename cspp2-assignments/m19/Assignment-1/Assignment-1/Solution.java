@@ -89,7 +89,7 @@ public final class Solution {
             quiz.marks[i] = inp1[3];
             quiz.penality[i] = inp1[4];
             String[] inp2 = quiz.choices[i].split(",");
-             if(inp2.length != 4){
+             if(inp2.length > 1){
              	System.out.println("trick question  does not have enough answer choices");
              	break;
              }
