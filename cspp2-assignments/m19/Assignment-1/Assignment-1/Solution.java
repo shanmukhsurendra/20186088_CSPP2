@@ -87,12 +87,15 @@ public final class Solution {
             quiz.penality[i] = inp1[4];
             i ++;
             quiz.i ++;
-        }
+       
+        if(inp1.length == 5){
         if (questionCount == 0){
         	System.out.println("Quiz does not have questions");
         }else{
         System.out.println(questionCount + " are added to the quiz");
     }
+}
+}
 }
 
 
