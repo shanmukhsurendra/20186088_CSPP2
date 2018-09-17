@@ -182,7 +182,7 @@ public final class Solution {
      */
     public static void displayScore(final Quiz quiz) {
         // write your code here to display the score report
-        System.out.println("i am not entering");
+        //System.out.println("i am not entering");
         if(quiz.i > 0){
          int total = 0;
         // ArrayList al = new ArrayList(Arrays.asList(quiz.choices));
