@@ -5,19 +5,46 @@ import java.util.ArrayList;
  * Solution class for code-eval.
  */
 class Quiz {
+    /**
+     * Constructs the object.
+     */
     Quiz() {
 
     }
-    /*class Quiz {*/
-    String[] questions = new String[10];
-    String[] choices = new String[10];;
-    String[] correctAns = new String[10];;
-    String[] marks = new String[10];;
-    String[] penality = new String[10];;
-    String[] responses = new String[10];
+    /**
+     * variable ten.
+     */
+    final int ten = 10;
+    /**
+     * questions array.
+     */
+    String[] questions = new String[ten];
+    /**
+     *choices array.
+     */
+    String[] choices = new String[ten];
+    /**
+     * correctAns array.
+     */
+    String[] correctAns = new String[ten];
+    /**
+     *marks array.
+     */
+    String[] marks = new String[ten];
+    /**
+     * penality array.
+     */
+    String[] penality = new String[ten];
+    /**
+     * responses array.
+     */
+    String[] responses = new String[ten];
     int i = 0;
 
 }
+/**
+ * solution class.
+ */
 public final class Solution {
     /**
     * Constructs the object.
@@ -79,45 +106,44 @@ public final class Solution {
         // tokenize the question line and create the question object
         // add the question objects to the quiz class
         int  i = 0;
+        final int zero = 0, one = 1, two = 2, three = 3, four = 4, five = 5;
         /*String[] inp1;*/
         String inp;
         while (i < questionCount) {
             inp = s.nextLine();
             String[] inp1 = inp.split(":");
-            if (inp1.length == 5 && inp1[0].length() > 0) {
-                quiz.questions[i] = inp1[0];
-                quiz.choices[i] = inp1[1];
-                quiz.correctAns[i] = inp1[2];
-                quiz.marks[i] = inp1[3];
-                quiz.penality[i] = inp1[4];
+            if (inp1.length == five && inp1[zero].length() > zero) {
+                quiz.questions[i] = inp1[zero];
+                quiz.choices[i] = inp1[one];
+                quiz.correctAns[i] = inp1[two];
+                quiz.marks[i] = inp1[three];
+                quiz.penality[i] = inp1[four];
                 String[] inp2 = quiz.choices[i].split(",");
-                if (inp2.length < 2) {
+                if (inp2.length < two) {
                     System.out.println(
                         "trick question  does not have enough answer choices");
                     break;
                 }
-                if (Integer.parseInt(quiz.correctAns[i]) > 4) {
+                if (Integer.parseInt(quiz.correctAns[i]) > four) {
                     System.out.println(
                     "Error! Correct answer choice number is out of range for "
-                     + inp1[0]);
+                     + inp1[zero]);
 
                     break;
                 }
-                if (Integer.parseInt(quiz.marks[i]) < 0) {
+                if (Integer.parseInt(quiz.marks[i]) < zero) {
                     System.out.println(
                         "Invalid max marks for question about sony");
                     break;
                 }
-                if (Integer.parseInt(quiz.penality[i]) > 0) {
+                if (Integer.parseInt(quiz.penality[i]) > zero) {
                     System.out.println(
                         "Invalid penalty for question about sony");
                     break;
                 }
-                i ++;
-                quiz.i ++;
-            }
-
-            else {
+                i++;
+                quiz.i++;
+            }else {
                 System.out.println("Error! Malformed question");
                 break;
             }
@@ -125,7 +151,7 @@ public final class Solution {
 
 
         if (quiz.i == questionCount) {
-            if (questionCount == 0) {
+            if (questionCount == zero) {
                 System.out.println("Quiz does not have questions");
             } else {
                 //System.out.println(Arrays.toString(quiz.choices));
@@ -244,7 +270,7 @@ public final class Solution {
                     }
                     // System.out.println();
                 }
-                /* 
+                /*
                  System.out.println("-------------------");
                  System.out.println(quiz.responses[i])*/
                 String neww = quiz.responses[i];
@@ -252,15 +278,15 @@ public final class Solution {
                     //  System.out.println("i am here");
                     correctAns = Integer.parseInt(quiz.marks[i]);
                     System.out.println(quiz.questions[i]);
-                    System.out.println
-                    (" Correct Answer! - Marks Awarded: " + quiz.marks[i]);
+                    System.out.println(
+                        " Correct Answer! - Marks Awarded: " + quiz.marks[i]);
                 } else {
                     penality = Integer.parseInt(quiz.penality[i]);
                     System.out.println(quiz.questions[i]);
-                    System.out.println
-                    (" Wrong Answer! - Penalty: " + quiz.penality[i]);
+                    System.out.println(
+                        " Wrong Answer! - Penalty: " + quiz.penality[i]);
                 }
-                total = total + correctAns + penality;
+                 total = total + correctAns + penality;
             }
             System.out.println("Total Score: " + total);
         }
