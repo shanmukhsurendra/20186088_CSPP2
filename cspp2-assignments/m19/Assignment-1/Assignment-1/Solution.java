@@ -159,14 +159,14 @@ public final class Solution {
         int c = 1;
         for(String option : options) {
             if(c == 4) {
-                System.out.println(option);
+                System.out.print(option);
             }
             else {
                 System.out.print(option + "\t");
             }
             c++;
         }
-        
+        System.out.println();
         String answer = sc1.nextLine();
         String[] res = answer.split(" ");
         quiz.responses[i1] = res[1];
