@@ -77,8 +77,10 @@ public final class Solution {
         // tokenize the question line and create the question object
         // add the question objects to the quiz class
          int  i = 0;
+         /*String[] inp1;*/
+         String inp;
         while(i < questionCount) {
-            String inp = s.nextLine();
+            inp = s.nextLine();
             String[] inp1 = inp.split(":");
             quiz.questions[i] = inp1[0];
             quiz.choices[i] = inp1[1];
@@ -87,15 +89,13 @@ public final class Solution {
             quiz.penality[i] = inp1[4];
             i ++;
             quiz.i ++;
+        }
        
-        if(inp1.length == 5){
         if (questionCount == 0){
         	System.out.println("Quiz does not have questions");
         }else{
         System.out.println(questionCount + " are added to the quiz");
     }
-}
-}
 }
 
 
