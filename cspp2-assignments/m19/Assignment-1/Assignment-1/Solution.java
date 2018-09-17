@@ -183,9 +183,9 @@ public final class Solution {
         // write your code here to display the score report
         if(quiz.i > 0){
          int total = 0;
-         ArrayList al = new ArrayList(Arrays.asList(quiz.correctAns));
+         ArrayList al = new ArrayList(Arrays.asList(quiz.choices));
           /*List<String> al = 
-            new ArrayList<String>(Arrays.asList(geeks)); */
+            new ArrayList<String>(Arrays.asList(quiz.choices));*/
             /*ArrayList<Element> arrayList = new ArrayList<Element>(Arrays.asList(array))
         System.out.println(al); */
         for(int i = 0; i < quiz.i; i++) {
@@ -210,7 +210,7 @@ public final class Solution {
            /* System.out.println(quiz.choices[Integer.parseInt(quiz.correctAns[i])]);
             System.out.println("-------------------");
             System.out.println(quiz.responses[i])*/;
-            if(quiz.correctAns[i].equals(quiz.responses[i])) {
+            if(quiz.correctAns[i].equals(al.indexOf(quiz.responses[i]))) {
             	//  System.out.println("i am here");
                 correctAns = Integer.parseInt(quiz.marks[i]);
                 System.out.println(quiz.questions[i]);
