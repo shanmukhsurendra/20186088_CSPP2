@@ -16,31 +16,31 @@ class Quiz {
     /**
      * questions array.
      */
-    String[] questions = new String[ten];
+    protected static String[] questions = new String[ten];
     /**
      *choices array.
      */
-    String[] choices = new String[ten];
+    protected static String[] choices = new String[ten];
     /**
      * correctAns array.
      */
-    String[] correctAns = new String[ten];
+    protected static String[] correctAns = new String[ten];
     /**
      *marks array.
      */
-    String[] marks = new String[ten];
+    protected static String[] marks = new String[ten];
     /**
      * penality array.
      */
-    String[] penality = new String[ten];
+    protected static String[] penality = new String[ten];
     /**
      * responses array.
      */
-    String[] responses = new String[ten];
+    protected static String[] responses = new String[ten];
     /**
      * integer.
      */
-    int i = 0;
+    protected static int i = 0;
 
 }
 /**
