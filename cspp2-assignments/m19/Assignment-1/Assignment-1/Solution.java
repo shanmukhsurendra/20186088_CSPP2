@@ -224,7 +224,7 @@ public final class Solution {
             System.out.println("-------------------");
             System.out.println(quiz.responses[i])*/
             String neww = quiz.responses[i];
-            if(quiz.correctAns[i].equals(al.indexOf(neww))) {
+            if(quiz.correctAns[i].equals(quiz.responses[i])) {
             	//  System.out.println("i am here");
                 correctAns = Integer.parseInt(quiz.marks[i]);
                 System.out.println(quiz.questions[i]);
