@@ -166,11 +166,12 @@ public final class Solution {
             }
             c++;
         }
-        System.out.println();
+        
         String answer = sc1.nextLine();
         String[] res = answer.split(" ");
         quiz.responses[i1] = res[1];
         i1 += 1;
+        System.out.println();
     }
     }
 }
@@ -233,7 +234,7 @@ public final class Solution {
             		break;
 
             	}
-            	System.out.println();
+            	// System.out.println();
             }
            /* System.out.println(quiz.choices[Integer.parseInt(quiz.correctAns[i])]);
             System.out.println("-------------------");
