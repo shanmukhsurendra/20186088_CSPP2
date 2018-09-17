@@ -92,7 +92,7 @@ public final class Solution {
             if(Integer.parseInt(quiz.correctAns[i])>4){
             	System.out.println("Error! Correct answer choice number is out of range for "+inp1[0]);
 
-
+            	break;
             }
             String[] inp2 = quiz.choices[i].split(",");
              if(inp2.length < 2){
