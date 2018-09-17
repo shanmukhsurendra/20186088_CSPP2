@@ -10,33 +10,33 @@ class Quiz {
 
     }
     /**
-     * variable ten.
+     * variable TEN.
      */
-    private static final int ten = 10;
+    private static final int TEN = 10;
     /**
      * questions array.
      */
-    protected static String[] questions = new String[ten];
+    protected static String[] questions = new String[TEN];
     /**
      *choices array.
      */
-    protected static String[] choices = new String[ten];
+    protected static String[] choices = new String[TEN];
     /**
      * correctAns array.
      */
-    protected static String[] correctAns = new String[ten];
+    protected static String[] correctAns = new String[TEN];
     /**
      *marks array.
      */
-    protected static String[] marks = new String[ten];
+    protected static String[] marks = new String[TEN];
     /**
      * penality array.
      */
-    protected static String[] penality = new String[ten];
+    protected static String[] penality = new String[TEN];
     /**
      * responses array.
      */
-    protected static String[] responses = new String[ten];
+    protected static String[] responses = new String[TEN];
     /**
      * integer.
      */
