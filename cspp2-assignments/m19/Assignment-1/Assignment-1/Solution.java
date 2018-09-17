@@ -88,10 +88,10 @@ public final class Solution {
             i ++;
             quiz.i ++;
         }
-        if (quiz.questions.length == 0){
-        	System.out.println("Quiz does not have questions");
-        }else{
+        if (quiz.questions.length > 0){
         System.out.println(questionCount + " are added to the quiz");
+        }else{
+        	System.out.println("Quiz does not have questions");
     }
 }
 
