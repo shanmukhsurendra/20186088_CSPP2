@@ -82,12 +82,13 @@ public final class Solution {
         while(i < questionCount) {
             inp = s.nextLine();
             String[] inp1 = inp.split(":");
+            if(inp1.length == 5){
             quiz.questions[i] = inp1[0];
             quiz.choices[i] = inp1[1];
             quiz.correctAns[i] = inp1[2];
             quiz.marks[i] = inp1[3];
             quiz.penality[i] = inp1[4];
-            if(inp1.length == 5){
+            
             i ++;
             quiz.i ++;
         }
