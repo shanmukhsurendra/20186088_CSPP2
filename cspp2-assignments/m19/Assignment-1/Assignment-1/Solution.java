@@ -83,12 +83,17 @@ public final class Solution {
         while(i < questionCount) {
             inp = s.nextLine();
             String[] inp1 = inp.split(":");
-            if(inp1.length == 5){
+            if(inp1.length == 5 && inp1[0].length()>0){
             quiz.questions[i] = inp1[0];
             quiz.choices[i] = inp1[1];
             quiz.correctAns[i] = inp1[2];
             quiz.marks[i] = inp1[3];
             quiz.penality[i] = inp1[4];
+            if(Integer.parseInt(quiz.correctAns[i])>4){
+            	System.out.println("Error! Correct answer choice number is out of range for "+inp1[0]);
+
+
+            }
             String[] inp2 = quiz.choices[i].split(",");
              if(inp2.length < 2){
              	System.out.println("trick question  does not have enough answer choices");
