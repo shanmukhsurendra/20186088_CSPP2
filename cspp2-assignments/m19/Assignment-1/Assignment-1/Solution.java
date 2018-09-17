@@ -1,6 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
-import java.util.ArrayList;
 /**
  * Solution class for code-eval.
  */
@@ -39,6 +37,9 @@ class Quiz {
      * responses array.
      */
     String[] responses = new String[ten];
+    /**
+     * integer.
+     */
     int i = 0;
 
 }
@@ -143,7 +144,7 @@ public final class Solution {
                 }
                 i++;
                 quiz.i++;
-            }else {
+            } else {
                 System.out.println("Error! Malformed question");
                 break;
             }
