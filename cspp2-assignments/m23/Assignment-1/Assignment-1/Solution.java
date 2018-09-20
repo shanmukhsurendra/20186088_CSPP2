@@ -132,5 +132,6 @@ class Solution {
 				System.out.println("empty directory");
 			}
 		}
+		System.out.println("empty directory");
 	}
 }
