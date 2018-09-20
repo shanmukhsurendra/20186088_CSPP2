@@ -66,12 +66,13 @@ class Solution {
 	public static void main(String[] args) throws Exception {
 		Scanner s = new Scanner(System.in);
 		String folder = s.nextLine();
-		
 		File file = new File("F:\\cspp2\\cspp2-assignments\\m23\\Assignment-1\\Assignment-1\\" + folder);
 		String[] file3 = file.list();
-		if(file3.length == 0){
-			System.out.println("empty directory");
-		}else{
+		int len = file3.length;
+		//System.out.println(len);
+		//System.out.println(Arrays.toString(file3));
+		//System.out.println(file3[0]);
+		if(len != 0){
 		Arrays.sort(file3);
 			System.out.print("      ");
 			System.out.print("	");
@@ -126,6 +127,8 @@ class Solution {
 			
 		}
 		System.out.print("Maximum similarity is between "+index[0]+" and "+index[1]);
+		}else{
+			System.out.println("empty directory");
 	}
 
 	}
