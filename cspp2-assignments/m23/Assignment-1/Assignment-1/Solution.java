@@ -68,10 +68,10 @@ class Solution {
 		String folder = s.nextLine();
 		
 		File file = new File("F:\\cspp2\\cspp2-assignments\\m23\\Assignment-1\\Assignment-1\\" + folder);
-		if(folder.length() == 0){
+		String[] file3 = file.list();
+		if(file3.length == 0){
 			System.out.println("empty directory");
 		}else{
-		String[] file3 = file.list();
 		Arrays.sort(file3);
 			System.out.print("      ");
 			System.out.print("	");
