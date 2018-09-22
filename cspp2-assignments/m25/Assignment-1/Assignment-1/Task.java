@@ -6,7 +6,7 @@ class Task {
 	public String urgent;
 	public String status;
 	Task(String taskTitle, String personName, String timeToComplete
-		, String important, String urgent, String status) {
+	     , String important, String urgent, String status) {
 		this.taskTitle = taskTitle;
 		this.personName = personName;
 		this.timeToComplete = timeToComplete;
@@ -37,24 +37,38 @@ class Task {
 	public String getUrgent() {
 		// if(getUrgent().equals("y")){
 		return urgent;
-	// }
-	// return "Not Urgent";
+		// }
+		// return "Not Urgent";
 	}
 	public String getStatus() {
 		return status;
 	}
 	public String toString() {
-		if(this.important.equals("y")){
-			this.important = "Important";
-		}else{
-			this.important = "Not Important";
+		if (this.taskTitle.length() == 0 || Integer.parseInt(this.timeToComplete) < 0 || (!this.status.equals("todo") && !this.status.equals("done") )) {
+			if (this.taskTitle.length() == 0) {
+				return "Title not provided";
+			}
+			if (Integer.parseInt(this.timeToComplete) < 0) {
+				return "Invalid timeToComplete " + this.timeToComplete;
+			}
+			if (!this.status.equals("todo") || !this.status.equals("done")) {
+				// System.out.println("entering here");
+				return "Invalid status " + this.status;
+			}
+		} else {
+			if (this.important.equals("y")) {
+				this.important = "Important";
+			} else {
+				this.important = "Not Important";
+			}
+			if (this.urgent.equals("y")) {
+				this.urgent = "Urgent";
+			} else {
+				this.urgent = "Not Urgent";
+			}
+			return getTaskTitle() + ", " + getPersonName() + ", " + getTimeToComplete() + ", " + this.important +
+			       ", " + getUrgent() + ", " + getStatus();
 		}
-		if(this.urgent.equals("y")){
-			this.urgent = "Urgent";
-		}else{
-			this.urgent = "Not Urgent";
-		}
-		return getTaskTitle()+", "+getPersonName()+", "+getTimeToComplete()+", "+this.important+
-			", "+getUrgent()+", "+getStatus();
+		return null;
 	}
 }
