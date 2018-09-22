@@ -103,54 +103,76 @@ class Task {
 	}
 }
 */
-class Todoist {
+class Todoist{
+	
 	Task[] tasks;
 	int size;
 
 	Todoist() {
-		tasks = new Task[100];
+		tasks = new Task[25];
 		size = 0;
 	}
 
-	public void addTask(Task task) {
-		if (tasks.length == size) {
-			tasks = resize();
-		}
-		tasks[size++] = task;
-	}
-
-	public Task[] resize() {
-		Task[] newList = new Task[tasks.length * 2];
-		for (int i = 0; i < size; i++) {
-			newList[i] = tasks[i];
-		}
-		return newList;
+	public void addTask(Task t) {
+		tasks[size++] = t;
 	}
 
 	public String toString() {
-		String s = "";
-		for (int i = 0; i < size; i++) {
-			s += tasks[i].getTaskTitle() + ", " + tasks[i].getPersonName() + ", " + tasks[i].getTimeToComplete() + ", " + tasks[i].getImportant() + ", " + tasks[i].getUrgent() + ", " + tasks[i].getStatus() + "\n";
+		if(size == 0){
+			System.out.println("kkk");
+			return "";
 		}
-		return s.substring(0, s.length() - 1);
+		for(int i = 0; i < size; i++) {
+			if(tasks[i].taskTitle.equals(null)) {
+				break;
+			}
+			if(tasks[i].time == 0) {
+				break;
+			}
+			if(tasks[i].status.equals(null)) {
+				break;
+			}
+			String ret = tasks[i].toString();
+			System.out.println(ret);
+		}
+		return "";
 	}
-	
-	/*}
-	public String getNextTask(String parameter) {
-		for (int j = 0; j < tasks.length; j++) {
-			if (tasks[j].getPersonName() == parameter) {
-				if (tasks[j].getStatus() == "todo" && tasks[j].getImportant() == "Important"  && tasks[j].getUrgent() == "Urgent") {
-					return tasks[j].getTaskTitle();
+	public Task getNextTask(String name) {
+		for(int i = 0; i < size; i++) {
+			if(tasks[i].assignedTo.equals(name)) {
+				if(tasks[i].status.equals("todo")&& tasks[i].important && (!tasks[i].urgent) && tasks[i].status.equals("todo")) {
+					return tasks[i];
 				}
+				for(int j = i+1; j < size; j++) {
+					if(tasks[j].assignedTo.equals(name)) {
+						Task t = tasks[j];
+						if(t.important && (!t.urgent) && t.status.equals("todo") || t.important && (t.urgent) && t.status.equals("todo")) {
+							return t;
+						}
+					}
+				}	
 			}
 		}
+		return null;
+	}
 
-		for (int j = 0; j < tasks.length; j++) {
-			if (tasks[j].getPersonName() == parameter) {
-				if (tasks[j].getStatus() == "todo" && tasks[j].getImportant() == "Important" && tasks[j].getUrgent() == "Urgent") {
-					return tasks[j].getTaskTitle();
-				}
-			}
+	public Task[] getNextTask(String name, int count) {
+		// System.out.println("1");
+		Task[] ret = new Task[count];
+		int i = 0;
+		while(i < count) {
+			ret[i] = getNextTask(name);
+			i++;
 		}
-		return "null";*/
+		return ret;
 	}
+
+	public int totalTime4Completion() {
+		int total = 0;
+		for(int i = 0; i < size; i++) {
+			if(tasks[i].status.equals("todo"))
+				total += tasks[i].time;
+		}
+		return total;
+	}
+}
