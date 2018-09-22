@@ -36,7 +36,7 @@ class Task {
 	public String getTimeToComplete() {
 		return timeToComplete;
 	}
-	public String getimportant() {
+	public String getImportant() {
 		// if(getimportant().equals("y")){
 		return important;
 	}
@@ -103,3 +103,54 @@ class Task {
 	}
 }
 */
+class Todoist {
+	Task[] tasks;
+	int size;
+
+	Todoist() {
+		tasks = new Task[100];
+		size = 0;
+	}
+
+	public void addTask(Task task) {
+		if (tasks.length == size) {
+			tasks = resize();
+		}
+		tasks[size++] = task;
+	}
+
+	public Task[] resize() {
+		Task[] newList = new Task[tasks.length * 2];
+		for (int i = 0; i < size; i++) {
+			newList[i] = tasks[i];
+		}
+		return newList;
+	}
+
+	public String toString() {
+		String s = "";
+		for (int i = 0; i < size; i++) {
+			s += tasks[i].getTaskTitle() + ", " + tasks[i].getPersonName() + ", " + tasks[i].getTimeToComplete() + ", " + tasks[i].getImportant() + ", " + tasks[i].getUrgent() + ", " + tasks[i].getStatus() + "\n";
+		}
+		return s.substring(0, s.length() - 1);
+	}
+	
+	/*}
+	public String getNextTask(String parameter) {
+		for (int j = 0; j < tasks.length; j++) {
+			if (tasks[j].getPersonName() == parameter) {
+				if (tasks[j].getStatus() == "todo" && tasks[j].getImportant() == "Important"  && tasks[j].getUrgent() == "Urgent") {
+					return tasks[j].getTaskTitle();
+				}
+			}
+		}
+
+		for (int j = 0; j < tasks.length; j++) {
+			if (tasks[j].getPersonName() == parameter) {
+				if (tasks[j].getStatus() == "todo" && tasks[j].getImportant() == "Important" && tasks[j].getUrgent() == "Urgent") {
+					return tasks[j].getTaskTitle();
+				}
+			}
+		}
+		return "null";*/
+	}
