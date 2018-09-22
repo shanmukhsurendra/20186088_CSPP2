@@ -1,3 +1,7 @@
+import java.util.*;
+import java.io.*;
+import java.util.Arrays;
+
 class Task {
 	public String taskTitle;
 	public String personName;
@@ -13,6 +17,10 @@ class Task {
 		this.important = important;
 		this.urgent = urgent;
 		this.status = status;
+	}
+	Task(String taskTitle) {
+		this.taskTitle = taskTitle;
+
 	}
 	/*void task1(String taskTitle1, String personName1,
 	 String status1, String timeToComplete1, String important1, String urgent1){
@@ -72,3 +80,26 @@ class Task {
 		return null;
 	}
 }
+/*class Todoist {
+	ArrayList<Task> task1;
+	String[] tasks;
+	Todoist() {
+		tasks = new String[10];
+		int size = 0;
+	}
+	public void resize() {
+		tasks = Arrays.copyOf(tasks, tasks.length * 2);
+	}
+	void addT(Task item) {
+		task1.add(item);
+	
+	void addTask(Task item) {
+		task1 = new ArrayList<>();
+		task1.add(item);
+		//String n = task1.get(0);
+		System.out.println(task1.toString());
+		//tasks.add();
+		System.out.println(Arrays.toString(tasks));
+	}
+}
+*/
