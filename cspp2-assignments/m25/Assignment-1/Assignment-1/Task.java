@@ -50,11 +50,11 @@ class Task {
 			this.important = "Not Important";
 		}
 		if(this.urgent.equals("y")){
-			this.urgent = "urgent";
+			this.urgent = "Urgent";
 		}else{
 			this.urgent = "Not Urgent";
 		}
-		return getTaskTitle()+","+getPersonName()+","+getTimeToComplete()+","+this.important+
-			","+getUrgent()+","+getStatus();
+		return getTaskTitle()+", "+getPersonName()+", "+getTimeToComplete()+", "+this.important+
+			", "+getUrgent()+", "+getStatus();
 	}
 }
