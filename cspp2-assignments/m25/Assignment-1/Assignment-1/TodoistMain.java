@@ -14,7 +14,7 @@ public class TodoistMain {
      * Starts a test.
      */
     public static void startTest() {
-        //Todoist todo = new Todoist();
+        Todoist todo = new Todoist();
         Scanner s = new Scanner(System.in);
         while (s.hasNext()) {
             String[] tokens = s.nextLine().split(",");
@@ -22,7 +22,7 @@ public class TodoistMain {
                 case "task":
                     testTask(tokens);
                 break;
-                /*case "add-task":
+                case "add-task":
                     testAddTask(todo, tokens);
                 break;
                 case "print-todoist":
@@ -38,7 +38,7 @@ public class TodoistMain {
                 break;
                 case "total-time":
                     System.out.println(todo.totalTime4Completion());
-                break;*/
+                break;
                 default:
                 break;
             }
@@ -51,7 +51,7 @@ public class TodoistMain {
      * @param      todo    The todo
      * @param      tokens  The tokens
      */
-   /* public static void testAddTask(final Todoist todo, final String[] tokens) {
+    public static void testAddTask(final Todoist todo, final String[] tokens) {
         try {
             todo.addTask(createTask(tokens));
         } catch (Exception e) {
