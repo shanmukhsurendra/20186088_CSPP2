@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 
 class Solution {
-    Solution() {
+    public Solution() {
 
     }
     public static void main(final String[] args) throws Exception {
