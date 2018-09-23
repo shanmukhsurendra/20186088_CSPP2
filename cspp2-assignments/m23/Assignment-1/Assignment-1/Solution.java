@@ -1,5 +1,4 @@
 import java.io.BufferedReader;
-import java.io.Reader;
 import java.io.File;
 import java.util.Scanner;
 import java.util.Arrays;
@@ -7,7 +6,10 @@ import java.io.FileReader;
 
 
 class Solution {
-    public static void main(String[] args) throws Exception {
+    Solution(){
+
+    }
+    public static void main(final String[] args) throws Exception {
         Scanner s = new Scanner(System.in);
         while (s.hasNext()) {
             String folder = s.nextLine();
@@ -31,11 +33,11 @@ File file = new File(
                 for (int a = 0; a < file3.length; a++) {
                     System.out.print(file3[a] + "\t");
                     for (int b = 0; b < file3.length; b++) {
-File file1 = new File
-("F:\\cspp2\\cspp2-assignments\\m23\\Assignment-1\\Assignment-1\\" + folder
+File file1 = new File(
+    "F:\\cspp2\\cspp2-assignments\\m23\\Assignment-1\\Assignment-1\\" + folder
  + "\\" + file3[a]);
-File file2 = new File
-("F:\\cspp2\\cspp2-assignments\\m23\\Assignment-1\\Assignment-1\\"
+File file2 = new File(
+    "F:\\cspp2\\cspp2-assignments\\m23\\Assignment-1\\Assignment-1\\"
  + folder + "\\" + file3[b]);
         BufferedReader br1 = new BufferedReader(new FileReader(file1));
         BufferedReader br2 = new BufferedReader(new FileReader(file2));
@@ -62,7 +64,7 @@ inp1 = inp1 + line1.replaceAll("[0-9_ ]", " ").replaceAll("\\s+", " ");
 
                 }
                 long max = result[0][1];
-                String index[] = new String[2];
+                String[] index = new String[2];
                 index[0] = file3[0];
                 index[1] = file3[0];
                 for (int d = 0; d < file3.length; d++) {
