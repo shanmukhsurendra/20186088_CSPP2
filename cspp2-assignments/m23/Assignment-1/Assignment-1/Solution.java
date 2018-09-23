@@ -14,6 +14,13 @@ final  class Solution {
     Solution() {
 //empty constructer.
     }
+    /**
+     * reads the text files in a entire folder.
+     *
+     * @param      args       The arguments
+     *
+     * @throws     Exception  { exception_description }
+     */
     public static void main(final String[] args) throws Exception {
         Scanner s = new Scanner(System.in);
         while (s.hasNext()) {
