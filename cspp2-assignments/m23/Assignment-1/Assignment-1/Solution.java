@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.io.FileReader;
 
 
-public final class Solution {
+final  class Solution {
     Solution() {
 
     }
