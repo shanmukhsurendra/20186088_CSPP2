@@ -5,8 +5,8 @@ import java.util.Arrays;
 import java.io.FileReader;
 
 
-class Solution {
-    public Solution() {
+public final class Solution {
+    Solution() {
 
     }
     public static void main(final String[] args) throws Exception {
