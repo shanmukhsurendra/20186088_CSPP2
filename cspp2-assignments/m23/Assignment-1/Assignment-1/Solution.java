@@ -4,10 +4,15 @@ import java.util.Scanner;
 import java.util.Arrays;
 import java.io.FileReader;
 
-
+/**
+ * solution  class is to read the input and forward to other class.
+ */
 final  class Solution {
+    /**
+     * Constructs the object.
+     */
     Solution() {
-
+//empty constructer.
     }
     public static void main(final String[] args) throws Exception {
         Scanner s = new Scanner(System.in);
