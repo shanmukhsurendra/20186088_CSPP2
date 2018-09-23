@@ -12,7 +12,7 @@ class Solution {
 		while (s.hasNext()) {
 			String folder = s.nextLine();
 File file = new File(
-	"F:\\cspp2\\cspp2-assignments\\m23\\Assignment-1\\Assignment-1\\" + folder);
+"F:\\cspp2\\cspp2-assignments\\m23\\Assignment-1\\Assignment-1\\" + folder);
 			String[] file3 = file.list();
 			int len = file3.length;
 			//System.out.println(len);
@@ -37,8 +37,8 @@ File file1 = new File
 File file2 = new File
 ("F:\\cspp2\\cspp2-assignments\\m23\\Assignment-1\\Assignment-1\\"
  + folder + "\\" + file3[b]);
-			BufferedReader br1 = new BufferedReader(new FileReader(file1));
-			BufferedReader br2 = new BufferedReader(new FileReader(file2));
+		BufferedReader br1 = new BufferedReader(new FileReader(file1));
+		BufferedReader br2 = new BufferedReader(new FileReader(file2));
 						String line1;
 						String line2;
 						String inp1 = "";
@@ -46,7 +46,7 @@ File file2 = new File
 						Count cu = new Count();
 						while ((line1 = br1.readLine()) != null) {
 							line1 = line1.toLowerCase();
-		inp1 = inp1 + line1.replaceAll("[0-9_ ]", " ").replaceAll("\\s+", " ");
+inp1 = inp1 + line1.replaceAll("[0-9_ ]", " ").replaceAll("\\s+", " ");
 						}
 						while ((line2 = br2.readLine()) != null) {
 							line2 = line2.toLowerCase();
