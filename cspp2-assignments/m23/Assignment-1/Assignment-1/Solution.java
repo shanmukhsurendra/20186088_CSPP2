@@ -11,7 +11,8 @@ class Solution {
 		Scanner s = new Scanner(System.in);
 		while (s.hasNext()) {
 			String folder = s.nextLine();
-			File file = new File("F:\\cspp2\\cspp2-assignments\\m23\\Assignment-1\\Assignment-1\\" + folder);
+File file = new File(
+	"F:\\cspp2\\cspp2-assignments\\m23\\Assignment-1\\Assignment-1\\" + folder);
 			String[] file3 = file.list();
 			int len = file3.length;
 			//System.out.println(len);
@@ -30,10 +31,14 @@ class Solution {
 				for (int a = 0; a < file3.length; a++) {
 					System.out.print(file3[a] + "\t");
 					for (int b = 0; b < file3.length; b++) {
-						File file1 = new File("F:\\cspp2\\cspp2-assignments\\m23\\Assignment-1\\Assignment-1\\" + folder + "\\" + file3[a]);
-						File file2 = new File("F:\\cspp2\\cspp2-assignments\\m23\\Assignment-1\\Assignment-1\\" + folder + "\\" + file3[b]);
-						BufferedReader br1 = new BufferedReader(new FileReader(file1));
-						BufferedReader br2 = new BufferedReader(new FileReader(file2));
+File file1 = new File
+("F:\\cspp2\\cspp2-assignments\\m23\\Assignment-1\\Assignment-1\\" + folder
+ + "\\" + file3[a]);
+File file2 = new File
+("F:\\cspp2\\cspp2-assignments\\m23\\Assignment-1\\Assignment-1\\"
+ + folder + "\\" + file3[b]);
+			BufferedReader br1 = new BufferedReader(new FileReader(file1));
+			BufferedReader br2 = new BufferedReader(new FileReader(file2));
 						String line1;
 						String line2;
 						String inp1 = "";
@@ -41,11 +46,11 @@ class Solution {
 						Count cu = new Count();
 						while ((line1 = br1.readLine()) != null) {
 							line1 = line1.toLowerCase();
-							inp1 = inp1 + line1.replaceAll("[0-9_ ]", " ").replaceAll("\\s+", " ");
+		inp1 = inp1 + line1.replaceAll("[0-9_ ]", " ").replaceAll("\\s+", " ");
 						}
 						while ((line2 = br2.readLine()) != null) {
 							line2 = line2.toLowerCase();
-							inp2 = inp2 + line2.replaceAll("[0-9_ ]", " ").replaceAll("\\s+", " ");
+	inp2 = inp2 + line2.replaceAll("[0-9_ ]", " ").replaceAll("\\s+", " ");
 						}
 						//System.out.println("call3");
 						long ot = cu.bagOFWords(inp1, inp2);
@@ -71,7 +76,8 @@ class Solution {
 					}
 
 				}
-				System.out.print("Maximum similarity is between " + index[0] + " and " + index[1]);
+System.out.print(
+	"Maximum similarity is between " + index[0] + " and " + index[1]);
 			} else {
 				System.out.println("empty directory");
 			}
