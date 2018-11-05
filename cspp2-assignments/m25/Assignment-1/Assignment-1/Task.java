@@ -64,15 +64,15 @@ class Task {
 				return "Invalid status " + this.status;
 			}
 		} else {
-			if (this.important.equals("y")) {
-				this.important = "Important";
+			if (important.equals("y")) {
+				important = "Important";
 			} else {
-				this.important = "Not Important";
+				important = "Not Important";
 			}
-			if (this.urgent.equals("y")) {
-				this.urgent = "Urgent";
+			if (urgent.equals("y")) {
+				urgent = "Urgent";
 			} else {
-				this.urgent = "Not Urgent";
+				urgent = "Not Urgent";
 			}
 			return getTaskTitle() + ", " + getPersonName() + ", " + getTimeToComplete() + ", " + this.important +
 			       ", " + getUrgent() + ", " + getStatus();
@@ -119,14 +119,14 @@ class Todoist{
 
 	public String toString() {
 		if(size == 0){
-			System.out.println("kkk");
+			System.out.println("sdsf");
 			return "";
 		}
 		for(int i = 0; i < size; i++) {
 			if(tasks[i].taskTitle.equals(null)) {
 				break;
 			}
-			if(tasks[i].time == 0) {
+			if(tasks[i].timeToComplete.equals("0")) {
 				break;
 			}
 			if(tasks[i].status.equals(null)) {
@@ -139,12 +139,12 @@ class Todoist{
 	}
 	public Task getNextTask(String name) {
 		for(int i = 0; i < size; i++) {
-			if(tasks[i].assignedTo.equals(name)) {
-				if(tasks[i].status.equals("todo")&& tasks[i].important && (!tasks[i].urgent) && tasks[i].status.equals("todo")) {
+			if(tasks[i].personName.equals(name)) {
+				if(tasks[i].status.equals("todo") && tasks[i].important && (!tasks[i].urgent) && tasks[i].status.equals("todo")) {
 					return tasks[i];
 				}
 				for(int j = i+1; j < size; j++) {
-					if(tasks[j].assignedTo.equals(name)) {
+					if(tasks[j].personName.equals(name)) {
 						Task t = tasks[j];
 						if(t.important && (!t.urgent) && t.status.equals("todo") || t.important && (t.urgent) && t.status.equals("todo")) {
 							return t;
@@ -171,7 +171,7 @@ class Todoist{
 		int total = 0;
 		for(int i = 0; i < size; i++) {
 			if(tasks[i].status.equals("todo"))
-				total += tasks[i].time;
+				total += tasks[i].Integer.parseInt(timeToComplete);
 		}
 		return total;
 	}
