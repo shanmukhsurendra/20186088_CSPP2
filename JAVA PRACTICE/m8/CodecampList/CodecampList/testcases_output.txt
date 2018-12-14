@@ -1,0 +1,33 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+2
+[5,-1]
+[5,-1,0,99]
+3
+[5,0,99]
+-1
+99
+true
+
+Your Output: 
+Error: Could not find or load main class list
+Caused by: java.lang.NoClassDefFoundError: List (wrong name: list)
+----------------------------------------
+
+########## Testcase 1: Failed ##########
+Expected Output: 
+[8,12,97]
+4
+Invalid Position Exception
+[8,12,97,11]
+4
+0
+97
+1
+true
+
+Your Output: 
+Error: Could not find or load main class list
+Caused by: java.lang.NoClassDefFoundError: List (wrong name: list)
+----------------------------------------
+
