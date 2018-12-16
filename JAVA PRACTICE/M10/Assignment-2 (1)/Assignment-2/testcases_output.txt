@@ -36,7 +36,7 @@ Your Output:
 [r2,e@,t!,c*,a.,b",c:]
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 0
 Invalid Position Exception
@@ -53,10 +53,10 @@ Your Output:
 Invalid Position Exception
 []
 []
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -2
-	at StringList.toString(StringList.java:229)
-	at java.base/java.lang.String.valueOf(Unknown Source)
-	at java.base/java.io.PrintStream.println(Unknown Source)
-	at Solution.main(Solution.java:41)
+Invalid Position Exception
+[]
+[1,2,3,4,5,6,7,8,9,10,11M$itc1hL@pa$$w0rd]
+[1]
+[]
 ----------------------------------------
 
