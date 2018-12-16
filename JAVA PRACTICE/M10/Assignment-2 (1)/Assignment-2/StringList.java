@@ -214,7 +214,7 @@ public class StringList implements StringListInterface {
 			return "[]";
 		} else {
 			for(int i =0; i <size;i++) {
-				e += list[i];
+				e += list[i] + ",";
 			}
 		}
 		e += list[size] + "]";
