@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 [a1,b2,c3,d4,e5,f6,g7,h9]
 6
@@ -15,7 +15,7 @@ Your Output:
 6
 Invalid Position Exception
 Invalid Position Exception
-[b2,d4]
+[b2,d4,e5,g7]
 ----------------------------------------
 
 ########## Testcase 1: Passed ##########
@@ -51,6 +51,8 @@ Invalid Position Exception
 Your Output: 
 0
 Invalid Position Exception
+[]
+[]
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -2
 	at StringList.toString(StringList.java:229)
 	at java.base/java.lang.String.valueOf(Unknown Source)
