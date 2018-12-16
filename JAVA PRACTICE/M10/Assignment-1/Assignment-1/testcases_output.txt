@@ -58,8 +58,10 @@ Invalid Position Exception
 []
 -1
 Negative Index Exception
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at List.add(List.java:295)
-	at List.main(List.java:334)
+[0]
+[]
+[1,2,3,4,5,6,7,8,9,10,11]
+[11]
+[]
 ----------------------------------------
 
