@@ -57,8 +57,9 @@ Your Output:
 Invalid Position Exception
 []
 -1
+Negative Index Exception
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at List.add(List.java:293)
-	at List.main(List.java:332)
+	at List.add(List.java:295)
+	at List.main(List.java:334)
 ----------------------------------------
 
