@@ -70,7 +70,10 @@ public class StringList implements StringListInterface {
 	 * The purpose of the constructor is to initialize the
 	 * class variables with some default values.
 	 */
-
+		public String[] resize(){
+			list = Arrays.copyOf(list, list.length*2);
+			return list;
+		}
 
 
 	public StringList() {
@@ -120,6 +123,9 @@ public class StringList implements StringListInterface {
 	 * The method returns void (nothing)
 	 */
 	public void add(String item) {
+		if(size == list.length) {
+			list = resize();
+		}
 		list[size++] = item;
 
 	}

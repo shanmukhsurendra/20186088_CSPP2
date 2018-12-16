@@ -9,10 +9,10 @@ Invalid Position Exception
 [b2,d4,e5,g7]
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at StringList.add(StringList.java:123)
-	at StringList.addAll(StringList.java:131)
-	at Solution.main(Solution.java:27)
+[a1,b2,c3,d4,e5,f6,g7,h9]
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
+	at StringList.remove(StringList.java:177)
+	at Solution.main(Solution.java:44)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -25,9 +25,12 @@ Expected Output:
 [r2,e@,t!,c*,a.,b",c:]
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at StringList.add(StringList.java:123)
-	at Solution.main(Solution.java:22)
+2
+[r2,e@,t!,c*]
+4
+[r2,e@,t!,c*]
+7
+[r2,e@,t!,c*,a.,b",c:,null]
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -48,9 +51,8 @@ Invalid Index Position
 []
 []
 []
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at StringList.add(StringList.java:123)
-	at StringList.addAll(StringList.java:131)
-	at Solution.main(Solution.java:27)
+[1,2,3,4,5,6,7,8,9,10,11M$itc1hL@pa$$w0rd,null,null,null,null,null]
+[11M$itc1hL@pa$$w0rd,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
 ----------------------------------------
 
