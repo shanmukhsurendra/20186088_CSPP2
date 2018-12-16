@@ -177,6 +177,7 @@ public class StringList implements StringListInterface {
 				list[i] = list[i + 1];
 			}
 		}
+		size = size - 1;
 	}
 
 	/*
@@ -219,7 +220,7 @@ public class StringList implements StringListInterface {
 		if(size == 0) {
 			return "[]";
 		} else {
-			for(int i =0; i < list.length -1;i++) {
+			for(int i =0; i < size -1;i++) {
 				e += list[i] + ",";
 			}
 		}

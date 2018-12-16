@@ -10,10 +10,12 @@ Invalid Position Exception
 
 Your Output: 
 [a1,b2,c3,d4,e5,f6,g7,h9]
-8
-[c3,d4,e5,f6,g7,h9,h9,h9]
-8
-[g7,h9,h9,h9,h9,h9,h9,h9]
+6
+[c3,d4,e5,f6,g7,h9]
+6
+Invalid Index Position
+Invalid Index Position
+[e5,h9]
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -31,7 +33,7 @@ Your Output:
 4
 [r2,e@,t!,c*]
 7
-[r2,e@,t!,c*,a.,b",c:,null]
+[r2,e@,t!,c*,a.,b",null]
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -49,11 +51,13 @@ Invalid Position Exception
 Your Output: 
 0
 Invalid Index Position
-[]
-[]
-[]
-[1,2,3,4,5,6,7,8,9,10,11M$itc1hL@pa$$w0rd,null,null,null,null,null]
-[11M$itc1hL@pa$$w0rd,11M$itc1hL@pa$$w0rd,11M$itc1hL@pa$$w0rd,11M$itc1hL@pa$$w0rd,11M$itc1hL@pa$$w0rd,11M$itc1hL@pa$$w0rd,11M$itc1hL@pa$$w0rd,11M$itc1hL@pa$$w0rd,11M$itc1hL@pa$$w0rd,11M$itc1hL@pa$$w0rd,11M$itc1hL@pa$$w0rd,null,null,null,null,null]
-[11M$itc1hL@pa$$w0rd,11M$itc1hL@pa$$w0rd,11M$itc1hL@pa$$w0rd,11M$itc1hL@pa$$w0rd,11M$itc1hL@pa$$w0rd,11M$itc1hL@pa$$w0rd,11M$itc1hL@pa$$w0rd,11M$itc1hL@pa$$w0rd,11M$itc1hL@pa$$w0rd,11M$itc1hL@pa$$w0rd,11M$itc1hL@pa$$w0rd,null,null,null,null,null]
+[null]
+[null]
+Invalid Index Position
+[null]
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -2
+	at StringList.add(StringList.java:129)
+	at StringList.addAll(StringList.java:137)
+	at Solution.main(Solution.java:27)
 ----------------------------------------
 
