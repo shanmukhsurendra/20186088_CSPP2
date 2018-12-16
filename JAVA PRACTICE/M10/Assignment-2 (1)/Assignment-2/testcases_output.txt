@@ -9,11 +9,11 @@ Invalid Position Exception
 [b2,d4,e5,g7]
 
 Your Output: 
-[a1,b2,c3,d4,e5,f6,g7,h9,null]
-8
-[c3,d4,e5,f6,g7,h9,null,null,null]
-8
-[g7,h9,null,null,null,null,null,null,null]
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
+	at StringList.toString(StringList.java:220)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:41)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -27,11 +27,11 @@ Expected Output:
 
 Your Output: 
 2
-[r2,e@,t!,c*,null]
-4
-[r2,e@,t!,c*,null]
-7
-[r2,e@,t!,c*,a.,b",c:,null]
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
+	at StringList.toString(StringList.java:220)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:41)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########

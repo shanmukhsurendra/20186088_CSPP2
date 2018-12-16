@@ -213,11 +213,11 @@ public class StringList implements StringListInterface {
 		if(size == 0) {
 			return "[]";
 		} else {
-			for(int i =0; i <size;i++) {
+			for(int i =0; i <list.length;i++) {
 				e += list[i] + ",";
 			}
 		}
-		e += list[size] + "]";
+		e += list[list.length] + "]";
 		return e; 
 	}
 
