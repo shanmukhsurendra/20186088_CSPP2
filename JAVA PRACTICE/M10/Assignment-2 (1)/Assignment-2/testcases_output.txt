@@ -11,14 +11,14 @@ Invalid Position Exception
 Your Output: 
 [a1,b2,c3,d4,e5,f6,g7,h9]
 6
-[c3,d4,e5,f6,g7,h9]
+[b2,d4,e5,f6,g7,h9]
 6
 Invalid Position Exception
 Invalid Position Exception
-[e5,h9]
+[b2,d4]
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 2
 [r2,e@,t!,c*]
@@ -33,7 +33,7 @@ Your Output:
 4
 [r2,e@,t!,c*]
 7
-[r2,e@,t!,c*,a.,b",null]
+[r2,e@,t!,c*,a.,b",c:]
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -51,13 +51,10 @@ Invalid Position Exception
 Your Output: 
 0
 Invalid Position Exception
-[null]
-[null]
-Invalid Position Exception
-[null]
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -2
-	at StringList.add(StringList.java:129)
-	at StringList.addAll(StringList.java:137)
-	at Solution.main(Solution.java:27)
+	at StringList.toString(StringList.java:229)
+	at java.base/java.lang.String.valueOf(Unknown Source)
+	at java.base/java.io.PrintStream.println(Unknown Source)
+	at Solution.main(Solution.java:41)
 ----------------------------------------
 

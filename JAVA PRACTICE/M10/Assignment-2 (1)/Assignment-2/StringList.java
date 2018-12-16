@@ -173,11 +173,11 @@ public class StringList implements StringListInterface {
 		if (index < 0 || index > size) {
 			System.out.println("Invalid Position Exception");
 		} else {
-			for (int i = 0; i < size-1; i++) {
+			for (int i = index; i < size-1; i++) {
 				list[i] = list[i + 1];
 			}
 		}
-		size = size - 1;
+		size = size- 1;
 	}
 
 	/*
@@ -216,15 +216,17 @@ public class StringList implements StringListInterface {
 	 *
 	 */
 	public String toString() {
+		// System.out.println(size);
+		// System.out.println(list.length);
 			String e = "[";
 		if(size == 0) {
 			return "[]";
 		} else {
-			for(int i =0; i < size -1;i++) {
+			for(int i =0; i < size-1;i++) {
 				e += list[i] + ",";
 			}
 		}
-		e += list[list.length-1] + "]";
+		e += list[size-1] + "]";
 		return e; 
 	}
 
