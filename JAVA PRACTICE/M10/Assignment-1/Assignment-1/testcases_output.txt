@@ -18,7 +18,7 @@ Your Output:
 [5,4,10,0,9,99,1,2,3]
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 0
 0
@@ -30,7 +30,7 @@ Expected Output:
 Your Output: 
 0
 0
-
+[]
 3
 [1,2,3,4,4,4]
 [1,2,3,5,5,5,4,4,4]
@@ -55,7 +55,7 @@ Your Output:
 0
 0
 Invalid Position Exception
-
+[]
 -1
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
 	at List.add(List.java:293)

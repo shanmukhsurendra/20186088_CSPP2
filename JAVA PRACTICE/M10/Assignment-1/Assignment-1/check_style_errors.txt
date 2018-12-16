@@ -18,6 +18,7 @@ Starting audit...
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-1\Assignment-1\List.java:102:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-1\Assignment-1\List.java:103:47: '*' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-1\Assignment-1\List.java:103:48: '*' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-1\Assignment-1\List.java:104: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-1\Assignment-1\List.java:114: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-1\Assignment-1\List.java:117:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-1\Assignment-1\List.java:117:21: Parameter item should be final. [FinalParameters]
@@ -106,4 +107,4 @@ Starting audit...
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-1\Assignment-1\List.java:344:28: '=' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-1\Assignment-1\List.java:344:29: '=' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 106 errors.
+Checkstyle ends with 107 errors.

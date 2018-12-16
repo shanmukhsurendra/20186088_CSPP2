@@ -101,7 +101,7 @@ public class List {
     }
     public int[] resize() {
     	list = Arrays.copyOf(list, list.length*2);
-    	return list;
+    	return list; 
     }
     /*
      * The add method does what the name suggests.
@@ -240,7 +240,7 @@ public class List {
      */
     public String toString() {
         if(size == 0)
-            return "";
+            return "[]";
         String str = "[";
         int i = 0;
         for(i = 0; i < size - 1; i++) {
