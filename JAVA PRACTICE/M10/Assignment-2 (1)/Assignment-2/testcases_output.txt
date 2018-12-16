@@ -13,8 +13,8 @@ Your Output:
 6
 [c3,d4,e5,f6,g7,h9]
 6
-Invalid Index Position
-Invalid Index Position
+Invalid Position Exception
+Invalid Position Exception
 [e5,h9]
 ----------------------------------------
 
@@ -50,10 +50,10 @@ Invalid Position Exception
 
 Your Output: 
 0
-Invalid Index Position
+Invalid Position Exception
 [null]
 [null]
-Invalid Index Position
+Invalid Position Exception
 [null]
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -2
 	at StringList.add(StringList.java:129)
