@@ -42,7 +42,6 @@ Starting audit...
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:42:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:67:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:76:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:83:35: '10' is a magic number. [MagicNumber]
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:107:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:107:27: Parameter capacity should be final. [FinalParameters]
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:122:9: Missing a Javadoc comment. [JavadocMethod]
@@ -56,8 +55,8 @@ Starting audit...
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:187:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:187:27: Parameter index should be final. [FinalParameters]
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:211:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:213:19: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:216:28: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:213:19: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:216:28: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:216:36: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:216:56: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:216:58: ';' is not followed by whitespace. [WhitespaceAfter]
@@ -68,8 +67,8 @@ Starting audit...
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:230:33: Parameter item should be final. [FinalParameters]
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:239:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:239:28: Parameter item should be final. [FinalParameters]
-[ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:240:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:240:20: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:240:33: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:241:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\cspp2\JAVA PRACTICE\M10\Assignment-2 (1)\Assignment-2\StringList.java:241:27: 'if' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 52 errors.
+Checkstyle ends with 51 errors.

@@ -9,11 +9,10 @@ Invalid Position Exception
 [b2,d4,e5,g7]
 
 Your Output: 
-[a1,b2,c3,d4,e5,f6,g7,h9,null,null]
-8
-[c3,d4,e5,f6,g7,h9,null,null,null,null]
-8
-[g7,h9,null,null,null,null,null,null,null,null]
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at StringList.add(StringList.java:123)
+	at StringList.addAll(StringList.java:131)
+	at Solution.main(Solution.java:27)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -26,12 +25,9 @@ Expected Output:
 [r2,e@,t!,c*,a.,b",c:]
 
 Your Output: 
-2
-[r2,e@,t!,c*,null,null,null,null,null,null]
-4
-[r2,e@,t!,c*,null,null,null,null,null,null]
-7
-[r2,e@,t!,c*,a.,b",c:,null,null,null]
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at StringList.add(StringList.java:123)
+	at Solution.main(Solution.java:22)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -52,7 +48,7 @@ Invalid Index Position
 []
 []
 []
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
 	at StringList.add(StringList.java:123)
 	at StringList.addAll(StringList.java:131)
 	at Solution.main(Solution.java:27)
