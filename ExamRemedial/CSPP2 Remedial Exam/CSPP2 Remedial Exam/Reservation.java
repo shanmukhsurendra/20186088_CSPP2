@@ -86,7 +86,7 @@ class Hotel {
     /**
      * initialises the size integer.
      */
-    int size = 0;
+    private int size = 0;
     /**
      * reerves room for a person.
      *
