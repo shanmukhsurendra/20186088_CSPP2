@@ -76,7 +76,7 @@ class Hotel {
     /**
      * intialises the string array.
      */
-    String[] reservearra; 
+    private String[] reservearra; 
     /**
      * initialises the size integer.
      */
