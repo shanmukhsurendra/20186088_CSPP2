@@ -1,6 +1,7 @@
 /*
   Reservation class, stores the person and room number in the Hotel
 */
+import java.util.Arrays;
 
 public class Reservation {
     //instance variables
@@ -49,7 +50,7 @@ class Hotel {
             } else {
                 reservearra[i] = person;
                 size++;
-                int j = i+1;
+                int j = i + 1;
                 return  j;
             }
         }
@@ -63,10 +64,6 @@ class Hotel {
             System.out.println("All Rooms are reserved");
             return false;
         }
-        // if(size == reservearra.length) {
-        //     System.out.println("All Rooms are reserved");
-        //     return 
-        // }
         int k = roomNum - 1;
         reservearra[k] = person;
         size++;
@@ -74,15 +71,22 @@ class Hotel {
     }
     public void printReservations() {
         for (int i = 0; i < reservearra.length; i++) {
-            int j = i + 1;
-            System.out.println(this.reservearra[i] + " " + j);
+            if (reservearra[i] != null) {
+                int j = i + 1;
+                System.out.println(this.reservearra[i] + " " + j);
+            }
         }
-        // System.out.println("sndbanmsd");
     }
     public void cancelReservations(String person) {
-
+        for( int j = 0 ;j < reservearra.length; j++) {
+            if(reservearra[j].equals(person)) {
+                reservearra[j] = null;
+                size--;
+            }
+        }
     }
     public boolean buildRooms(int num) {
-        return false;
+        reservearra = Arrays.copyOf(reservearra, reservearra.length * 2);
+        return true;
     }
 }

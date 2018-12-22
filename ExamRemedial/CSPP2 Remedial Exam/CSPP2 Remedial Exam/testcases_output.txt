@@ -112,7 +112,7 @@ kumar 4
 swathi 5
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -138,17 +138,19 @@ Room is already reserved
 kalyani 3
 kumar 4
 swathi 5
-No rooms are added
-All Rooms are reserved
-All Rooms are reserved
+Added 2 more rooms
+alekhya 6
+manasa 7
 murthy 1
 kiran 2
 kalyani 3
 kumar 4
 swathi 5
+alekhya 6
+manasa 7
 ----------------------------------------
 
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -182,12 +184,22 @@ Room is already reserved
 murthy 1
 kiran 2
 kumar 3
-null 4
-null 5
-No rooms are added
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
-	at Hotel.reserveRoom(Reservation.java:59)
-	at Solution.main(Solution.java:46)
+Added 5 more rooms
+alekhya 6
+manasa 4
+kumar 5
+karthik 7
+manohar 8
+kumar 9
+murthy 1
+kiran 2
+kumar 3
+manasa 4
+kumar 5
+alekhya 6
+karthik 7
+manohar 8
+kumar 9
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -235,17 +247,18 @@ kumar now has no reservations.
 murthy 1
 kiran 2
 kalyani 3
-kumar 4
 swathi 5
-No rooms are added
-All Rooms are reserved
-All Rooms are reserved
-All Rooms are reserved
+Added 2 more rooms
+alekhya 6
+manasa 4
+kumar 7
 murthy 1
 kiran 2
 kalyani 3
-kumar 4
+manasa 4
 swathi 5
+alekhya 6
+kumar 7
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -298,20 +311,23 @@ kumar now has no reservations.
 murthy 1
 kiran 2
 kalyani 3
-kumar 4
+Added 5 more rooms
+alekhya 6
+manasa 4
 kumar 5
-No rooms are added
-All Rooms are reserved
-All Rooms are reserved
-All Rooms are reserved
-All Rooms are reserved
-All Rooms are reserved
-All Rooms are reserved
-All Rooms are reserved
+karthik 7
+manohar 8
+swetha 9
+reddy 10
 murthy 1
 kiran 2
 kalyani 3
-kumar 4
+manasa 4
 kumar 5
+alekhya 6
+karthik 7
+manohar 8
+swetha 9
+reddy 10
 ----------------------------------------
 
