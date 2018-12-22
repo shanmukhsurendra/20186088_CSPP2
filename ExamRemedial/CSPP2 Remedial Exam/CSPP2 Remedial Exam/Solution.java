@@ -1,10 +1,23 @@
-import java.util.*;
+// import java.util.*;
+import java.util.Scanner;
+import java.util.Arrays;
+
 /**
  * Class for main.
  */
 public class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
 
-    public static void main(String[] args) {
+    }
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Hotel h = new Hotel();
         String name;
         int roomnum;
@@ -13,7 +26,7 @@ public class Solution {
         int c = 0;
         while (c < readLines) {
             String line = scan.nextLine();
-            String tokens[] = line.split(" ");
+            String[] tokens = line.split(" ");
             switch (tokens[0]) {
             case "reserve":
                 name = tokens[1];
