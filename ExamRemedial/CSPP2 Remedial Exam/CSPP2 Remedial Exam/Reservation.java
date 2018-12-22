@@ -97,7 +97,7 @@ class Hotel {
     public int reserveRoom(final String person) {
         for (int i = 0; i < reservearra.length; i++) {
             if (reservearra[i] != null) {
-                
+
             } else {
                 reservearra[i] = person;
                 size++;
@@ -145,7 +145,7 @@ class Hotel {
      * @param      person  The person
      */
     public void cancelReservations(final String person) {
-        for (int j = 0; j < reservearra.length; j++) {
+        for ( int j = 0 ; j < reservearra.length; j++) {
             if (reservearra[j].equals(person)) {
                 reservearra[j] = null;
                 size--;
@@ -160,7 +160,7 @@ class Hotel {
      * @return     The rooms.
      */
     public boolean buildRooms(final int num) {
-        reservearra = Arrays.copyOf(reservearra, num);
+        reservearra = Arrays.copyOf(reservearra, reservearra.length * 2);
         return true;
     }
 }
