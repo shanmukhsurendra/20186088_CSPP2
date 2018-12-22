@@ -39,15 +39,19 @@ public class Reservation {
     }
 
     /**
-     *  mutators, set the room number or name.
+     * Sets the room.
+     *
+     * @param      newroom  The newroom
      */
 
     public void setRoom(int newroom) {
         this.roomNumber = newroom;
     }
     /**
-         *  mutators, set the room number or name.
-         */
+     * Sets the name.
+     *
+     * @param      newname  The newname
+     */
     public void setName(String newname) {
         this.name = newname;
     }
@@ -76,7 +80,7 @@ class Hotel {
     /**
      * intialises the string array.
      */
-    private String[] reservearra; 
+    private String[] reservearra;
     /**
      * initialises the size integer.
      */
@@ -146,7 +150,7 @@ class Hotel {
      * @param      person  The person
      */
     public void cancelReservations(final String person) {
-        for ( int j = 0 ; j < reservearra.length; j++) {
+        for (int j = 0; j < reservearra.length; j++) {
             if (reservearra[j].equals(person)) {
                 reservearra[j] = null;
                 size--;
