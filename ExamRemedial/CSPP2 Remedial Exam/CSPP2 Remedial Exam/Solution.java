@@ -24,8 +24,12 @@ public class Solution{
 								        roomnum = h.reserveRoom(name);
 
 								    //give feedback
-								    if(roomnum!=-1)
+								    if(roomnum!=-1) {
 								        System.out.println(name+" "+roomnum);
+								    } else  {
+								    	System.out.println("All Rooms are reserved");
+								    }
+
 								 
 									break;
 
