@@ -1,11 +1,11 @@
 // import java.util.*;
 import java.util.Scanner;
-import java.util.Arrays;
+// import java.util.Arrays;
 
 /**
  * Class for main.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -95,3 +95,6 @@ public class Solution {
         }
     }
 }
+
+
+
