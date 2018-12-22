@@ -43,8 +43,11 @@ public class Solution{
 								     roomnum = Integer.parseInt(tokens[2]);
 								    }    
 								    //give feedback
-								    if(h.reserveRoom(name, roomnum))
+								    if(h.reserveRoom(name, roomnum)) {
 								        System.out.println(name+" "+roomnum);
+								    } else {
+								    	System.out.println("All Rooms are reserved");
+								    }
 								    
 								    break;
 
