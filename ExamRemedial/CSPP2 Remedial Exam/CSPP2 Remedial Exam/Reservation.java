@@ -74,19 +74,20 @@ public class Reservation {
  */
 class Hotel {
     /**
-     * Constructs the object.
-     */
-    Hotel() {
-
-    }
-    /**
      * intialises the string array.
      */
-    String[] reservearra = new String[2 + 2 + 1];
+    String[] reservearra; 
     /**
      * initialises the size integer.
      */
-    private int size = 0;
+    private int size;
+    /**
+     * Constructs the object.
+     */
+    Hotel() {
+        reservearra = new String[2 + 2 + 1];
+        size = 0;
+    }
     /**
      * reerves room for a person.
      *
