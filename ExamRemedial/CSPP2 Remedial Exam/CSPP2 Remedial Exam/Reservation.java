@@ -51,7 +51,7 @@ class Hotel {
         return -1;
     }
     public boolean reserveRoom(String person, int roomNum) {
-        if (reservearra[roomNum] != null) {
+        if (reservearra[roomNum -1] != null) {
 
             return false;
         }
