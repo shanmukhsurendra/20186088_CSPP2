@@ -22,7 +22,7 @@ public class Reservation {
      *
      * @param      person  The person
      */
-    public Reservation(String person) {
+    public Reservation(final String person) {
         this.name = person;
 
     }
@@ -32,7 +32,7 @@ public class Reservation {
      * @param      person  The person
      * @param      room    The room
      */
-    public Reservation(String person, int room) {
+    public Reservation(final String person, final int room) {
         this.name = person;
         this.roomNumber = room;
 
@@ -44,7 +44,7 @@ public class Reservation {
      * @param      newroom  The newroom
      */
 
-    public void setRoom(int newroom) {
+    public void setRoom(final int newroom) {
         this.roomNumber = newroom;
     }
     /**
@@ -52,7 +52,7 @@ public class Reservation {
      *
      * @param      newname  The newname
      */
-    public void setName(String newname) {
+    public void setName(final String newname) {
         this.name = newname;
     }
 
