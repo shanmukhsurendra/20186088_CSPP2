@@ -102,7 +102,7 @@ class Hotel {
     public int reserveRoom(final String person) {
         for (int i = 0; i < reservearra.length; i++) {
             if (reservearra[i] != null) {
-                int z = 0+1;
+                int z = 0 + 1;
             } else {
                 reservearra[i] = person;
                 size++;
