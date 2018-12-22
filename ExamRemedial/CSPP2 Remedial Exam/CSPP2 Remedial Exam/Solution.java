@@ -39,8 +39,7 @@ public class Solution {
 
                 if ((name == null) || (name.equals(""))) {
                     roomnum = -1;
-                }
-                else {
+                } else {
                     roomnum = Integer.parseInt(tokens[2]);
                 }
                 //give feedback
@@ -59,8 +58,8 @@ public class Solution {
                 name = tokens[1];
                 if (!((name == null) || (name.equals("")))) {
                     h.cancelReservations(name);
-                    System.out.println(name +
-                     " now has no reservations.");
+                    System.out.println(name
+                                       + " now has no reservations.");
                 } else {
                     System.out.println("No input");
                 }
@@ -70,11 +69,13 @@ public class Solution {
                 roomnum = Integer.parseInt(tokens[1]);
 
                 if (h.buildRooms(roomnum)) {
-                    System.out.println("Added " +
-                     roomnum + " more rooms");
+                    System.out.println("Added "
+                                       + roomnum + " more rooms");
                 } else {
                     System.out.println("No rooms are added");
                 }
+                break;
+            default :
                 break;
             }
             c++;
