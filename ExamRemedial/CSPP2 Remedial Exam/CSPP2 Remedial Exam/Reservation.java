@@ -164,5 +164,3 @@ class Hotel {
         return true;
     }
 }
-
-
