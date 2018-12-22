@@ -94,7 +94,7 @@ class Hotel {
      *
      * @return     { description_of_the_return_value }
      */
-    public int reserveRoom(String person) {
+    public int reserveRoom(final String person) {
         for (int i = 0; i < reservearra.length; i++) {
             if (reservearra[i] != null) {
 
@@ -115,7 +115,7 @@ class Hotel {
      *
      * @return     { description_of_the_return_value }
      */
-    public boolean reserveRoom(String person, int roomNum) {
+    public boolean reserveRoom(final String person, final int roomNum) {
         if (size < reservearra.length && reservearra[roomNum - 1] != null) {
             System.out.println("Room is already reserved");
             return false;
@@ -144,7 +144,7 @@ class Hotel {
      *
      * @param      person  The person
      */
-    public void cancelReservations(String person) {
+    public void cancelReservations(final String person) {
         for ( int j = 0 ; j < reservearra.length; j++) {
             if (reservearra[j].equals(person)) {
                 reservearra[j] = null;
@@ -159,8 +159,10 @@ class Hotel {
      *
      * @return     The rooms.
      */
-    public boolean buildRooms(int num) {
+    public boolean buildRooms(final int num) {
         reservearra = Arrays.copyOf(reservearra, reservearra.length * 2);
         return true;
     }
 }
+
+
