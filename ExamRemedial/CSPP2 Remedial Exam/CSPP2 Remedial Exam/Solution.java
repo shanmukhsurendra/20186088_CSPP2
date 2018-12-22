@@ -19,8 +19,9 @@ public class Solution {
                 name = tokens[1];
                 roomnum = -1;
                 //if we got a good name, try to reserve a room
-                if (!((name == null) || (name.equals(""))))
+                if (!((name == null) || (name.equals("")))) {
                     roomnum = h.reserveRoom(name);
+                }
 
                 //give feedback
                 if (roomnum != -1) {
@@ -36,14 +37,16 @@ public class Solution {
                 name = tokens[1];
                 //if we got a bad input, report failure
 
-                if ((name == null) || (name.equals("")))
+                if ((name == null) || (name.equals(""))) {
                     roomnum = -1;
+                }
                 else {
                     roomnum = Integer.parseInt(tokens[2]);
                 }
                 //give feedback
-                if (h.reserveRoom(name, roomnum))
+                if (h.reserveRoom(name, roomnum)) {
                     System.out.println(name + " " + roomnum);
+                }
 
                 break;
 
