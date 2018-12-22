@@ -56,10 +56,17 @@ class Hotel {
         return -1;
     }
     public boolean reserveRoom(String person, int roomNum) {
-        if (reservearra[roomNum - 1] != null) {
-
+        if (size < reservearra.length && reservearra[roomNum - 1] != null) {
+            System.out.println("Room is already reserved");
+            return false;
+        } else if (size == reservearra.length) {
+            System.out.println("All Rooms are reserved");
             return false;
         }
+        // if(size == reservearra.length) {
+        //     System.out.println("All Rooms are reserved");
+        //     return 
+        // }
         int k = roomNum - 1;
         reservearra[k] = person;
         size++;

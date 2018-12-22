@@ -82,7 +82,7 @@ kalyani 4
 kumar 5
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -100,7 +100,7 @@ swathi 5
 Your Output: 
 kiran 2
 murthy 1
-All Rooms are reserved
+Room is already reserved
 kalyani 3
 kumar 4
 swathi 5
@@ -134,14 +134,18 @@ manasa 7
 Your Output: 
 kiran 2
 murthy 1
-All Rooms are reserved
+Room is already reserved
 kalyani 3
 kumar 4
 swathi 5
 No rooms are added
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
-	at Hotel.reserveRoom(Reservation.java:59)
-	at Solution.main(Solution.java:46)
+All Rooms are reserved
+All Rooms are reserved
+murthy 1
+kiran 2
+kalyani 3
+kumar 4
+swathi 5
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -174,7 +178,7 @@ Your Output:
 kiran 2
 murthy 1
 kumar 3
-All Rooms are reserved
+Room is already reserved
 murthy 1
 kiran 2
 kumar 3
@@ -218,7 +222,7 @@ alekhya 6
 Your Output: 
 kiran 2
 murthy 1
-All Rooms are reserved
+Room is already reserved
 kalyani 3
 kumar 4
 swathi 5
@@ -234,9 +238,14 @@ kalyani 3
 kumar 4
 swathi 5
 No rooms are added
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
-	at Hotel.reserveRoom(Reservation.java:59)
-	at Solution.main(Solution.java:46)
+All Rooms are reserved
+All Rooms are reserved
+All Rooms are reserved
+murthy 1
+kiran 2
+kalyani 3
+kumar 4
+swathi 5
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -276,7 +285,7 @@ manohar 8
 Your Output: 
 kiran 2
 murthy 1
-All Rooms are reserved
+Room is already reserved
 kalyani 3
 kumar 4
 kumar 5
@@ -292,8 +301,17 @@ kalyani 3
 kumar 4
 kumar 5
 No rooms are added
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
-	at Hotel.reserveRoom(Reservation.java:59)
-	at Solution.main(Solution.java:46)
+All Rooms are reserved
+All Rooms are reserved
+All Rooms are reserved
+All Rooms are reserved
+All Rooms are reserved
+All Rooms are reserved
+All Rooms are reserved
+murthy 1
+kiran 2
+kalyani 3
+kumar 4
+kumar 5
 ----------------------------------------
 
