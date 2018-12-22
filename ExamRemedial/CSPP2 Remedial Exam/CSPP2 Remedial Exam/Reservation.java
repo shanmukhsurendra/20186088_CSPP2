@@ -140,7 +140,7 @@ class Hotel {
         for (int i = 0; i < reservearra.length; i++) {
             if (reservearra[i] != null) {
                 int j = i + 1;
-                System.out.println(this.reservearra[i] + " " + this.i);
+                System.out.println(this.reservearra[i] + " " + j);
             }
         }
     }
