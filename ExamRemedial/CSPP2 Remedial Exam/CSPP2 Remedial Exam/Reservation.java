@@ -41,22 +41,28 @@ class Hotel {
 
     }
     String[] reservearra = new String[2 + 2 + 1];
-    int i = 0;
+    int size = 0;
     public int reserveRoom(String person) {
-        if (i < 5) {
-            reservearra[i] = person;
-            i++;
-            return  i;
+        for (int i = 0; i < reservearra.length; i++) {
+            if (reservearra[i] != null) {
+
+            } else {
+                reservearra[i] = person;
+                size++;
+                int j = i+1;
+                return  j;
+            }
         }
         return -1;
     }
     public boolean reserveRoom(String person, int roomNum) {
-        if (reservearra[roomNum -1] != null) {
+        if (reservearra[roomNum - 1] != null) {
 
             return false;
         }
-        int k = roomNum -1;
+        int k = roomNum - 1;
         reservearra[k] = person;
+        size++;
         return true;
     }
     public void printReservations() {
