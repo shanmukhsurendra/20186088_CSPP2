@@ -223,7 +223,7 @@ All Rooms are reserved
 murthy 1
 kiran 2
 Exception in thread "main" java.lang.NullPointerException
-	at Hotel.cancelReservations(Reservation.java:150)
+	at Hotel.cancelReservations(Reservation.java:149)
 	at Solution.main(Solution.java:59)
 ----------------------------------------
 
@@ -271,7 +271,7 @@ All Rooms are reserved
 murthy 1
 kiran 2
 Exception in thread "main" java.lang.NullPointerException
-	at Hotel.cancelReservations(Reservation.java:150)
+	at Hotel.cancelReservations(Reservation.java:149)
 	at Solution.main(Solution.java:59)
 ----------------------------------------
 
