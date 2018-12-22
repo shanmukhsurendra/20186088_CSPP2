@@ -160,7 +160,7 @@ class Hotel {
      * @return     The rooms.
      */
     public boolean buildRooms(final int num) {
-        reservearra = Arrays.copyOf(reservearra, reservearra.length * 2);
+        reservearra = Arrays.copyOf(reservearra, num);
         return true;
     }
 }

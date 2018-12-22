@@ -130,11 +130,10 @@ All Rooms are reserved
 All Rooms are reserved
 All Rooms are reserved
 Added 2 more rooms
-alekhya 6
+All Rooms are reserved
 All Rooms are reserved
 murthy 1
 kiran 2
-alekhya 6
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -172,16 +171,9 @@ murthy 1
 kiran 2
 kumar 3
 Added 5 more rooms
-alekhya 6
-All Rooms are reserved
-All Rooms are reserved
-All Rooms are reserved
-All Rooms are reserved
-All Rooms are reserved
-murthy 1
-kiran 2
-kumar 3
-alekhya 6
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+	at Hotel.reserveRoom(Reservation.java:119)
+	at Solution.main(Solution.java:46)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
